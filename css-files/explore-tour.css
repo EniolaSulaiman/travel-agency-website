@@ -1,0 +1,84 @@
+body {
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.tours-main img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+    animation: opacity-full 1.5s;
+}
+.tours-main {
+    width: 100%;
+    height: 100vh;
+    padding-top: 0.5em;
+}
+
+.tours-main .container {
+    position: relative;
+    width: clamp(650px, 50vw, 1000px);
+    color: black;
+    background: #f1f1f1;
+    padding: 0;
+    padding-bottom: 2em;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2), -10px -10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.prev-btn {
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.473);
+    position: absolute;
+    top: 20%;
+    left: 0.3em;
+}
+
+.next-btn {
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.473);
+    position: absolute;
+    top: 20%;
+    right: 0.3em;
+    width: fit-content;
+    height: fit-content;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    color: black;
+}
+
+.tours-main .h1-container {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 65px;
+    transform: translateY(-8px);
+}
+
+.tours-main h1 {
+    color: #f1f1f1;
+    margin: auto;
+    font-weight: 700;
+}
+
+.about-text h2 {
+    font-weight: 500;
+}
+
+.text {
+    margin: 0 4em;
+}
+
+.text p {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-bottom: 1em;
+}

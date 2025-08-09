@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enimbi | Fun travels for everyone</title>
+    <link rel="stylesheet" href="css-files/styles.css">
+    <link rel="stylesheet" href="css-files/utilities.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .loading-animation {
+            width: 100%;
+            height: 100%;
+            background: var(--main-background-color);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .ball {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            margin: 0.8rem;
+            animation: bounce 1.3s infinite ease-in-out;
+        }
+
+        .ball1 {
+            animation-delay: 0.5s;
+        }
+
+        .ball2 {
+            animation-delay: 0.6s;
+        }
+
+        .ball3 {
+            background: rgba(0, 0, 0, 0.2);
+            animation-delay: 0.7s;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/2dd572f429.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body class="home-body">
+    <div class="loading-animation flex" id="loadingAnimation">
+        <div class="ball1 ball bg-primary"></div>
+        <div class="ball2 ball bg-secondary"></div>
+        <div class="ball3 ball "></div>
+    </div>
+    <div class="nav-bar bg-primary">
+        <div class="container flex">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <i class="fa-solid fa-bars icon">Icon</i>
+            <nav class="links-nav">
+                <ul class="index-links flex ">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ds&ts.html">Destinations & Tours</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <nav class="flex ham-menu bg-primary">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ds&ts.html">Destinations & Tours</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="hero-text flex">
+        <h1>ENIMBI TRAVEL AGENCY</h1>
+        <p>Your gateway to the wold's most unforgettable experiences.</p>
+    </div>
+    <img src="images/hero-img.jpg" alt="hero-img" class="hero-img">
+
+    <section class="home-about">
+        <div class="container">
+            <h2>Your Trusted Travel Partner</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat fugit veritatis
+                exercitationem eveniet odit incidunt nam, necessitatibus omnis repudiandae accusamus cumque
+                distinctio
+                recusandae numquam aperiam! Nihil, hic dolorum? Eius ! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Adipisci, voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                ex.</p>
+            <div class="slider flex">
+                <a href="#" id="destinations">
+                    <span class="destination-name flex" id="destinationName">Bali</span>
+                </a>
+                <a href="#" id="destinations">
+                    <span class="destination-name flex" id="destinationName">Bali</span>
+                </a>
+                <a href="#" id="destinations">
+                    <span class="destination-name flex" id="destinationName">Bali</span>
+                </a>
+                <a href="#" id="destinations">
+                    <span class="destination-name flex" id="destinationName">Bali</span>
+                </a>
+                <a href="#" id="destinations">
+                    <span class="destination-name flex" id="destinationName">Bali</span>
+                </a>
+                <a href="#" id="destinations">
+                    <span class="destination-name flex" id="destinationName">Bali</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="travel-tips">
+        <h2>Travel Stories and Tips</h2>
+        <div class="slider flex">
+            <div class="slide"><img src="images/bahamas-3.jpg" alt="Image">
+                <h3>
+                    Lorem ipsum dolor sit.
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, tempora?
+                </p>
+                <a href="#" class="btn">Explore</a>
+            </div>
+            <div class="slide"><img src="images/bahamas-3.jpg" alt="Image">
+                <h3>
+                    Lorem ipsum dolor sit.
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, tempora?
+                </p>
+                <a href="#" class="btn">Explore</a>
+            </div>
+            <div class="slide"><img src="images/bahamas-3.jpg" alt="Image">
+                <h3>
+                    Lorem ipsum dolor sit.
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, tempora?
+                </p>
+                <a href="#" class="btn">Explore</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        if (!sessionStorage.getItem(`animationLoaded`)) {
+            const loadingAnimation = document.getElementById(`loadingAnimation`)
+            function removeLoader() {
+                loadingAnimation.style.opacity = 0;
+                loadingAnimation.style.display = `none`
+                document.body.style.overflowY = `visible`
+            } function load() {
+                try {
+                    window.addEventListener(`DOMContentLoaded`, () => {
+                        loadingAnimation.style.animation = `fade-out 1s`
+                        setTimeout(
+                            removeLoader, 5000
+                        )
+                        sessionStorage.clear()
+                        sessionStorage.setItem(`animationLoaded`, `true`)
+                    }
+                    )
+                }
+
+
+                catch (error) {
+                    console.error(error)
+                }
+            }
+            load()
+        }
+        else {
+            loadingAnimation.style.opacity = 0;
+            loadingAnimation.style.display = `none`
+            document.body.style.overflowY = `visible`
+        }
+    </script>
+    <script type="module" src="js-files/index.js"></script>
+</body>
+
+</html>

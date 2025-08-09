@@ -1,0 +1,549 @@
+[
+    [
+        {
+            "name": "Zanzibar, Tanzania",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "White sands, turquoise waters, and spice island soul.",
+            "id": ""
+        },
+        {
+            "name": "New York City, USA",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "The city that never sleeps and never stops inspiring..",
+            "id": ""
+        },
+        {
+            "name": "Rome, Italy",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": " A timeless city of ruins, romance, and rich pasta plates.",
+            "id": ""
+        },
+        {
+            "name": "Cape Town, South Africa",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "A coastal gem with mountains, beaches, and penguins.",
+            "id": ""
+        },
+        {
+            "name": "London, UK",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Royal sights and punk energy wrapped in foggy charm.",
+            "id": ""
+        },
+        {
+            "name": "Bali, Indonesia",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "A tropical paradise of temples and tranquility.",
+            "id": ""
+        },
+        {
+            "name": "Dubai, UAE",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Luxury skyscrapers rising from the golden desert.",
+            "id": ""
+        },
+        {
+            "name": "Rio de Janeiro, Brazil",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Samba beats, beach days, and Christ the Redeemer.",
+            "id": ""
+        },
+        {
+            "name": "Santorini, Greece",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Whitewashed cliffs, blue domes, and sunset magic.",
+            "id": ""
+        },
+        {
+            "name": "Kyoto, Japan",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "A serene city of shrines, geishas, and gardens.",
+            "id": ""
+        },
+        {
+            "name": "Istanbul, Turkey",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Where East kisses West across the Bosphorus.",
+            "id": ""
+        },
+        {
+            "name": "Amsterdam, Netherlands",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Canals, bicycles, and Dutch charm in every corner.",
+            "id": ""
+        },
+        {
+            "name": "Marrakech, Morocco",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "A sensory feast of spices, souks, and sand-colored walls.",
+            "id": ""
+        },
+        {
+            "name": "Barcelona, Spain",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Gaudí dreams, beach scenes, and tapas bites.",
+            "id": ""
+        },
+        {
+            "name": "Queenstown, New Zealand",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Adrenaline capital with jaw-dropping mountain views.",
+            "id": ""
+        },
+        {
+            "name": "Petra, Jordan",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Rose-red ruins carved into desert cliffs.",
+            "id": ""
+        },
+        {
+            "name": "Machu Picchu, Peru",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Lost Incan city nestled high in the Andes.",
+            "id": ""
+        },
+        {
+            "name": "Las Vegas, USA",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Neon lights, wild nights, and Elvis sightings.",
+            "id": ""
+        },
+        {
+            "name": "Prague, Czech Republic",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Gothic beauty and beer in a fairy tale setting.",
+            "id": ""
+        },
+        {
+            "name": "Venice, Italy",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Gondolas glide through romance-soaked canals.",
+            "id": ""
+        },
+        {
+            "name": "Bangkok, Thailand",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Street food heaven with golden temples galore.",
+            "id": ""
+        },
+        {
+            "name": "Vancouver, Canada",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Nature meets urban cool in a scenic wonderland.",
+            "id": ""
+        },
+        {
+            "name": "Buenos Aires, Argentina",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Tango, steak, and sultry Latin energy.",
+            "id": ""
+        },
+        {
+            "name": "Cairo, Egypt",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Pyramids, pharaohs, and timeless desert sands.",
+            "id": ""
+        },
+        {
+            "name": "Seoul, South Korea",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "K-pop vibes and ancient palaces collide in style.",
+            "id": ""
+        },
+        {
+            "name": "Dubrovnik, Croatia",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Game of Thrones city walls and Adriatic beauty.",
+            "id": ""
+        },
+        {
+            "name": "Reykjavik, Iceland",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Hot springs, volcanoes, and Northern Lights.",
+            "id": ""
+        },
+        {
+            "name": "Los Angeles, USA",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Hollywood glitz, beaches, and endless sunshine.",
+            "id": ""
+        },
+        {
+            "name": "Munich, Germany",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Oktoberfest fun and Bavarian traditions.",
+            "id": ""
+        },
+        {
+            "name": "Nairobi, Kenya",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Safari gateways with a city twist.",
+            "id": ""
+        },
+        {
+            "name": "Havana, Cuba",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Classic cars, salsa rhythms, and faded colonial beauty.",
+            "id": ""
+        },
+        {
+            "name": "Athens, Greece",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "The cradle of Western civilization and mythology.",
+            "id": ""
+        },
+        {
+            "name": "Zurich, Switzerland",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Alpine beauty with precision and chocolate.",
+            "id": ""
+        },
+        {
+            "name": "Siem Reap, Cambodia",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Gateway to the majestic Angkor Wat ruins.",
+            "id": ""
+        },
+        {
+            "name": "Edinburgh, Scotland",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Castles, kilts, and literary legends.",
+            "id": ""
+        },
+        {
+            "name": "Berlin, Germany",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "History, hipster culture, and techno nights.",
+            "id": ""
+        },
+        {
+            "name": "Lima, Peru",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Culinary capital perched on Pacific cliffs.",
+            "id": ""
+        },
+        {
+            "name": "Ho Chi Minh City, Vietnam",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Motorbikes, markets, and spicy street eats.",
+            "id": ""
+        },
+        {
+            "name": "Porto, Portugal",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Wine by the river in colorful, hilly streets.",
+            "id": ""
+        },
+        {
+            "name": " Kuala Lumpur, Malaysia",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Skyscrapers, street food, and cultural fusion.",
+            "id": ""
+        },
+        {
+            "name": "Budapest, Hungary",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Thermal baths, ruin bars, and Danube views.",
+            "id": ""
+        },
+        {
+            "name": "Lagos, Nigeria",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Africa's heartbeat with booming energy and jollof fire.",
+            "id": ""
+        },
+        {
+            "name": "Florence, Italy",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Renaissance art, architecture, and irresistible gelato.",
+            "id": ""
+        },
+        {
+            "name": " Amman, Jordan",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Hills of ancient history and Middle Eastern warmth.",
+            "id": ""
+        },
+        {
+            "name": "Delhi, India",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "A chaotic charm of spice, history, and color.",
+            "id": ""
+        },
+        {
+            "name": "Montreal, Canada",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "French flair meets North American cool.",
+            "id": ""
+        },
+        {
+            "name": "Johannesburg, South Africa",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Urban energy with a strong historical heart.",
+            "id": ""
+        },
+        {
+            "name": "Jaipur, India",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "The Pink City of palaces and vibrant bazaars.",
+            "id": ""
+        },
+        {
+            "name": "Auckland, New Zealand",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "A harbor city of sails and volcanic hills.",
+            "id": ""
+        },
+        {
+            "name": "Tallinn, Estonia",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "A fairytale old town with digital innovation.",
+            "id": ""
+        },
+        {
+            "name": "Oslo, Norway",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Fjords, forests, and a minimalist vibe.",
+            "id": ""
+        },
+        {
+            "name": "Doha, Qatar",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Desert glam, skyscrapers, and cultural richness.",
+            "id": ""
+        },
+        {
+            "name": "Casablanca, Morocco",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Modern meets mystical in a North African hub.",
+            "id": ""
+        },
+        {
+            "name": "Manila, Philippines",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "A bustling city of contrasts and colonial heritage.",
+            "id": ""
+        },
+        {
+            "name": "Salzburg, Austria",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Mozart's hometown with Alpine charm.",
+            "id": ""
+        },
+        {
+            "name": "Brussels, Belgium",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Waffles, chocolate, and EU power.",
+            "id": ""
+        },
+        {
+            "name": "Mexico City, Mexico",
+            "image": "images/europe-1.jpg",
+            "alt": "Image",
+            "desc": "Aztec roots, tacos, and buzzing city life.",
+            "id": ""
+        }
+    ],
+    [
+        {
+            "name": "European Highlights Tour",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "A whirlwind trip through Europe's most iconic cities",
+            "id": "",
+            "destinations": "London, Paris, Amsterdam, Rome, Barcelona"
+        },
+        {
+            "name": "Southeast Asia Explorer",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "A vibrant journey through temples, beaches, and bustling markets.",
+            "id": "",
+            "destinations": "Bangkok, Siem Reap, Ho Chi Minh City, Hanoi, Luang Prabang"
+        },
+        {
+            "name": "Safari & Savannah Adventure",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Wild encounters in Africa's legendary national parks.",
+            "id": "",
+            "destinations": "Nairobi, Masai Mara, Serengeti, Ngorongoro, Arusha"
+        },
+        {
+            "name": "Silk Road Chronicles",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Get up close with gentle giants in lush green forests.",
+            "id": "",
+            "destinations": " Samarkand, Bukhara, Tashkent, Almaty, Bishkek"
+        },
+        {
+            "name": "East Africa Gorilla Trek",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nostrum.",
+            "id": "",
+            "destinations": "Kigali, Bwindi Impenetrable Forest, Volcanoes National Park, Lake Bunyonyi"
+        },
+        {
+            "name": "Northern Lights & Nordic Nights",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Chase the aurora through wintry wonderlands.",
+            "id": "",
+            "destinations": "Tromsø, Rovaniemi, Reykjavik, Abisko, Kiruna"
+        },
+        {
+            "name": "Mediterranean Magic Cruise",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Sun-soaked sailing through historic coastal gems.",
+            "id": "",
+            "destinations": "Santorini, Mykonos, Dubrovnik, Venice, Barcelona"
+        },
+        {
+            "name": "South American Discovery",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "A spicy mix of ancient wonders and natural beauty.",
+            "id": "",
+            "destinations": "Lima, Cusco, Machu Picchu, Buenos Aires, Rio de Janeiro"
+        },
+        {
+            "name": "Caribbean Island Hopper",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Sunshine, rum, and rhythms across tropical jewels.",
+            "id": "",
+            "destinations": "Barbados, St. Lucia, Antigua, St. Maarten, Bahamas"
+        },
+        {
+            "name": "Canadian Rockies Expedition",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Scenic peaks, lakes, and wilderness adventures.",
+            "id": "",
+            "destinations": "Vancouver, Banff, Jasper, Lake Louise, Calgary"
+        },
+        {
+            "name": "Arabian Desert & City Lights",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "From modern marvels to endless dunes.",
+            "id": "",
+            "destinations": "Dubai, Abu Dhabi, Muscat, Wahiba Sands, Nizwa"
+        },
+        {
+            "name": "Himalayan Spiritual Journey",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Mountains and meditation from Nepal to Bhutan.",
+            "id": "",
+            "destinations": "Kathmandu, Pokhara, Paro, Thimphu, Punakha"
+        },
+        {
+            "name": "Romantic Italy Tour",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Pasta, passion, and piazzas on every corner.",
+            "id": "",
+            "destinations": "Venice, Florence, Rome, Naples, Amalfi Coast"
+        },
+        {
+            "name": "Great American Road Trip",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Cross-country thrills from coast to coast.",
+            "id": "",
+            "destinations": "New York City, Chicago, Las Vegas, Grand Canyon, Los Angeles"
+        },
+        {
+            "name": " Iceland Ring Road Adventure",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Glaciers, geysers, and auroras all around the island.",
+            "id": "",
+            "destinations": "Reykjavik, Vik, Akureyri, Hofn, Thingvellir"
+        },
+        {
+            "name": "Japan Culture Trail",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Tradition, tech, and tranquility in the Land of the Rising Sun.",
+            "id": "",
+            "destinations": "Tokyo, Hakone, Kyoto, Nara, Osaka"
+        },
+        {
+            "name": "Classic Egypt & Nile Cruise",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Ancient pyramids and river magic on the Nile.",
+            "id": "",
+            "destinations": "Cairo, Luxor, Aswan, Edfu, Abu Simbel"
+        },
+        {
+            "name": "Australia East Coast Escape",
+            "image": "images/europe-3.jpg",
+            "alt": "Image",
+            "desc": "Beaches, reefs, and laid-back life Down Under.",
+            "id": "",
+            "destinations": "Sydney, Gold Coast, Brisbane, Cairns, Great Barrier Reef"
+        }
+    ]
+]

@@ -1,0 +1,69 @@
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card {
+    height: fit-content;
+}
+
+.luxury-tours .grid,
+.family-tours .grid,
+.adventure-tours .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.grid {
+    width: 100%;
+}
+
+.luxury-tours .card,
+.family-tours .card,
+.adventure-tours .card {
+    max-width: 30vw;
+    height: fit-content;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin: 0 0 1rem;
+    color: #666;
+}
+.destination-components{
+    width:100%;
+    padding: 2em;
+    border-radius: 50%;
+}
+.destination-components h2 {
+    font-size: 3rem;
+    justify-self: center;
+}
+
+.component-2,
+.component-4,
+.component-6 {
+    background: #e9e8e8;
+}
+
+@media(max-width: 650px) {
+
+    .grid,
+    .flex {
+        display: block;
+    }
+
+    .card {
+        width: 70%;
+    }
+}
