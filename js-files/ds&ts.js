@@ -14,7 +14,7 @@ async function retrieveJSON() {
     return data
   }
 
-  
+
   catch(error){
     console.error(error)
   }
@@ -360,6 +360,11 @@ async function displayTours() {
     moreContent1.classList.add(`moreContent`);
     moreContent1.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent1);
+
+
+
+
+
     for (let i = 0; i < 6; i++) {
       moreContent1.innerHTML += `
         <div class="card">
@@ -374,15 +379,25 @@ async function displayTours() {
         </div>
         `;
     }
+
+
+
     moreContent1.innerHTML += `
     <button class="see-all" id="toursDisplay2">See more</button>
     <button class="hide-all" id="hideTours1">Hide all</button>
     `;
 
+    
+
+
     const moreContent2 = document.createElement(`div`);
     moreContent2.classList.add(`moreContent`);
     moreContent2.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent2);
+
+
+
+
     for (let i = 6; i < 12; i++) {
       moreContent2.innerHTML += `
         <div class="card">
@@ -397,14 +412,26 @@ async function displayTours() {
         </div>
         `;
     }
+
+
+
+
     moreContent2.innerHTML += `
         <button class="see-all" id="toursDisplay3">See more</button>
     <button class="hide-all" id="hideTours2">Hide all</button>
     `;
+
+
+
+
     const moreContent3 = document.createElement(`div`);
     moreContent3.classList.add(`moreContent`);
     moreContent3.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent3);
+
+
+
+
     for (let i = 12; i < 17; i++) {
       moreContent3.innerHTML += `
         <div class="card">
@@ -419,15 +446,25 @@ async function displayTours() {
         </div>
         `;
     }
+
+
+
+
     moreContent3.innerHTML += `
     <button class="hide-all" id="hideTours3">Hide all</button>
     `;
+
+
+
 
     const hideTours1 = document.getElementById(`hideTours1`);
     const hideTours2 = document.getElementById(`hideTours2`);
     const hideTours3 = document.getElementById(`hideTours3`);
     const toursDisplay2 = document.getElementById(`toursDisplay2`);
     const toursDisplay3 = document.getElementById(`toursDisplay3`);
+
+
+
 
     hideTours1.addEventListener(`click`, () => {
       toursContainer.appendChild(toursDisplay);
@@ -454,6 +491,9 @@ async function displayTours() {
       hideTours2.style.display = `block`;
     });
 
+
+
+
     toursDisplay.addEventListener(`click`, () => {
       moreContent1.classList.add(`show`);
       toursDisplay.style.display = `none`;
@@ -470,7 +510,11 @@ async function displayTours() {
       hideTours1.style.display = `none`;
       hideTours2.style.display = `none`;
     });
-  } catch (error) {
+  }
+  
+  
+  
+  catch (error) {
     console.error(error);
   }
 }
