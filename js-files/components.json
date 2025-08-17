@@ -888,7 +888,9 @@
       "desc": "Alpine beauty with precision and chocolate.",
       "price": "$3,500",
       "duration": "3-5 days"
-    },
+    }
+  },
+  {
     "africanSafariAdventure": {
       "name": "African Safari Adventure",
       "desc": "A guided safari to see iconic African wildlife and learn from local guides.",
