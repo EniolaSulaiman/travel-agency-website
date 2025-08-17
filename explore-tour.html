@@ -7,9 +7,56 @@
     <title>Explore Tour</title>
     <link rel="stylesheet" href="css-files/styles.css">
     <link rel="stylesheet" href="css-files/utilities.css">
+     <link rel="stylesheet" href="css-files/explore-tour.css">
 </head>
 <body>
-    
+    <div class="nav-bar bg-primary">
+        <div class="container flex">
+            <i class="fa-solid fa-bars" onclick="showNavBar()"></i>
+            <img class="logo" src="images/logo.png" alt="">
+            <nav class="links-nav">
+                <ul class="index-links flex ">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ds&ts.html">Destinations & Tours</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+        <main>
+            <div class="tours-main" id="toursMain">
+                <div class="container card">
+                    <img id="image" src="images/paris-1.jpg" alt="">
+                    <img id="image" src="images/paris-2.jpg" alt="">
+                    <img id="image" src="images/paris-3.jpg" alt="">
+                    <span id="prevBtn" class="prev-btn" onclick="prevSlide()">&#10094;</span>
+                    <span id="nextBtn" class="next-btn" onclick="nextSlide()">&#10095;</span>
+                    <span class="h1-container flex">
+                        <h1></h1>
+                    </span>
+                    <div class="text">
+                        <span class="about-text">
+                            <h2>About the Tour</h2>
+                        </span>
+                        <p></p>
+                        <div class="grid-3">
+                            <span>
+                                <h3>Price</h3>
+                                
+                            </span>
+                            <span>
+                                <h3>Duration</h3>
+                               
+                            </span>
+                            <span>
+                                <a href="#" class="btn">Book Now</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
     <script src="js-files/explore-tour.js"></script>
 </body>
