@@ -10,8 +10,7 @@ async function retrieveJSON() {
     }
 
 
-    const data = await response.json();
-    return data
+    return await response.json();
   }
 
 
@@ -22,7 +21,7 @@ async function retrieveJSON() {
 
 async function displayDestinations() {
   try {
-    const data = retrieveJSON()
+    const data = await retrieveJSON()
     const destinationCards = document.getElementById(`destinationCards`);
     const destinationsDisplay = document.getElementById(`destinationsDisplay`);
 
@@ -342,13 +341,13 @@ async function displayDestinations() {
   
   
   catch (error) {
-    console.error(error);
+    console.error(`Extra destinations failed to load`,error);
   }
 }
 displayDestinations();
 async function displayTours() {
   try {
-    const data = retrieveJSON()
+    const data = await retrieveJSON()
     const toursContainer = document.getElementById(`toursContainer`);
     const toursDisplay = document.getElementById(`toursDisplay`);
 
@@ -515,7 +514,7 @@ async function displayTours() {
   
   
   catch (error) {
-    console.error(error);
+    console.error(`Extra tours failed to load`,error);
   }
 }
 displayTours();
