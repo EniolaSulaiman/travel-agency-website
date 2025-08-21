@@ -556,7 +556,7 @@ body .hero-text {
 }
 
 .above-the-fold :first-child p {
-    color: rgb(207, 207, 207);
+    color: hsl(0, 0%, 81%);
 }
 
 .above-the-fold form {
