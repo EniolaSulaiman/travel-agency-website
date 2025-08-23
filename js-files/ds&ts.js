@@ -37,14 +37,15 @@ async function displayDestinations() {
     for (let i = 0; i < 9; i++) {
       moreContent1.innerHTML += `
             <div class="card">
-                <img loading="lazy" src="${data[0][i].image}" alt="${data[0][i].alt}">
+                <img loading="lazy" src="${data[0][i].image}" alt="Image">
                 <h3>
                     ${data[0][i].name}
                 </h3>
                 <p>
                 ${data[0][i].desc}
                 </p>
-                <a href="explore-tour.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
+              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
+                <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
             </div>
             `;
     }
@@ -65,14 +66,15 @@ async function displayDestinations() {
     for (let i = 9; i < 18; i++) {
       moreContent2.innerHTML += `
         <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="${data[0][i].alt}">
+            <img loading="lazy" src="${data[0][i].image}" alt="Image">
             <h3>
                 ${data[0][i].name}
             </h3>
             <p>
             ${data[0][i].desc}
             </p>
-            <a href="explore-tour.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
+              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
+            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
         </div>
         `;
     }
@@ -95,14 +97,15 @@ async function displayDestinations() {
     for (let i = 19; i < 28; i++) {
       moreContent3.innerHTML += `
         <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="${data[0][i].alt}">
+            <img loading="lazy" src="${data[0][i].image}" alt="Image">
             <h3>
                 ${data[0][i].name}
             </h3>
             <p>
             ${data[0][i].desc}
             </p>
-            <a href="explore-tour.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
+              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
+            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
         </div>
         `;
     }
@@ -127,14 +130,15 @@ async function displayDestinations() {
     for (let i = 29; i < 38; i++) {
       moreContent4.innerHTML += `
         <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="${data[0][i].alt}">
+            <img loading="lazy" src="${data[0][i].image}" alt="Image">
             <h3>
                 ${data[0][i].name}
             </h3>
             <p>
             ${data[0][i].desc}
             </p>
-            <a href="explore-tour.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
+              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
+            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
         </div>
         `;
     }
@@ -161,14 +165,15 @@ async function displayDestinations() {
     for (let i = 38; i < 47; i++) {
       moreContent5.innerHTML += `
         <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="${data[0][i].alt}">
+            <img loading="lazy" src="${data[0][i].image}" alt="Image">
             <h3>
                 ${data[0][i].name}
             </h3>
             <p>
             ${data[0][i].desc}
             </p>
-            <a href="explore-tour.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
+              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
+            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
         </div>
         `;
     }
@@ -194,14 +199,15 @@ async function displayDestinations() {
     for (let i = 47; i < 57; i++) {
       moreContent6.innerHTML += `
         <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="${data[0][i].alt}">
+            <img loading="lazy" src="${data[0][i].image}" alt="Image">
             <h3>
                 ${data[0][i].name}
             </h3>
             <p>
             ${data[0][i].desc}
             </p>
-            <a href="explore-tour.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
+              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
+            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
         </div>
         `;
     }
@@ -367,13 +373,14 @@ async function displayTours() {
     for (let i = 0; i < 6; i++) {
       moreContent1.innerHTML += `
         <div class="card">
-            <img loading="lazy" src="${data[1][i].image}" alt="${data[1][i].alt}">
+            <img loading="lazy" src="${data[1][i].image}" alt="Image">
             <h3>
                 ${data[1][i].name}
             </h3>
             <p>
             ${data[1][i].desc}
             </p>
+            <p>${data[1][i].destinationsVisited}</p>
             <a href="explore-tour.html?id=${data[1][i].id}" class="btn">Explore Tour</a>
         </div>
         `;
@@ -400,13 +407,14 @@ async function displayTours() {
     for (let i = 6; i < 12; i++) {
       moreContent2.innerHTML += `
         <div class="card">
-            <img loading="lazy" src="${data[1][i].image}" alt="${data[1][i].alt}">
+            <img loading="lazy" src="${data[1][i].image}" alt="Image">
             <h3>
                 ${data[1][i].name}
             </h3>
             <p>
             ${data[1][i].desc}
             </p>
+            <p>${data[1][i].destinationsVisited}</p>
             <a href="explore-tour.html?id=${data[1][i].id}" class="btn">Explore Tour</a>
         </div>
         `;
@@ -434,13 +442,14 @@ async function displayTours() {
     for (let i = 12; i < 17; i++) {
       moreContent3.innerHTML += `
         <div class="card">
-            <img loading="lazy" src="${data[1][i].image}" alt="${data[1][i].alt}">
+            <img loading="lazy" src="${data[1][i].image}" alt="Image">
             <h3>
                 ${data[1][i].name}
             </h3>
             <p>
             ${data[1][i].desc}
             </p>
+            <p>${data[1][i].destinationsVisited}</p>
             <a href="explore-tour.html?id=${data[1][i].id}" class="btn">Explore Tour</a>
         </div>
         `;
