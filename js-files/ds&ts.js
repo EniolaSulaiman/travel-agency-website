@@ -422,7 +422,7 @@ async function displayTours() {
 
     const moreContent4 = document.createElement(`div`);
     moreContent4.classList.add(`moreContent`);
-    moreContent4.classList.add(`grid-4`);
+    moreContent4.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent4);
 
     for (let i = 19; i < 25; i++) {
@@ -460,7 +460,7 @@ async function displayTours() {
 
     const moreContent5 = document.createElement(`div`);
     moreContent5.classList.add(`moreContent`);
-    moreContent5.classList.add(`grid-5`);
+    moreContent5.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent5);
 
     for (let i = 25; i < 37; i++) {
@@ -491,7 +491,7 @@ async function displayTours() {
       tourDestinationsVisited = null;
     }
 
-    moreContent3.innerHTML += `
+    moreContent5.innerHTML += `
     <button class="hide-all" id="hideTours5">Hide all</button>
     `;
 
@@ -572,29 +572,17 @@ async function displayTours() {
     });
     toursDisplay3.addEventListener(`click`, () => {
       moreContent3.classList.add(`show`);
-      toursDisplay2.style.display = `none`;
       toursDisplay3.style.display = `none`;
-      hideTours1.style.display = `none`;
       hideTours2.style.display = `none`;
     });
     toursDisplay4.addEventListener(`click`, () => {
-      moreContent3.classList.add(`show`);
-      toursDisplay2.style.display = `none`;
-      toursDisplay3.style.display = `none`;
+      moreContent4.classList.add(`show`);
       toursDisplay4.style.display = `none`;
-      hideTours1.style.display = `none`;
-      hideTours2.style.display = `none`;
-      hideTours3.style.display = `none`;
+      hideTours3.style.display = `none`; 
     });
     toursDisplay5.addEventListener(`click`, () => {
-      moreContent3.classList.add(`show`);
-      toursDisplay2.style.display = `none`;
-      toursDisplay3.style.display = `none`;
-      toursDisplay4.style.display = `none`;
+      moreContent5.classList.add(`show`);
       toursDisplay5.style.display = `none`;
-      hideTours1.style.display = `none`;
-      hideTours2.style.display = `none`;
-      hideTours3.style.display = `none`;
       hideTours4.style.display = `none`;
     });
   } catch (error) {
