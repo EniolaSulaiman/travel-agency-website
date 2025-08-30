@@ -14,19 +14,19 @@
       <h1>EXPLORE DESTINATIONS</h1>
       <p>DISCOVER UNFORGETTABLE ADVENTURES ACROSS THE GLOBE</p>
       <span class="datalists">
-        <input type="text" list="tour-types" placeholder="Tour Type" />
-        <datalist name="" id="tour-types">
+        <select name="" id="tourTypes">
           <option onclick="componentLoad1(0)">All Tours</option>
-          <option onclick="componentLoad1(1)">Family Tours</option>
+          <option onclick="componentLoad1(1)">Cultural Tours</option>
           <option onclick="componentLoad1(2)">Adventure Tours</option>
           <option onclick="componentLoad1(3)">Luxury Tours</option>
-        </datalist>
+          <option onclick="componentLoad1(3)">Nature & Wildlife Tours</option>
+          </select>
         <input
           type="text"
           list="destinations-datalist"
           placeholder="Destination"
         />
-        <datalist name="" id="destinations-datalist">
+        <datalist name="" id="destinationsDatalist">
           <option onclick="componentLoad1(0)">All Destinations</option>
           <option onclick="componentLoad2(0)">Paris</option>
           <option onclick="componentLoad2(1)">London</option>
