@@ -73,7 +73,6 @@ async function loadRoute() {
   const data = await retrieveJSON();
   const params = new URLSearchParams(window.location.search);
   const destinationId = params.get(`id`);
-  console.log(data[2][destinationId])
 
    document.getElementById(`toursMain`).innerHTML = `
 <div class="container card">
