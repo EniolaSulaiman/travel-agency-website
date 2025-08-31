@@ -305,7 +305,7 @@ section.home-about a.btn {
   justify-self: center;
 }
 
-.ds-header input {
+.ds-header .input {
   background: white;
   border: none;
   padding: 5px;
