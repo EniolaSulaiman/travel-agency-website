@@ -15,17 +15,18 @@
       <p>DISCOVER UNFORGETTABLE ADVENTURES ACROSS THE GLOBE</p>
       <span class="datalists">
         <select name="" id="tourTypes" class="input">
-          <option onclick="componentLoad1(0)">All Tours</option>
-          <option onclick="componentLoad1(1)">Cultural Tours</option>
-          <option onclick="componentLoad1(2)">Adventure Tours</option>
-          <option onclick="componentLoad1(3)">Luxury Tours</option>
-          <option onclick="componentLoad1(3)">Nature & Wildlife Tours</option>
+          <option onclick="componentLoad1(`all`)">All Tours</option>
+          <option onclick="componentLoad1(`cultural`)">Cultural Tours</option>
+          <option onclick="componentLoad1(`adventure`)">Adventure Tours</option>
+          <option onclick="componentLoad1(`luxury`)">Luxury Tours</option>
+          <option onclick="componentLoad1(`nature`)">Nature & Wildlife Tours</option>
         </select>
         <input
           type="text"
           list="destinationsDatalist"
           placeholder="Destination"
           class="input"
+          id="destinationInput"
         />
         <datalist name="" id="destinationsDatalist">
           <option>Amsterdam, Netherlands</option>
@@ -97,7 +98,7 @@
         </ul>
       </span>
     </header>
-    <main class="ds-main">
+    <main class="ds-main" id="dsMain">
       <section class="destination-cards" id="destinationCards">
         <article class="flex">
           <h2>POPULAR DESTINATIONS</h2>
