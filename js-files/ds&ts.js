@@ -648,3 +648,34 @@ destinationInput.addEventListener("keydown", async function (event) {
     document.getElementById(`dsMain`).appendChild(resultsContainer);
   }
 });
+
+async function filterTours(tourType) {
+  let filteredContent;
+  const data = await retrieveJSON();
+  resultsContainer.innerHTML = "";
+  if (tourType === `all`) {
+    filteredContent = data[1];
+  } else {
+    filteredContent = data[1].filter((tour) => {
+      return tour.type === tourType; 
+    });
+  }
+  filteredContent.forEach((item) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    card.innerHTML = `
+        <img src="${item.image}" alt="${item.name}" class="card-img">
+        <div class="card-body">
+          <h3 class="card-title">${item.name}</h3>
+          <p class="card-desc">${item.desc}</p>
+          <p>
+                <a class="destinations">${item.destinationsVisited[0]}</a>
+              </p>
+        </div>
+      `;
+    resultsContainer.appendChild(card);
+  });
+  document.getElementById(`dsMain`).innerHTML = null;
+  document.getElementById(`dsMain`).appendChild(resultsContainer);
+}
