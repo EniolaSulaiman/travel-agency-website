@@ -578,7 +578,7 @@ async function displayTours() {
     toursDisplay4.addEventListener(`click`, () => {
       moreContent4.classList.add(`show`);
       toursDisplay4.style.display = `none`;
-      hideTours3.style.display = `none`; 
+      hideTours3.style.display = `none`;
     });
     toursDisplay5.addEventListener(`click`, () => {
       moreContent5.classList.add(`show`);
@@ -590,3 +590,92 @@ async function displayTours() {
   }
 }
 displayTours();
+const destinationInput = document.getElementById("destinationInput");
+const resultsContainer = document.createElement(`div`);
+resultsContainer.classList.add(`grid-3`, `moreContent`);
+
+destinationInput.addEventListener("keydown", async function (event) {
+  if (event.key === "Enter") {
+    const data = await retrieveJSON();
+
+    let filteredContent;
+    if (destinationInput.value.trim() === "") {
+      filteredContent = data[0];
+    }
+    filteredContent = data[0].filter((item) =>
+      item.name.toLowerCase().includes(destinationInput.value.toLowerCase())
+    );
+
+    // Clear old results
+    resultsContainer.innerHTML = "";
+
+    if (filteredContent.length === 0) {
+      // Show "not found" card
+      const noResultCard = document.createElement("div");
+      noResultCard.classList.add("card");
+
+      noResultCard.innerHTML = `
+        <div class="card-body">
+          <h3 class="card-title">No destinations found</h3>
+          <p class="card-desc">Try another destination or check your spelling.</p>
+        </div>
+      `;
+
+      resultsContainer.appendChild(noResultCard);
+      return; // stop execution here
+    }
+
+    // Otherwise, show matching cards
+    filteredContent.forEach((item) => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+
+      card.innerHTML = `
+        <img src="${item.image}" alt="${item.name}" class="card-img">
+        <div class="card-body">
+          <h3 class="card-title">${item.name}</h3>
+          <p class="card-desc">${item.desc}</p>
+          <p>
+                <span class="price info">${item.price}</span>
+                <span class="duration info">${item.duration}</span>
+              </p>
+        </div>
+      `;
+
+      resultsContainer.appendChild(card);
+    });
+    document.getElementById(`dsMain`).innerHTML = null;
+    document.getElementById(`dsMain`).appendChild(resultsContainer);
+  }
+});
+
+async function filterTours(tourType) {
+  let filteredContent;
+  const data = await retrieveJSON();
+  resultsContainer.innerHTML = "";
+  if (tourType === `all`) {
+    filteredContent = data[1];
+  } else {
+    filteredContent = data[1].filter((tour) => {
+      return tour.type === tourType; 
+    });
+  }
+  filteredContent.forEach((item) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    card.innerHTML = `
+        <img src="${item.image}" alt="${item.name}" class="card-img">
+        <div class="card-body">
+          <h3 class="card-title">${item.name}</h3>
+          <p class="card-desc">${item.desc}</p>
+          <p>
+                <a class="destinations">${item.destinationsVisited[0]}</a>
+              </p>
+        </div>
+      `;
+    resultsContainer.appendChild(card);
+  });
+  document.getElementById(`dsMain`).innerHTML = null;
+  document.getElementById(`dsMain`).appendChild(resultsContainer);
+}

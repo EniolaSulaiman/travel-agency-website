@@ -14,29 +14,79 @@
       <h1>EXPLORE DESTINATIONS</h1>
       <p>DISCOVER UNFORGETTABLE ADVENTURES ACROSS THE GLOBE</p>
       <span class="datalists">
-        <select name="" id="tourTypes">
-          <option onclick="componentLoad1(0)">All Tours</option>
-          <option onclick="componentLoad1(1)">Cultural Tours</option>
-          <option onclick="componentLoad1(2)">Adventure Tours</option>
-          <option onclick="componentLoad1(3)">Luxury Tours</option>
-          <option onclick="componentLoad1(3)">Nature & Wildlife Tours</option>
-          </select>
+        <select name="" id="tourTypes" class="input">
+          <option onclick="filterTours(`all`)">All Tours</option>
+          <option onclick="filterTours(`cultural`)">Cultural Tours</option>
+          <option onclick="filterTours(`adventure`)">Adventure Tours</option>
+          <option onclick="filterTours(`luxury`)">Luxury Tours</option>
+          <option onclick="filterTours(`nature`)">Nature & Wildlife Tours</option>
+        </select>
         <input
           type="text"
-          list="destinations-datalist"
+          list="destinationsDatalist"
           placeholder="Destination"
+          class="input"
+          id="destinationInput"
         />
         <datalist name="" id="destinationsDatalist">
-          <option onclick="componentLoad1(0)">All Destinations</option>
-          <option onclick="componentLoad2(0)">Paris</option>
-          <option onclick="componentLoad2(1)">London</option>
-          <option onclick="componentLoad2(2)">Vienna</option>
-          <option onclick="componentLoad2(3)">The Great Alps</option>
-          <option onclick="componentLoad2(4)">Beijing</option>
-          <option onclick="componentLoad2(5)">Hong Kong</option>
-          <option onclick="componentLoad2(6)">Accra</option>
-          <option onclick="componentLoad2(7)">Giza</option>
-          <option onclick="componentLoad2(8)">Kilimanjaro</option>
+          <option>Amsterdam, Netherlands</option>
+          <option>Amman, Jordan</option>
+          <option>Athens, Greece</option>
+          <option>Auckland, New Zealand</option>
+          <option>Bali, Indonesia</option>
+          <option>Bangkok, Thailand</option>
+          <option>Barcelona, Spain</option>
+          <option>Berlin, Germany</option>
+          <option>Brussels, Belgium</option>
+          <option>Buenos Aires, Argentina</option>
+          <option>Budapest, Hungary</option>
+          <option>Cairo, Egypt</option>
+          <option>Cape Town, South Africa</option>
+          <option>Casablanca, Morocco</option>
+          <option>Delhi, India</option>
+          <option>Doha, Qatar</option>
+          <option>Dubrovnik, Croatia</option>
+          <option>Dubai, UAE</option>
+          <option>Edinburgh, Scotland</option>
+          <option>Florence, Italy</option>
+          <option>Havana, Cuba</option>
+          <option>Ho Chi Minh City, Vietnam</option>
+          <option>Istanbul, Turkey</option>
+          <option>Jaipur, India</option>
+          <option>Johannesburg, South Africa</option>
+          <option>Kyoto, Japan</option>
+          <option>Lagos, Nigeria</option>
+          <option>Lima, Peru</option>
+          <option>London, UK</option>
+          <option>Los Angeles, USA</option>
+          <option>Machu Picchu, Peru</option>
+          <option>Manila, Philippines</option>
+          <option>Marrakech, Morocco</option>
+          <option>Mexico City, Mexico</option>
+          <option>Montreal, Canada</option>
+          <option>Munich, Germany</option>
+          <option>Nairobi, Kenya</option>
+          <option>New York City, USA</option>
+          <option>Oslo, Norway</option>
+          <option>Paris, France</option>
+          <option>Petra, Jordan</option>
+          <option>Porto, Portugal</option>
+          <option>Prague, Czech Republic</option>
+          <option>Queenstown, New Zealand</option>
+          <option>Reykjavik, Iceland</option>
+          <option>Rome, Italy</option>
+          <option>Salzburg, Austria</option>
+          <option>Santorini, Greece</option>
+          <option>Seoul, South Korea</option>
+          <option>Siem Reap, Cambodia</option>
+          <option>Sydney, Australia</option>
+          <option>Tallinn, Estonia</option>
+          <option>The Bahamas</option>
+          <option>Tokyo, Japan</option>
+          <option>Venice, Italy</option>
+          <option>Vancouver, Canada</option>
+          <option>Zanzibar, Tanzania</option>
+          <option>Zurich, Switzerland</option>
         </datalist>
       </span>
       <span class="links">
@@ -48,7 +98,7 @@
         </ul>
       </span>
     </header>
-    <main class="ds-main">
+    <main class="ds-main" id="dsMain">
       <section class="destination-cards" id="destinationCards">
         <article class="flex">
           <h2>POPULAR DESTINATIONS</h2>
@@ -61,7 +111,10 @@
               />
               <h3>Paris, France</h3>
               <p>Experience the romance and charm of the City Of Lights.</p>
-              <p><span class="price info">$2500</span><span class="duration info">3-5 days</span></p>
+              <p>
+                <span class="price info">$2500</span
+                ><span class="duration info">3-5 days</span>
+              </p>
               <a href="explore-destination.html?id=paris" class="btn"
                 >Explore Tour</a
               >
@@ -75,7 +128,10 @@
               />
               <h3>Bahamas</h3>
               <p>Relax on pristine beaches and enjoy crystal clear waters.</p>
-              <p><span class="price info">$2500</span><span class="duration info">3-5 days</span></p>
+              <p>
+                <span class="price info">$2500</span
+                ><span class="duration info">3-5 days</span>
+              </p>
               <a href="explore-destination.html?id=bahamas" class="btn"
                 >Explore Tour</a
               >
@@ -89,7 +145,10 @@
               />
               <h3>Sydney, Australia</h3>
               <p>Opera, ocean waves, and laid-back vibes.</p>
-              <p><span class="price info">$2500</span><span class="duration info">3-5 days</span></p>
+              <p>
+                <span class="price info">$2500</span
+                ><span class="duration info">3-5 days</span>
+              </p>
               <a href="explore-destination.html?id=sydney" class="btn"
                 >Explore Tour</a
               >
@@ -103,7 +162,10 @@
               />
               <h3>Tokyo, Japan</h3>
               <p>A neon jungle where tradition meets high-tech future.</p>
-              <p><span class="price info">$2500</span><span class="duration info">3-5 days</span></p>
+              <p>
+                <span class="price info">$2500</span
+                ><span class="duration info">3-5 days</span>
+              </p>
               <a href="explore-destination.html?id=tokyo" class="btn"
                 >Explore Tour</a
               >
@@ -305,6 +367,7 @@
         </div>
       </section>
     </main>
-    <script type="module" loading="lazy" src="js-files/ds&ts.js"></script>
+    <script src="js-files/ds&ts.js"></script>
   </body>
 </html>
+ 

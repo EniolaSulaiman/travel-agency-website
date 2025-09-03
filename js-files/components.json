@@ -470,66 +470,77 @@
       "name": "African Safari Adventure",
       "image": "images/europe-3.jpg",
       "desc": "A guided safari to see iconic African wildlife and learn from local guides.",
+      "type": "adventure",
       "destinationsVisited": ["nairobi", "capeTown", "johannesburg"]
     },
     {
       "name": "Alaskan Wildlife Cruise",
       "image": "images/europe-3.jpg",
       "desc": "Cruise-style expedition focusing on glaciers and marine wildlife.",
+      "type": "nature",
       "destinationsVisited": ["reykjavik", "vancouver"]
     },
     {
       "name": "Amazon Rainforest Expedition",
       "image": "images/europe-3.jpg",
       "desc": "Guided nature treks into lush rainforest with local naturalists.",
+      "type": "adventure",
       "destinationsVisited": ["lima", "machuPicchu", "rioDeJaneiro"]
     },
     {
       "name": "Antarctic Cruise",
       "image": "images/europe-3.jpg",
       "desc": "An immersive voyage to the Antarctic for ice, wildlife, and polar scenery.",
+      "type": "adventure",
       "destinationsVisited": ["capeTown", "buenosAires", "reykjavik"]
     },
     {
       "name": "Bali Wellness Retreat",
       "image": "images/europe-3.jpg",
       "desc": "Relaxing retreat with yoga, spa treatments, and local wellness practices.",
+      "type": "luxury",
       "destinationsVisited": ["bali"]
     },
     {
       "name": "Bali Wellness Retreat (Extended)",
       "image": "images/europe-3.jpg",
       "desc": "Longer version of the wellness program with deeper cultural immersion.",
+      "type": "luxury",
       "destinationsVisited": ["bali", "ubud"]
     },
     {
       "name": "Bora Bora Romance Escape",
       "image": "images/europe-3.jpg",
       "desc": "Luxury island escape ideal for couples.",
+      "type": "luxury",
       "destinationsVisited": ["vancouver", "auckland"]
     },
     {
       "name": "Canadian Rockies Expedition",
       "image": "images/europe-3.jpg",
       "desc": "Hiking, lakeside views, and mountain exploration in Banff and Jasper regions.",
+      "type": "nature",
       "destinationsVisited": ["vancouver", "montreal"]
     },
     {
       "name": "Caribbean Island Hopping",
       "image": "images/europe-3.jpg",
       "desc": "Cruise and beach days across tropical Caribbean islands.",
+      "type": "luxury",
       "destinationsVisited": ["havana", "buenosAires", "mexicoCity"]
     },
     {
       "name": "Costa Rica Eco Adventure",
       "image": "images/europe-3.jpg",
       "desc": "Rainforest hikes, canopy tours, and wildlife experiences focusing on conservation.",
+      "type": "nature",
       "destinationsVisited": ["lima", "manila"]
     },
     {
       "name": "Dubai Luxury Getaway",
       "image": "images/europe-3.jpg",
       "desc": "Opulent hotels, desert activities, and high-end shopping in Dubai and nearby emirates.",
+      "type": "luxury",
       "destinationsVisited": ["dubai", "doha"]
     },
     {
@@ -537,6 +548,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Pyramids, temples, and Nile-side history led by Egyptology guides.",
       "id": "egyptianPharaohsTour",
+      "type": "cultural",
       "destinationsVisited": ["cairo", "petra"]
     },
     {
@@ -544,6 +556,7 @@
       "image": "images/europe-3.jpg",
       "desc": "A whirlwind trip through Europe's most iconic cities.",
       "id": "europeanHighlightsTour",
+      "type": "cultural",
       "destinationsVisited": [
         "paris",
         "rome",
@@ -557,6 +570,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Multi-day hike along iconic sections of the Great Wall.",
       "id": "greatWallHikingChallenge",
+      "type": "adventure",
       "destinationsVisited": ["tokyo", "kyoto"]
     },
     {
@@ -564,6 +578,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Sail between whitewashed villages, historic sites, and scenic coves.",
       "id": "greekIslandCruise",
+      "type": "luxury",
       "destinationsVisited": ["santorini", "athens", "porto"]
     },
     {
@@ -571,6 +586,7 @@
       "desc": "Sun, surf, and volcanic landscapes across iconic Hawaiian islands.",
       "image": "images/europe-3.jpg",
       "id": "hawaiianParadiseExperience",
+      "type": "luxury",
       "destinationsVisited": ["losAngeles", "auckland"]
     },
     {
@@ -578,6 +594,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Multi-day trekking through high mountain passes and remote mountain villages.",
       "id": "himalayanTrekkingExpedition",
+      "type": "adventure",
       "destinationsVisited": ["delhi", "jaipur"]
     },
     {
@@ -585,6 +602,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Chase the aurora and explore geothermal landscapes in Iceland.",
       "id": "icelandNorthernLights",
+      "type": "nature",
       "destinationsVisited": ["reykjavik"]
     },
     {
@@ -592,6 +610,7 @@
       "image": "images/europe-3.jpg",
       "desc": "A classic route covering history, architecture, and culture in North India.",
       "id": "indiasGoldenTriangle",
+      "type": "cultural",
       "destinationsVisited": ["delhi", "jaipur", "agra"]
     },
     {
@@ -599,6 +618,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Temples, gardens, and traditional culture across Japan's historic cities.",
       "id": "japanHeritageTour",
+      "type": "cultural",
       "destinationsVisited": ["tokyo", "kyoto"]
     },
     {
@@ -606,6 +626,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Coastal cities, ancient ruins, and seaside cuisine on a relaxed cruise.",
       "id": "mediterraneanCruise",
+      "type": "cultural",
       "destinationsVisited": ["rome", "barcelona", "venice", "dubrovnik"]
     },
     {
@@ -613,6 +634,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Luxury overwater villas and pristine lagoon snorkeling.",
       "id": "maldivesOverwaterRetreat",
+      "type": "luxury",
       "destinationsVisited": ["zanzibar", "bali"]
     },
     {
@@ -620,6 +642,7 @@
       "image": "images/europe-3.jpg",
       "desc": "A guided ascent of Africa's highest peak suitable for fit trekkers.",
       "id": "mountKilimanjaroClimb",
+      "type": "adventure",
       "destinationsVisited": ["nairobi", "zanzibar"]
     },
     {
@@ -627,6 +650,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Explore towering dunes, desert wildlife, and stark landscapes.",
       "id": "namibiaDesertAdventure",
+      "type": "adventure",
       "destinationsVisited": ["capeTown", "marrakech"]
     },
     {
@@ -634,6 +658,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Fjords, mountains, and extreme-sport options from a scenic base.",
       "id": "newZealandAdventure",
+      "type": "nature",
       "destinationsVisited": ["queenstown", "auckland"]
     },
     {
@@ -641,6 +666,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Learn bushcraft and survival while exploring Australia's remote interior.",
       "id": "outbackSurvivalTrek",
+      "type": "adventure",
       "destinationsVisited": ["sydney", "aliceSprings"]
     },
     {
@@ -648,6 +674,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Glaciers, wind-swept plains and dramatic mountain scenery in southern South America.",
       "id": "patagoniaHikingAdventure",
+      "type": "adventure",
       "destinationsVisited": ["buenosAires", "santiago"]
     },
     {
@@ -655,6 +682,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Highland villages, ancient terraces and spectacular mountain views en route to Inca sites.",
       "id": "peruvianAndeanTrail",
+      "type": "adventure",
       "destinationsVisited": ["machuPicchu", "lima"]
     },
     {
@@ -662,6 +690,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Paddle fast rivers framed by rugged mountain scenery and alpine forests.",
       "id": "rockiesWhitewaterRafting",
+      "type": "adventure",
       "destinationsVisited": ["vancouver", "montreal"]
     },
     {
@@ -669,6 +698,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Canals, coastal cliffs, and intimate dinners with sea views.",
       "id": "romanticVeniceAndAmalfiCoast",
+      "type": "luxury",
       "destinationsVisited": ["venice", "santorini", "florence"]
     },
     {
@@ -676,6 +706,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Coastal drives, nature reserves, and curated wildlife experiences.",
       "id": "safariGardenRoute",
+      "type": "nature",
       "destinationsVisited": ["capeTown", "portElizabeth"]
     },
     {
@@ -683,6 +714,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Rugged mountains, lochs, and remote castles across Scotland.",
       "id": "scottishHighlandsExplorer",
+      "type": "nature",
       "destinationsVisited": ["edinburgh", "salzburg"]
     },
     {
@@ -690,6 +722,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Historic trade cities, caravan routes, and cultural immersion across Central Asia.",
       "id": "silkRoadExpedition",
+      "type": "cultural",
       "destinationsVisited": ["istanbul", "amman", "petra"]
     },
     {
@@ -697,6 +730,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Ski-in/ski-out chalets, gourmet dining, and alpine relaxation.",
       "id": "swissAlpsLuxuryChalet",
+      "type": "luxury",
       "destinationsVisited": ["zurich", "salzburg"]
     },
     {
@@ -704,6 +738,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Iconic alpine train routes with picture-postcard mountain vistas.",
       "id": "swissScenicRailJourney",
+      "type": "nature",
       "destinationsVisited": ["zurich", "salzburg", "vienna"]
     },
     {
@@ -711,6 +746,7 @@
       "image": "images/europe-3.jpg",
       "desc": "A tasty, sensory tour of local markets, street food, and temple culture.",
       "id": "thaiStreetFoodAndTemples",
+      "type": "cultural",
       "destinationsVisited": ["bangkok", "chiangMai"]
     },
     {
@@ -718,6 +754,7 @@
       "image": "images/europe-3.jpg",
       "desc": "Modern megacity energy paired with classic Japanese tradition.",
       "id": "tokyoAndKyotoHighlights",
+      "type": "cultural",
       "destinationsVisited": ["tokyo", "kyoto"]
     }
   ],

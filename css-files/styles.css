@@ -305,7 +305,7 @@ section.home-about a.btn {
   justify-self: center;
 }
 
-.ds-header input {
+.ds-header .input {
   background: white;
   border: none;
   padding: 5px;
@@ -505,7 +505,7 @@ section.home-about a.btn {
   text-decoration: none;
   margin-left: 20px;
 }
-.popular-tours .destinations {
+a.destinations {
   cursor: pointer;
   background: var(--primary-color);
   color: var(--main-background-color);
@@ -513,10 +513,9 @@ section.home-about a.btn {
   margin-right: 0.3rem;
   padding: 0.5rem;
 }
-.popular-tours .destinations:hover {
+a.destinations:hover {
   background: hsla(197, 100%, 40%, 0.7);
 }
-
 .about {
   width: 100vw;
   height: 200px;
