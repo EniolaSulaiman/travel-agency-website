@@ -618,6 +618,7 @@ destinationInput.addEventListener("keydown", async function (event) {
         <div class="card-body">
           <h3 class="card-title">No destinations found</h3>
           <p class="card-desc">Try another destination or check your spelling.</p>
+          <button class="clear" id=clearFilterBtn">Clear Results</button>
         </div>
       `;
 
