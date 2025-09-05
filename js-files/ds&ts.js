@@ -282,8 +282,7 @@ async function displayTours() {
     moreContent2.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent2);
 
-    
-      moreContent2.innerHTML = await tourCardsTemplate(6, 11)
+    moreContent2.innerHTML = await tourCardsTemplate(6, 11);
 
     moreContent2.innerHTML += `
         <button class="see-all" id="toursDisplay3">See more</button>
@@ -295,8 +294,7 @@ async function displayTours() {
     moreContent3.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent3);
 
-    
-      moreContent3.innerHTML = await tourCardsTemplate(12, 17)
+    moreContent3.innerHTML = await tourCardsTemplate(12, 17);
     moreContent3.innerHTML += `
     <button class="see-all" id="toursDisplay4">See more</button>
     <button class="hide-all" id="hideTours3">Hide all</button>
@@ -307,7 +305,7 @@ async function displayTours() {
     moreContent4.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent4);
 
-      moreContent4.innerHTML = await tourCardsTemplate(18, 23)
+    moreContent4.innerHTML = await tourCardsTemplate(18, 23);
 
     moreContent4.innerHTML += `
     <button class="see-all" id="toursDisplay5">See more</button>
@@ -319,8 +317,7 @@ async function displayTours() {
     moreContent5.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent5);
 
-   
-      moreContent5.innerHTML = await tourCardsTemplate(24, 29)
+    moreContent5.innerHTML = await tourCardsTemplate(24, 29);
 
     moreContent5.innerHTML += `
     <button class="hide-all" id="hideTours5">Hide all</button>
