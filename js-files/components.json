@@ -470,6 +470,7 @@
       "name": "African Safari Adventure",
       "image": "images/europe-3.jpg",
       "desc": "A guided safari to see iconic African wildlife and learn from local guides.",
+      "id": "africanSafariAdventure",
       "type": "adventure",
       "destinationsVisited": ["nairobi", "capeTown", "johannesburg"]
     },
@@ -477,6 +478,7 @@
       "name": "Alaskan Wildlife Cruise",
       "image": "images/europe-3.jpg",
       "desc": "Cruise-style expedition focusing on glaciers and marine wildlife.",
+      "id": "alaskanWildlifeCruise",
       "type": "nature",
       "destinationsVisited": ["reykjavik", "vancouver"]
     },
@@ -484,6 +486,7 @@
       "name": "Amazon Rainforest Expedition",
       "image": "images/europe-3.jpg",
       "desc": "Guided nature treks into lush rainforest with local naturalists.",
+      "id": "amazonRainforestExpedition",
       "type": "adventure",
       "destinationsVisited": ["lima", "machuPicchu", "rioDeJaneiro"]
     },
@@ -491,6 +494,7 @@
       "name": "Antarctic Cruise",
       "image": "images/europe-3.jpg",
       "desc": "An immersive voyage to the Antarctic for ice, wildlife, and polar scenery.",
+      "id": "antarcticCruise",
       "type": "adventure",
       "destinationsVisited": ["capeTown", "buenosAires", "reykjavik"]
     },
@@ -498,6 +502,7 @@
       "name": "Bali Wellness Retreat",
       "image": "images/europe-3.jpg",
       "desc": "Relaxing retreat with yoga, spa treatments, and local wellness practices.",
+      "id": "baliWellnessRetreat",
       "type": "luxury",
       "destinationsVisited": ["bali"]
     },
@@ -505,6 +510,7 @@
       "name": "Bali Wellness Retreat (Extended)",
       "image": "images/europe-3.jpg",
       "desc": "Longer version of the wellness program with deeper cultural immersion.",
+      "id": "baliWellnessRetreat2",
       "type": "luxury",
       "destinationsVisited": ["bali", "ubud"]
     },
@@ -512,6 +518,7 @@
       "name": "Bora Bora Romance Escape",
       "image": "images/europe-3.jpg",
       "desc": "Luxury island escape ideal for couples.",
+      "id": "boraBoraRomanceEscape",
       "type": "luxury",
       "destinationsVisited": ["vancouver", "auckland"]
     },
@@ -519,6 +526,7 @@
       "name": "Canadian Rockies Expedition",
       "image": "images/europe-3.jpg",
       "desc": "Hiking, lakeside views, and mountain exploration in Banff and Jasper regions.",
+      "id": "canadianRockiesExpedition",
       "type": "nature",
       "destinationsVisited": ["vancouver", "montreal"]
     },
@@ -526,6 +534,7 @@
       "name": "Caribbean Island Hopping",
       "image": "images/europe-3.jpg",
       "desc": "Cruise and beach days across tropical Caribbean islands.",
+      "id": "caribbeanIslandHopping",
       "type": "luxury",
       "destinationsVisited": ["havana", "buenosAires", "mexicoCity"]
     },
@@ -533,6 +542,7 @@
       "name": "Costa Rica Eco Adventure",
       "image": "images/europe-3.jpg",
       "desc": "Rainforest hikes, canopy tours, and wildlife experiences focusing on conservation.",
+      "id": "costaricaEcoAdventure",
       "type": "nature",
       "destinationsVisited": ["lima", "manila"]
     },
@@ -540,6 +550,7 @@
       "name": "Dubai Luxury Getaway",
       "image": "images/europe-3.jpg",
       "desc": "Opulent hotels, desert activities, and high-end shopping in Dubai and nearby emirates.",
+      "id": "dubaiLuxuryGetaway",
       "type": "luxury",
       "destinationsVisited": ["dubai", "doha"]
     },

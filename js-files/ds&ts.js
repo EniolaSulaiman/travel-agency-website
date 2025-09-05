@@ -958,22 +958,31 @@ async function filterTours(tourType) {
   filteredContent.forEach((item) => {
     const card = document.createElement("div");
     card.classList.add("card");
-
+    let destinationsVisited = item.destinationsVisited;
+    let destinationsVisitedLink = destinationsVisited
+      .map((destination) => {
+        return `<a href="explore-destination.html?id=${destination}" class="destinations">${
+          destination.charAt(0).toUpperCase() +
+          destination.slice(1).toLowerCase()
+        }</a>`;
+      })
+      .join(``);
     card.innerHTML = `
         <img src="${item.image}" alt="${item.name}" class="card-img">
         <div class="card-body">
           <h3 class="card-title">${item.name}</h3>
           <p class="card-desc">${item.desc}</p>
           <p>
-                <a class="destinations">${item.destinationsVisited[0]}</a>
+                ${destinationsVisitedLink}
               </p>
+              <a href="explore-tour.html?id=${item.id}" class="btn">Explore Tour</a>
         </div>
       `;
     resultsContainer.appendChild(card);
   });
   resultsContainer.innerHTML += `<div class="card">
-          <h3 class="card-title">No more destinations</h3>
-          <p class="card-desc">Try another destination name or explore one above.</p>
+          <h3 class="card-title">No more tours</h3>
+          <p class="card-desc">Try another tour type or explore one above.</p>
           <button class="clear" id="clearFilterBtn">Clear Results</button>
         </div>`;
   document.getElementById(`dsMain`).innerHTML = ``;
