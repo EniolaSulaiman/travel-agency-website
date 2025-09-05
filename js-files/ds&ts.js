@@ -8,24 +8,15 @@ async function retrieveJSON() {
 
     return await response.json();
   } catch (error) {
-    console.error(error);
+    console.error(`JSON was not retrieved successfully`, error);
   }
 }
 
-async function displayDestinations() {
-  try {
-    const data = await retrieveJSON();
-    const destinationCards = document.getElementById(`destinationCards`);
-    const destinationsDisplay = document.getElementById(`destinationsDisplay`);
-
-    //Create new div for new destinations
-    const moreContent1 = document.createElement(`div`);
-    moreContent1.classList.add(`moreContent`);
-    moreContent1.classList.add(`grid-3`);
-    destinationCards.appendChild(moreContent1);
-
-    for (let i = 0; i < 9; i++) {
-      moreContent1.innerHTML += `
+async function destinationCardsTemplate(min, max) {
+  const data = await retrieveJSON();
+  let content = ``;
+  for (let i = min; i < max + 1; i++) {
+    content += `
             <div class="card">
                 <img loading="lazy" src="${data[0][i].image}" alt="Image">
                 <h3>
@@ -35,10 +26,54 @@ async function displayDestinations() {
                 ${data[0][i].desc}
                 </p>
               <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-                <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
+                <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Destination</a>
             </div>
             `;
-    }
+  }
+  return content;
+}
+
+async function tourCardsTemplate(min, max) {
+  const data = await retrieveJSON();
+  let content = ``;
+  for (let i = min; i < max + 1; i++) {
+    let destinationsVisited = data[1][i].destinationsVisited;
+    let processedDestinationsVisited = destinationsVisited.map(
+      (destination) => {
+        return `<a href="explore-destination.html?id=${destination}" class="destination">${
+          destination.charAt(0) + destination.slice(1).toLowerCase()
+        }`;
+      }
+    );
+    content += `
+            <div class="card">
+            <img loading="lazy" src="${data[1][i].image}" alt="Image">
+            <h3>
+                ${data[1][i].name}
+            </h3>
+            <p>
+            ${data[1][i].desc}
+            </p>
+            <p>${processedDestinationsVisited}</p>
+            <a href="explore-tour.html?id=${data[1][i].id}" class="btn">Explore Tour</a>
+        </div>
+        `;
+  }
+  return content;
+}
+
+async function displayDestinations() {
+  try {
+    const destinationCards = document.getElementById(`destinationCards`);
+    const destinationsDisplay = document.getElementById(`destinationsDisplay`);
+
+    //Create new div for new destinations
+    const moreContent1 = document.createElement(`div`);
+    moreContent1.classList.add(`moreContent`);
+    moreContent1.classList.add(`grid-3`);
+    destinationCards.appendChild(moreContent1);
+
+    moreContent1.innerHTML = await destinationCardsTemplate(0, 8);
 
     moreContent1.innerHTML += `
     <button class="see-all" id="destinationsDisplay2">See more</button>
@@ -49,21 +84,7 @@ async function displayDestinations() {
     moreContent2.classList.add(`moreContent`);
     moreContent2.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent2);
-    for (let i = 9; i < 18; i++) {
-      moreContent2.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="Image">
-            <h3>
-                ${data[0][i].name}
-            </h3>
-            <p>
-            ${data[0][i].desc}
-            </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-    }
+    moreContent2.innerHTML = await destinationCardsTemplate(9, 17);
 
     moreContent2.innerHTML += `
     <button class="see-all" id="destinationsDisplay3">See more</button>
@@ -74,21 +95,7 @@ async function displayDestinations() {
     moreContent3.classList.add(`moreContent`);
     moreContent3.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent3);
-    for (let i = 19; i < 28; i++) {
-      moreContent3.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="Image">
-            <h3>
-                ${data[0][i].name}
-            </h3>
-            <p>
-            ${data[0][i].desc}
-            </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-    }
+    moreContent3.innerHTML = await destinationCardsTemplate(18, 26);
 
     moreContent3.innerHTML += `
     <button class="see-all" id="destinationsDisplay4">See more</button>
@@ -100,21 +107,7 @@ async function displayDestinations() {
     moreContent4.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent4);
 
-    for (let i = 29; i < 38; i++) {
-      moreContent4.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="Image">
-            <h3>
-                ${data[0][i].name}
-            </h3>
-            <p>
-            ${data[0][i].desc}
-            </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-    }
+    moreContent4.innerHTML = await destinationCardsTemplate(27, 35);
 
     moreContent4.innerHTML += `
     <button class="see-all" id="destinationsDisplay5">See more</button>
@@ -126,24 +119,10 @@ async function displayDestinations() {
     moreContent5.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent5);
 
-    for (let i = 38; i < 47; i++) {
-      moreContent5.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="Image">
-            <h3>
-                ${data[0][i].name}
-            </h3>
-            <p>
-            ${data[0][i].desc}
-            </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-    }
+    moreContent5.innerHTML = await destinationCardsTemplate(36, 44);
 
     moreContent5.innerHTML += `
-            <button class="see-all" id="destinationsDisplay6">See more</button>
+    <button class="see-all" id="destinationsDisplay6">See more</button>
     <button class="hide-all" id="hideDestinations5">Hide all</button>
     `;
 
@@ -152,22 +131,7 @@ async function displayDestinations() {
     moreContent6.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent6);
 
-    for (let i = 47; i < 57; i++) {
-      moreContent6.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="Image">
-            <h3>
-                ${data[0][i].name}
-            </h3>
-            <p>
-            ${data[0][i].desc}
-            </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-    }
-
+    moreContent6.innerHTML = await destinationCardsTemplate(45, 57);
     moreContent6.innerHTML += `
     <button class="hide-all" id="hideDestinations6">Hide all</button>
     `;
@@ -306,37 +270,7 @@ async function displayTours() {
     moreContent1.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent1);
 
-    let tourDestinationsVisited = null;
-
-    for (let i = 0; i < 6; i++) {
-      tourDestinationsVisited = data[1][i].destinationsVisited;
-
-      for (let j = 0; j < tourDestinationsVisited.length; j++) {
-        tourDestinationsVisited[
-          j
-        ] = `<a href="explore-destination.html?id=${tourDestinationsVisited[
-          j
-        ].toLowerCase()}" class="destinations"
-                >${tourDestinationsVisited[j]}</a>`;
-      }
-
-      tourDestinationsVisited = tourDestinationsVisited.join(``);
-
-      moreContent1.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[1][i].image}" alt="Image">
-            <h3>
-                ${data[1][i].name}
-            </h3>
-            <p>
-            ${data[1][i].desc}
-            </p>
-            <p>${tourDestinationsVisited}</p>
-            <a href="explore-tour.html?id=${data[1][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-      tourDestinationsVisited = null;
-    }
+    moreContent1.innerHTML = await tourCardsTemplate(0, 5);
 
     moreContent1.innerHTML += `
     <button class="see-all" id="toursDisplay2">See more</button>
@@ -348,34 +282,7 @@ async function displayTours() {
     moreContent2.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent2);
 
-    for (let i = 6; i < 12; i++) {
-      tourDestinationsVisited = data[1][i].destinationsVisited;
-
-      for (let j = 0; j < tourDestinationsVisited.length; j++) {
-        tourDestinationsVisited[
-          j
-        ] = `<a href="explore-destination.html?id=${tourDestinationsVisited[
-          j
-        ].toLowerCase()}" class="destinations"
-                >${tourDestinationsVisited[j]}</a>`;
-      }
-      moreContent2.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[1][i].image}" alt="Image">
-            <h3>
-                ${data[1][i].name}
-            </h3>
-            <p>
-            ${data[1][i].desc}
-            </p>
-            <p>${data[1][i].destinationsVisited.join("")}</p>
-            <a href="explore-tour.html?id=${
-              data[1][i].id
-            }" class="btn">Explore Tour</a>
-        </div>
-        `;
-      tourDestinationsVisited = null;
-    }
+    moreContent2.innerHTML = await tourCardsTemplate(6, 11);
 
     moreContent2.innerHTML += `
         <button class="see-all" id="toursDisplay3">See more</button>
@@ -387,34 +294,7 @@ async function displayTours() {
     moreContent3.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent3);
 
-    for (let i = 12; i < 18; i++) {
-      tourDestinationsVisited = data[1][i].destinationsVisited;
-      for (let j = 0; j < tourDestinationsVisited.length; j++) {
-        tourDestinationsVisited[
-          j
-        ] = `<a href="explore-destination.html?id=${tourDestinationsVisited[
-          j
-        ].toLowerCase()}" class="destinations"
-                >${tourDestinationsVisited[j]}</a>`;
-      }
-      moreContent3.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[1][i].image}" alt="Image">
-            <h3>
-                ${data[1][i].name}
-            </h3>
-            <p>
-            ${data[1][i].desc}
-            </p>
-            <p>${data[1][i].destinationsVisited.join("")}</p>
-            <a href="explore-tour.html?id=${
-              data[1][i].id
-            }" class="btn">Explore Tour</a>
-        </div>
-        `;
-      tourDestinationsVisited = null;
-    }
-
+    moreContent3.innerHTML = await tourCardsTemplate(12, 17);
     moreContent3.innerHTML += `
     <button class="see-all" id="toursDisplay4">See more</button>
     <button class="hide-all" id="hideTours3">Hide all</button>
@@ -425,33 +305,7 @@ async function displayTours() {
     moreContent4.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent4);
 
-    for (let i = 19; i < 25; i++) {
-      tourDestinationsVisited = data[1][i].destinationsVisited;
-      for (let j = 0; j < tourDestinationsVisited.length; j++) {
-        tourDestinationsVisited[
-          j
-        ] = `<a href="explore-destination.html?id=${tourDestinationsVisited[
-          j
-        ].toLowerCase()}" class="destinations"
-                >${tourDestinationsVisited[j]}</a>`;
-      }
-      moreContent4.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[1][i].image}" alt="Image">
-            <h3>
-                ${data[1][i].name}
-            </h3>
-            <p>
-            ${data[1][i].desc}
-            </p>
-            <p>${data[1][i].destinationsVisited.join("")}</p>
-            <a href="explore-tour.html?id=${
-              data[1][i].id
-            }" class="btn">Explore Tour</a>
-        </div>
-        `;
-      tourDestinationsVisited = null;
-    }
+    moreContent4.innerHTML = await tourCardsTemplate(18, 23);
 
     moreContent4.innerHTML += `
     <button class="see-all" id="toursDisplay5">See more</button>
@@ -463,33 +317,7 @@ async function displayTours() {
     moreContent5.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent5);
 
-    for (let i = 25; i < 37; i++) {
-      tourDestinationsVisited = data[1][i].destinationsVisited;
-      for (let j = 0; j < tourDestinationsVisited.length; j++) {
-        tourDestinationsVisited[
-          j
-        ] = `<a href="explore-destination.html?id=${tourDestinationsVisited[
-          j
-        ].toLowerCase()}" class="destinations"
-                >${tourDestinationsVisited[j]}</a>`;
-      }
-      moreContent5.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[1][i].image}" alt="Image">
-            <h3>
-                ${data[1][i].name}
-            </h3>
-            <p>
-            ${data[1][i].desc}
-            </p>
-            <p>${data[1][i].destinationsVisited.join("")}</p>
-            <a href="explore-tour.html?id=${
-              data[1][i].id
-            }" class="btn">Explore Tour</a>
-        </div>
-        `;
-      tourDestinationsVisited = null;
-    }
+    moreContent5.innerHTML = await tourCardsTemplate(24, 29);
 
     moreContent5.innerHTML += `
     <button class="hide-all" id="hideTours5">Hide all</button>
