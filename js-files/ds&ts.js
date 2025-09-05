@@ -8,15 +8,15 @@ async function retrieveJSON() {
 
     return await response.json();
   } catch (error) {
-    console.error(error);
+    console.error(`JSON was not retrieved successfully`, error);
   }
 }
 
-async function destinationCardsTemplate(min, max){
-  const data = await retrieveJSON()
-  let content = ``
-  for (let i = min; i < max+1; i++) {
-      content += `
+async function destinationCardsTemplate(min, max) {
+  const data = await retrieveJSON();
+  let content = ``;
+  for (let i = min; i < max + 1; i++) {
+    content += `
             <div class="card">
                 <img loading="lazy" src="${data[0][i].image}" alt="Image">
                 <h3>
@@ -30,11 +30,10 @@ async function destinationCardsTemplate(min, max){
             </div>
             `;
   }
-  return content
+  return content;
 }
 async function displayDestinations() {
   try {
-    const data = await retrieveJSON();
     const destinationCards = document.getElementById(`destinationCards`);
     const destinationsDisplay = document.getElementById(`destinationsDisplay`);
 
@@ -44,7 +43,7 @@ async function displayDestinations() {
     moreContent1.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent1);
 
-    moreContent1.innerHTML = await destinationCardsTemplate(0,8)
+    moreContent1.innerHTML = await destinationCardsTemplate(0, 8);
 
     moreContent1.innerHTML += `
     <button class="see-all" id="destinationsDisplay2">See more</button>
@@ -55,21 +54,7 @@ async function displayDestinations() {
     moreContent2.classList.add(`moreContent`);
     moreContent2.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent2);
-    for (let i = 9; i < 18; i++) {
-      moreContent2.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="Image">
-            <h3>
-                ${data[0][i].name}
-            </h3>
-            <p>
-            ${data[0][i].desc}
-            </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-    }
+    moreContent2.innerHTML = await destinationCardsTemplate(9, 17);
 
     moreContent2.innerHTML += `
     <button class="see-all" id="destinationsDisplay3">See more</button>
@@ -80,21 +65,7 @@ async function displayDestinations() {
     moreContent3.classList.add(`moreContent`);
     moreContent3.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent3);
-    for (let i = 19; i < 28; i++) {
-      moreContent3.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="Image">
-            <h3>
-                ${data[0][i].name}
-            </h3>
-            <p>
-            ${data[0][i].desc}
-            </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-    }
+    moreContent3.innerHTML = await destinationCardsTemplate(18, 26);
 
     moreContent3.innerHTML += `
     <button class="see-all" id="destinationsDisplay4">See more</button>
@@ -106,21 +77,7 @@ async function displayDestinations() {
     moreContent4.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent4);
 
-    for (let i = 29; i < 38; i++) {
-      moreContent4.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="Image">
-            <h3>
-                ${data[0][i].name}
-            </h3>
-            <p>
-            ${data[0][i].desc}
-            </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-    }
+    moreContent4.innerHTML = await destinationCardsTemplate(27, 35);
 
     moreContent4.innerHTML += `
     <button class="see-all" id="destinationsDisplay5">See more</button>
@@ -132,24 +89,10 @@ async function displayDestinations() {
     moreContent5.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent5);
 
-    for (let i = 38; i < 47; i++) {
-      moreContent5.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="Image">
-            <h3>
-                ${data[0][i].name}
-            </h3>
-            <p>
-            ${data[0][i].desc}
-            </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-    }
+    moreContent5.innerHTML = await destinationCardsTemplate(36, 44);
 
     moreContent5.innerHTML += `
-            <button class="see-all" id="destinationsDisplay6">See more</button>
+    <button class="see-all" id="destinationsDisplay6">See more</button>
     <button class="hide-all" id="hideDestinations5">Hide all</button>
     `;
 
@@ -158,22 +101,7 @@ async function displayDestinations() {
     moreContent6.classList.add(`grid-3`);
     destinationCards.appendChild(moreContent6);
 
-    for (let i = 47; i < 57; i++) {
-      moreContent6.innerHTML += `
-        <div class="card">
-            <img loading="lazy" src="${data[0][i].image}" alt="Image">
-            <h3>
-                ${data[0][i].name}
-            </h3>
-            <p>
-            ${data[0][i].desc}
-            </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-            <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
-        </div>
-        `;
-    }
-
+    moreContent6.innerHTML = await destinationCardsTemplate(45, 57);
     moreContent6.innerHTML += `
     <button class="hide-all" id="hideDestinations6">Hide all</button>
     `;
