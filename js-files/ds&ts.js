@@ -12,20 +12,11 @@ async function retrieveJSON() {
   }
 }
 
-async function displayDestinations() {
-  try {
-    const data = await retrieveJSON();
-    const destinationCards = document.getElementById(`destinationCards`);
-    const destinationsDisplay = document.getElementById(`destinationsDisplay`);
-
-    //Create new div for new destinations
-    const moreContent1 = document.createElement(`div`);
-    moreContent1.classList.add(`moreContent`);
-    moreContent1.classList.add(`grid-3`);
-    destinationCards.appendChild(moreContent1);
-
-    for (let i = 0; i < 9; i++) {
-      moreContent1.innerHTML += `
+async function destinationCardsTemplate(min, max){
+  const data = await retrieveJSON()
+  let content = ``
+  for (let i = min; i < max+1; i++) {
+      content += `
             <div class="card">
                 <img loading="lazy" src="${data[0][i].image}" alt="Image">
                 <h3>
@@ -38,7 +29,22 @@ async function displayDestinations() {
                 <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Tour</a>
             </div>
             `;
-    }
+  }
+  return content
+}
+async function displayDestinations() {
+  try {
+    const data = await retrieveJSON();
+    const destinationCards = document.getElementById(`destinationCards`);
+    const destinationsDisplay = document.getElementById(`destinationsDisplay`);
+
+    //Create new div for new destinations
+    const moreContent1 = document.createElement(`div`);
+    moreContent1.classList.add(`moreContent`);
+    moreContent1.classList.add(`grid-3`);
+    destinationCards.appendChild(moreContent1);
+
+    moreContent1.innerHTML = await destinationCardsTemplate(0,8)
 
     moreContent1.innerHTML += `
     <button class="see-all" id="destinationsDisplay2">See more</button>
