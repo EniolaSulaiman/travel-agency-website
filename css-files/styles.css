@@ -190,6 +190,7 @@ body .hero-text {
   width: 100%;
   height: 15rem;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 section.home-about a.btn {
