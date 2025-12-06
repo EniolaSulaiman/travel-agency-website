@@ -1,3 +1,8 @@
+function clearFilterInputs() {
+  document.getElementById("tourTypes").value = `All Tours`
+  document.getElementById("destinationInput").value = ``
+}
+clearFilterInputs()
 async function retrieveJSON() {
   try {
     const response = await fetch(`js-files/components.json`);
@@ -812,7 +817,7 @@ async function filterTours(tourType) {
   document.getElementById(`clearFilterBtn`).addEventListener(`click`, () => {
     document.getElementById(`dsMain`).removeChild(resultsContainer);
     document.getElementById(`dsMain`).innerHTML = baseContent;
-    destinationInput.value = ``;
+    tourTypes.value = `All Tours`
   });
 }
 displayTours()
