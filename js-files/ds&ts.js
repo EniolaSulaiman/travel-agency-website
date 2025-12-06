@@ -18,7 +18,7 @@ async function destinationCardsTemplate(min, max) {
   for (let i = min; i < max + 1; i++) {
     content += `
             <div class="card">
-                <img loading="lazy" src="${data[0][i].image}" alt="Image">
+                <img loading="lazy" src="${data[0][i].image}" alt="${data[0][i].alt}">
                 <h3>
                     ${data[0][i].name}
                 </h3>
@@ -40,9 +40,8 @@ async function tourCardsTemplate(min, max) {
     let destinationsVisited = data[1][i].destinationsVisited;
     let processedDestinationsVisited = destinationsVisited.map(
       (destination) => {
-        return `<a href="explore-destination.html?id=${destination}" class="destination">${
-          destination.charAt(0) + destination.slice(1).toLowerCase()
-        }`;
+        return `<a href="explore-destination.html?id=${destination}" class="destination">${destination.charAt(0) + destination.slice(1).toLowerCase()
+          }`;
       }
     );
     content += `
@@ -78,7 +77,7 @@ async function displayDestinations() {
     moreContent1.innerHTML += `
     <button class="see-all" id="destinationsDisplay2">See more</button>
     <button class="hide-all" id="hideDestinations1">Hide all</button>
-    `;
+    `
 
     const moreContent2 = document.createElement(`div`);
     moreContent2.classList.add(`moreContent`);
@@ -89,7 +88,7 @@ async function displayDestinations() {
     moreContent2.innerHTML += `
     <button class="see-all" id="destinationsDisplay3">See more</button>
     <button class="hide-all" id="hideDestinations2">Hide all</button>
-    `;
+    `
 
     const moreContent3 = document.createElement(`div`);
     moreContent3.classList.add(`moreContent`);
@@ -100,7 +99,8 @@ async function displayDestinations() {
     moreContent3.innerHTML += `
     <button class="see-all" id="destinationsDisplay4">See more</button>
     <button class="hide-all" id="hideDestinations3">Hide all</button>
-    `;
+    `
+
 
     const moreContent4 = document.createElement(`div`);
     moreContent4.classList.add(`moreContent`);
@@ -109,10 +109,11 @@ async function displayDestinations() {
 
     moreContent4.innerHTML = await destinationCardsTemplate(27, 35);
 
+
     moreContent4.innerHTML += `
     <button class="see-all" id="destinationsDisplay5">See more</button>
     <button class="hide-all" id="hideDestinations4">Hide all</button>
-    `;
+    `
 
     const moreContent5 = document.createElement(`div`);
     moreContent5.classList.add(`moreContent`);
@@ -134,148 +135,142 @@ async function displayDestinations() {
     moreContent6.innerHTML = await destinationCardsTemplate(45, 57);
     moreContent6.innerHTML += `
     <button class="hide-all" id="hideDestinations6">Hide all</button>
-    `;
+    `
 
-    const hideDestinations1 = document.getElementById(`hideDestinations1`);
-    const hideDestinations2 = document.getElementById(`hideDestinations2`);
-    const hideDestinations3 = document.getElementById(`hideDestinations3`);
-    const hideDestinations4 = document.getElementById(`hideDestinations4`);
-    const hideDestinations5 = document.getElementById(`hideDestinations5`);
-    const hideDestinations6 = document.getElementById(`hideDestinations6`);
-    const destinationsDisplay2 =
-      document.getElementById(`destinationsDisplay2`);
-    const destinationsDisplay3 =
-      document.getElementById(`destinationsDisplay3`);
-    const destinationsDisplay4 =
-      document.getElementById(`destinationsDisplay4`);
-    const destinationsDisplay5 =
-      document.getElementById(`destinationsDisplay5`);
-    const destinationsDisplay6 =
-      document.getElementById(`destinationsDisplay6`);
+    const hideDestinations1 = document.getElementById(`hideDestinations1`)
+    const hideDestinations2 = document.getElementById(`hideDestinations2`)
+    const hideDestinations3 = document.getElementById(`hideDestinations3`)
+    const hideDestinations4 = document.getElementById(`hideDestinations4`)
+    const hideDestinations5 = document.getElementById(`hideDestinations5`)
+    const hideDestinations6 = document.getElementById(`hideDestinations6`)
+    const destinationsDisplay2 = document.getElementById(`destinationsDisplay2`)
+    const destinationsDisplay3 = document.getElementById(`destinationsDisplay3`)
+    const destinationsDisplay4 = document.getElementById(`destinationsDisplay4`)
+    const destinationsDisplay5 = document.getElementById(`destinationsDisplay5`)
+    const destinationsDisplay6 = document.getElementById(`destinationsDisplay6`)
 
     hideDestinations1.addEventListener(`click`, () => {
-      destinationCards.appendChild(destinationsDisplay);
-      moreContent1.classList.remove(`show`);
-    });
+      destinationCards.appendChild(destinationsDisplay)
+      moreContent1.classList.remove(`show`)
+    })
     hideDestinations2.addEventListener(`click`, () => {
-      destinationCards.appendChild(destinationsDisplay);
-      moreContent1.classList.remove(`show`);
-      moreContent2.classList.remove(`show`);
-      destinationsDisplay2.style.display = `block`;
-      hideDestinations1.style.display = `block`;
-    });
+      destinationCards.appendChild(destinationsDisplay)
+      moreContent1.classList.remove(`show`)
+      moreContent2.classList.remove(`show`)
+      destinationsDisplay2.style.display = `block`
+      hideDestinations1.style.display = `block`
+    })
     hideDestinations3.addEventListener(`click`, () => {
-      destinationCards.appendChild(destinationsDisplay);
-      moreContent1.classList.remove(`show`);
-      moreContent2.classList.remove(`show`);
-      moreContent3.classList.remove(`show`);
-      destinationsDisplay2.style.display = `block`;
-      destinationsDisplay3.style.display = `block`;
-      hideDestinations1.style.display = `block`;
-      hideDestinations2.style.display = `block`;
-    });
+      destinationCards.appendChild(destinationsDisplay)
+      moreContent1.classList.remove(`show`)
+      moreContent2.classList.remove(`show`)
+      moreContent3.classList.remove(`show`)
+      destinationsDisplay2.style.display = `block`
+      destinationsDisplay3.style.display = `block`
+      hideDestinations1.style.display = `block`
+      hideDestinations2.style.display = `block`
+    })
     hideDestinations4.addEventListener(`click`, () => {
-      destinationCards.appendChild(destinationsDisplay);
-      moreContent1.classList.remove(`show`);
-      moreContent2.classList.remove(`show`);
-      moreContent3.classList.remove(`show`);
-      moreContent4.classList.remove(`show`);
-      destinationsDisplay2.style.display = `block`;
-      destinationsDisplay3.style.display = `block`;
-      destinationsDisplay4.style.display = `block`;
-      hideDestinations1.style.display = `block`;
-      hideDestinations2.style.display = `block`;
-      hideDestinations3.style.display = `block`;
-    });
+      destinationCards.appendChild(destinationsDisplay)
+      moreContent1.classList.remove(`show`)
+      moreContent2.classList.remove(`show`)
+      moreContent3.classList.remove(`show`)
+      moreContent4.classList.remove(`show`)
+      destinationsDisplay2.style.display = `block`
+      destinationsDisplay3.style.display = `block`
+      destinationsDisplay4.style.display = `block`
+      hideDestinations1.style.display = `block`
+      hideDestinations2.style.display = `block`
+      hideDestinations3.style.display = `block`
+    })
     hideDestinations5.addEventListener(`click`, () => {
-      destinationCards.appendChild(destinationsDisplay);
-      moreContent1.classList.remove(`show`);
-      moreContent2.classList.remove(`show`);
-      moreContent3.classList.remove(`show`);
-      moreContent4.classList.remove(`show`);
-      moreContent5.classList.remove(`show`);
-      destinationsDisplay2.style.display = `block`;
-      destinationsDisplay3.style.display = `block`;
-      destinationsDisplay4.style.display = `block`;
-      destinationsDisplay5.style.display = `block`;
-      hideDestinations1.style.display = `block`;
-      hideDestinations2.style.display = `block`;
-      hideDestinations3.style.display = `block`;
-      hideDestinations4.style.display = `block`;
-    });
+      destinationCards.appendChild(destinationsDisplay)
+      moreContent1.classList.remove(`show`)
+      moreContent2.classList.remove(`show`)
+      moreContent3.classList.remove(`show`)
+      moreContent4.classList.remove(`show`)
+      moreContent5.classList.remove(`show`)
+      destinationsDisplay2.style.display = `block`
+      destinationsDisplay3.style.display = `block`
+      destinationsDisplay4.style.display = `block`
+      destinationsDisplay5.style.display = `block`
+      hideDestinations1.style.display = `block`
+      hideDestinations2.style.display = `block`
+      hideDestinations3.style.display = `block`
+      hideDestinations4.style.display = `block`
+    })
     hideDestinations6.addEventListener(`click`, () => {
-      destinationCards.appendChild(destinationsDisplay);
-      moreContent1.classList.remove(`show`);
-      moreContent2.classList.remove(`show`);
-      moreContent3.classList.remove(`show`);
-      moreContent4.classList.remove(`show`);
-      moreContent5.classList.remove(`show`);
-      moreContent6.classList.remove(`show`);
-      destinationsDisplay2.style.display = `block`;
-      destinationsDisplay3.style.display = `block`;
-      destinationsDisplay4.style.display = `block`;
-      destinationsDisplay5.style.display = `block`;
-      destinationsDisplay6.style.display = `block`;
-      hideDestinations1.style.display = `block`;
-      hideDestinations2.style.display = `block`;
-      hideDestinations3.style.display = `block`;
-      hideDestinations4.style.display = `block`;
-      hideDestinations5.style.display = `block`;
-    });
-
+      destinationCards.appendChild(destinationsDisplay)
+      moreContent1.classList.remove(`show`)
+      moreContent2.classList.remove(`show`)
+      moreContent3.classList.remove(`show`)
+      moreContent4.classList.remove(`show`)
+      moreContent5.classList.remove(`show`)
+      moreContent6.classList.remove(`show`)
+      destinationsDisplay2.style.display = `block`
+      destinationsDisplay3.style.display = `block`
+      destinationsDisplay4.style.display = `block`
+      destinationsDisplay5.style.display = `block`
+      destinationsDisplay6.style.display = `block`
+      hideDestinations1.style.display = `block`
+      hideDestinations2.style.display = `block`
+      hideDestinations3.style.display = `block`
+      hideDestinations4.style.display = `block`
+      hideDestinations5.style.display = `block`
+    })
     destinationsDisplay.addEventListener(`click`, () => {
-      moreContent1.classList.add(`show`);
-      destinationCards.removeChild(destinationsDisplay);
-    });
+      moreContent1.classList.add(`show`)
+      destinationCards.removeChild(destinationsDisplay)
+    })
     destinationsDisplay2.addEventListener(`click`, () => {
-      moreContent2.classList.add(`show`);
-      destinationsDisplay2.style.display = `none`;
-      hideDestinations1.style.display = `none`;
-    });
+      moreContent2.classList.add(`show`)
+      destinationsDisplay2.style.display = `none`
+      hideDestinations1.style.display = `none`
+    })
     destinationsDisplay3.addEventListener(`click`, () => {
-      moreContent3.classList.add(`show`);
-      destinationsDisplay3.style.display = `none`;
-      hideDestinations2.style.display = `none`;
-    });
+      moreContent3.classList.add(`show`)
+      destinationsDisplay3.style.display = `none`
+      hideDestinations2.style.display = `none`
+    })
     destinationsDisplay4.addEventListener(`click`, () => {
-      moreContent4.classList.add(`show`);
-      destinationsDisplay4.style.display = `none`;
-      hideDestinations3.style.display = `none`;
-    });
+      moreContent4.classList.add(`show`)
+      destinationsDisplay4.style.display = `none`
+      hideDestinations3.style.display = `none`
+    })
     destinationsDisplay5.addEventListener(`click`, () => {
-      moreContent5.classList.add(`show`);
-      destinationsDisplay5.style.display = `none`;
-      hideDestinations4.style.display = `none`;
-    });
+      moreContent5.classList.add(`show`)
+      destinationsDisplay5.style.display = `none`
+      hideDestinations4.style.display = `none`
+    })
     destinationsDisplay6.addEventListener(`click`, () => {
-      moreContent6.classList.add(`show`);
-      destinationsDisplay6.style.display = `none`;
-      hideDestinations5.style.display = `none`;
-    });
-  } catch (error) {
-    console.error(`Extra destinations failed to load`, error);
+      moreContent6.classList.add(`show`)
+      destinationsDisplay6.style.display = `none`
+      hideDestinations5.style.display = `none`
+    })
+  }
+  catch (error) {
+    console.error(error)
   }
 }
-displayDestinations();
-
+displayDestinations()
 async function displayTours() {
   try {
-    const data = await retrieveJSON();
-    const toursContainer = document.getElementById(`toursContainer`);
-    const toursDisplay = document.getElementById(`toursDisplay`);
+    const response = await fetch(`js-files/components.json`)
+    if (!response.ok) {
+      throw new Error(`Could not fetch resource`)
+    }
+    const data = await response.json()
 
-    //Create new div for new tours
     const moreContent1 = document.createElement(`div`);
     moreContent1.classList.add(`moreContent`);
     moreContent1.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent1);
-
     moreContent1.innerHTML = await tourCardsTemplate(0, 5);
 
     moreContent1.innerHTML += `
     <button class="see-all" id="toursDisplay2">See more</button>
     <button class="hide-all" id="hideTours1">Hide all</button>
-    `;
+    `
 
     const moreContent2 = document.createElement(`div`);
     moreContent2.classList.add(`moreContent`);
@@ -298,19 +293,19 @@ async function displayTours() {
     moreContent3.innerHTML += `
     <button class="see-all" id="toursDisplay4">See more</button>
     <button class="hide-all" id="hideTours3">Hide all</button>
-    `;
+    `
 
     const moreContent4 = document.createElement(`div`);
     moreContent4.classList.add(`moreContent`);
     moreContent4.classList.add(`grid-3`);
     toursContainer.appendChild(moreContent4);
-
     moreContent4.innerHTML = await tourCardsTemplate(18, 23);
+
 
     moreContent4.innerHTML += `
     <button class="see-all" id="toursDisplay5">See more</button>
     <button class="hide-all" id="hideTours4">Hide all</button>
-    `;
+    `
 
     const moreContent5 = document.createElement(`div`);
     moreContent5.classList.add(`moreContent`);
@@ -401,7 +396,7 @@ async function displayTours() {
     toursDisplay3.addEventListener(`click`, () => {
       moreContent3.classList.add(`show`);
       toursDisplay3.style.display = `none`;
-      hideTours2.style.display = `none`;
+      Tours2.style.display = `none`;
     });
     toursDisplay4.addEventListener(`click`, () => {
       moreContent4.classList.add(`show`);
@@ -789,10 +784,9 @@ async function filterTours(tourType) {
     let destinationsVisited = item.destinationsVisited;
     let destinationsVisitedLink = destinationsVisited
       .map((destination) => {
-        return `<a href="explore-destination.html?id=${destination}" class="destinations">${
-          destination.charAt(0).toUpperCase() +
+        return `<a href="explore-destination.html?id=${destination}" class="destinations">${destination.charAt(0).toUpperCase() +
           destination.slice(1).toLowerCase()
-        }</a>`;
+          }</a>`;
       })
       .join(``);
     card.innerHTML = `
@@ -821,3 +815,4 @@ async function filterTours(tourType) {
     destinationInput.value = ``;
   });
 }
+displayTours()
