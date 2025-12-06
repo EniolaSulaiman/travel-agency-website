@@ -75,56 +75,68 @@
         </ul>
     </nav>
     <div class="hero-img">
-    <div class="hero-text flex">
-        <h1>ENIMBI TRAVEL AGENCY</h1>
-        <p>Your gateway to the wold's most unforgettable experiences.</p>
-    </div>
-</div>
-<section class="home-main">
-    <section class="home-about">
-        <h2>Your Trusted Travel Partner</h2>
-        <div class="container">
-            <div class="grid my-1">
-            <p>At Enimbi Travel Agency, we are committed to providing you with unforgettable experiences. With years of expertise and a passion for exploration, we ensure every journey is expertly crafted and tailored to meet your preferences. Whether you're seeking adventure, relaxation, or cultural immersion.</p>
-        <img src="images/about-picture.jpg" alt=""></div>
-            <a href="about.html" class="btn">Learn more about us</a>
+        <div class="hero-text flex">
+            <h1>ENIMBI TRAVEL AGENCY</h1>
+            <p>Your gateway to the wold's most unforgettable experiences.</p>
         </div>
-    </section>
-<section class="home-popular-destinations">
-    <h2>Popular Destinations</h2>
-    <div class="container">
-        <div class="slider flex">
-                <a href="#" id="destinations">
-                    <span class="destination-name flex" id="destinationName">Bali</span>
+        </div>
+        <section class="home-main">
+            <section class="home-about">
+                <h2>Your Trusted Travel Partner</h2>
+                <div class="container">
+                    <div class="grid my-1">
+                    <p>At Enimbi Travel Agency, we are committed to providing you with unforgettable experiences. With
+                        years of expertise and a passion for exploration, we ensure every journey is expertly crafted
+                        and tailored to meet your preferences. Whether you're seeking adventure, relaxation, or cultural
+                        immersion.</p>
+                    <img src="images/about-picture.jpg" alt="">
+                    </div>
+                    <a href="about.html" class="btn">Learn more about us</a>
+                    </div>
+                    </section>
+                    <section class="home-popular-destinations">
+                        <h2>Popular Destinations</h2>
+                        <div class="container">
+                            <div class="slider flex">
+                                <a href="#" id="destinations">
+                                    <span class="destination-name flex" id="destinationName">Bali</span>
+                                </a>
+                                <a href="#" id="destinations">
+                                    <span class="destination-name flex" id="destinationName">Bali</span>
+                                </a>
+                                <a href="#" id="destinations">
+                                    <span class="destination-name flex" id="destinationName">Bali</span>
+                                </a>
+                                <a href="#" id="destinations">
+                                    <span class="destination-name flex" id="destinationName">Bali</span>
+                                </a>
+                                <a href="#" id="destinations">
+                                    <span class="destination-name flex" id="destinationName">Bali</span>
+                                </a>
+                                <a href="#" id="destinations">
+                                    <span class="destination-name flex" id="destinationName">Bali</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="tour-types">
+                        <h2>Tours & Packages</h2>
+                        <div class="grid container">
+                <a href="ds&ts.html?tourType=adventure">
+                    <div class="card">Adventure</div>
                 </a>
-                <a href="#" id="destinations">
-                    <span class="destination-name flex" id="destinationName">Bali</span>
+                <a href="ds&ts.html?tourType=cultural">
+                    <div class="card">Cultural</div>
                 </a>
-                <a href="#" id="destinations">
-                    <span class="destination-name flex" id="destinationName">Bali</span>
+                <a href="ds&ts.html?tourType=luxury">
+                    <div class="card">Luxury</div>
                 </a>
-                <a href="#" id="destinations">
-                    <span class="destination-name flex" id="destinationName">Bali</span>
+                <a href="ds&ts.html?tourType=nature">
+                    <div class="card">Nature & Wildlife</div>
                 </a>
-                <a href="#" id="destinations">
-                    <span class="destination-name flex" id="destinationName">Bali</span>
-                </a>
-                <a href="#" id="destinations">
-                    <span class="destination-name flex" id="destinationName">Bali</span>
-                </a>
-            </div>
-    </div>
-</section>
-<section class="tour-types">
-    <h2>Tours & Packages</h2>
-    <div class="grid container">
-        <a href="ds&ts.html?tourType=adventure"><div class="card">Adventure</div></a>
-        <a href="ds&ts.html?tourType=cultural"><div class="card">Cultural</div></a>
-        <a href="ds&ts.html?tourType=luxury"><div class="card">Luxury</div></a>
-        <a href="ds&ts.html?tourType=nature"><div class="card">Nature & Wildlife</div></a>
-    </div>
-</section>
-    <!-- <section class="travel-tips">
+                </div>
+                </section>
+                <!-- <section class="travel-tips">
         <h2>Travel Stories and Tips</h2>
         <div class="slider flex">
             <div class="slide"><img src="images/bahamas-3.jpg" alt="Image">
@@ -167,15 +179,17 @@
         if (!sessionStorage.getItem(`animationLoaded`)) {
             const loadingAnimation = document.getElementById(`loadingAnimation`)
             function removeLoader() {
-                loadingAnimation.style.opacity = 0;
                 loadingAnimation.style.display = `none`
                 document.body.style.overflowY = `visible`
-            } function load() {
+            }
+
+            function load() {
                 try {
                     window.addEventListener(`DOMContentLoaded`, () => {
-                        loadingAnimation.style.animation = `fade-out 1s`
-                        setTimeout(
-                            removeLoader, 5000
+                        setTimeout(() => {
+                            loadingAnimation.style.animation = `fade-out 1s forwards`
+                            loadingAnimation.addEventListener(`animationend`, removeLoader)
+                        }, 5500
                         )
                         sessionStorage.clear()
                         sessionStorage.setItem(`animationLoaded`, `true`)
