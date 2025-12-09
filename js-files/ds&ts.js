@@ -768,6 +768,8 @@ function filterDestinations() {
           .addEventListener(`click`, () => {
             document.getElementById(`dsMain`).removeChild(resultsContainer);
             document.getElementById(`dsMain`).innerHTML = baseContent;
+            displayDestinations()
+            displayTours()
             destinationInput.value = ``;
           });
       }
@@ -826,9 +828,9 @@ async function filterTours(tourType) {
     document.getElementById(`dsMain`).removeChild(resultsContainer);
     document.getElementById(`dsMain`).innerHTML = baseContent;
     document.getElementById(`tourTypes`).value = `All Tours`
+    displayDestinations()
+    displayTours()
     if (sessionStorage.getItem(`filterFromHomepage`)) {
-      displayDestinations()
-      displayTours()
       filterDestinations()
       sessionStorage.clear(`filterFromHomepage`)
     }
