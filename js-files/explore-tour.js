@@ -52,32 +52,31 @@ async function loadRoute() {
   try {
     const data = await retrieveJSON();
     const params = new URLSearchParams(window.location.search);
-    const tourId = params.get(`id`);
-    console.log(data[3][tourId]);
+    const tour = params.get(`id`);
 
     document.getElementById(`toursMain`).innerHTML = `
 <div class="container card">
-                    <img id="image" src="${data[3][tourId].img1}" alt="Destination Image">
-                    <img id="image" src="${data[3][tourId].img2}" alt="Destination Image">
-                    <img id="image" src="${data[3][tourId].img3}" alt="Destination Image">
+                    <img id="image" src="${data[3][tour].img1}" alt="Destination Image">
+                    <img id="image" src="${data[3][tour].img2}" alt="Destination Image">
+                    <img id="image" src="${data[3][tour].img3}" alt="Destination Image">
                     <span id="prevBtn" class="prev-btn" onclick="prevSlide()">&#10094;</span>
                     <span id="nextBtn" class="next-btn" onclick="nextSlide()">&#10095;</span>
                     <span class="h1-container flex">
-                        <h1>${data[3][tourId].name}</h1>
+                        <h1>${data[3][tour].name}</h1>
                     </span>
                     <div class="text">
                         <span class="about-text">
                             <h2>About the Tour</h2>
                         </span>
-                        <p>${data[3][tourId].desc}</p>
+                        <p>${data[3][tour].desc}</p>
                         <div class="grid-3">
                             <span>
                                 <h3>Price</h3>
-                                ${data[3][tourId].price}
+                                ${data[3][tour].price}
                             </span>
                             <span>
                                 <h3>Duration</h3>
-                                ${data[3][tourId].duration}
+                                ${data[3][tour].duration}
                             </span>
                             <span>
                                 <a href="#" class="btn">Book Now</a>

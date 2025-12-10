@@ -32,7 +32,7 @@ function returnBaseContent() {
                   <span class="price info">$2500</span
                   ><span class="duration info">3-5 days</span>
                 </p>
-                <a href="explore-destination.html?id=paris" class="btn"
+                <a href="explore-destination.html?destination=paris" class="btn"
                   >Explore Tour</a
                 >
               </div>
@@ -49,7 +49,7 @@ function returnBaseContent() {
                   <span class="price info">$2500</span
                   ><span class="duration info">3-5 days</span>
                 </p>
-                <a href="explore-destination.html?id=bahamas" class="btn"
+                <a href="explore-destination.html?destination=bahamas" class="btn"
                   >Explore Tour</a
                 >
               </div>
@@ -66,7 +66,7 @@ function returnBaseContent() {
                   <span class="price info">$2500</span
                   ><span class="duration info">3-5 days</span>
                 </p>
-                <a href="explore-destination.html?id=sydney" class="btn"
+                <a href="explore-destination.html?destination=sydney" class="btn"
                   >Explore Tour</a
                 >
               </div>
@@ -83,7 +83,7 @@ function returnBaseContent() {
                   <span class="price info">$2500</span
                   ><span class="duration info">3-5 days</span>
                 </p>
-                <a href="explore-destination.html?id=tokyo" class="btn"
+                <a href="explore-destination.html?destination=tokyo" class="btn"
                   >Explore Tour</a
                 >
               </div>
@@ -106,17 +106,17 @@ function returnBaseContent() {
                 nostrum.
               </p>
               <p>
-                <a href="explore-destination.html?id=london" class="destinations"
+                <a href="explore-destination.html?destination=london" class="destinations"
                   >London</a
                 ><a
-                  href="explore-destination.html?id=barcelona"
+                  href="explore-destination.html?destination=barcelona"
                   class="destinations"
                   >Barcelona</a
-                ><a href="explore-destination.html?id=rome" class="destinations"
+                ><a href="explore-destination.html?destination=rome" class="destinations"
                   >Rome</a
                 >
               </p>
-              <a href="explore-tour.html?id=grandEuropeanTour" class="btn"
+              <a href="explore-tour.html?tour=grandEuropeanTour" class="btn"
                 >Explore Tour</a
               >
             </div>
@@ -129,17 +129,17 @@ function returnBaseContent() {
                 nostrum.
               </p>
               <p>
-                <a href="explore-destination.html?id=london" class="destinations"
+                <a href="explore-destination.html?destination=london" class="destinations"
                   >London</a
                 ><a
-                  href="explore-destination.html?id=barcelona"
+                  href="explore-destination.html?destination=barcelona"
                   class="destinations"
                   >Barcelona</a
-                ><a href="explore-destination.html?id=rome" class="destinations"
+                ><a href="explore-destination.html?destination=rome" class="destinations"
                   >Rome</a
                 >
               </p>
-              <a href="explore-tour.html?id=tropicalParadiseEscape" class="btn"
+              <a href="explore-tour.html?tour=tropicalParadiseEscape" class="btn"
                 >Explore Tour</a
               >
             </div>
@@ -152,18 +152,18 @@ function returnBaseContent() {
                 nostrum.
               </p>
               <p>
-                <a href="explore-destination.html?id=london" class="destinations"
+                <a href="explore-destination.html?destination=london" class="destinations"
                   >London</a
                 ><a
-                  href="explore-destination.html?id=barcelona"
+                  href="explore-destination.html?destination=barcelona"
                   class="destinations"
                   >Barcelona</a
-                ><a href="explore-destination.html?id=rome" class="destinations"
+                ><a href="explore-destination.html?destination=rome" class="destinations"
                   >Rome</a
                 >
               </p>
               <a
-                href="explore-tour.html?id=culturalJourneyThroughAsia"
+                href="explore-tour.html?tour=culturalJourneyThroughAsia"
                 class="btn"
                 >Explore Tour</a
               >
@@ -177,17 +177,17 @@ function returnBaseContent() {
                 nostrum.
               </p>
               <p>
-                <a href="explore-destination.html?id=london" class="destinations"
+                <a href="explore-destination.html?destination=london" class="destinations"
                   >London</a
                 ><a
-                  href="explore-destination.html?id=barcelona"
+                  href="explore-destination.html?destination=barcelona"
                   class="destinations"
                   >Barcelona</a
-                ><a href="explore-destination.html?id=rome" class="destinations"
+                ><a href="explore-destination.html?destination=rome" class="destinations"
                   >Rome</a
                 >
               </p>
-              <a href="explore-tour.html?id=kenyanSafariTour" class="btn"
+              <a href="explore-tour.html?tour=kenyanSafariTour" class="btn"
                 >Explore Tour</a
               >
             </div>
@@ -200,17 +200,17 @@ function returnBaseContent() {
                 nostrum.
               </p>
               <p>
-                <a href="explore-destination.html?id=london" class="destinations"
+                <a href="explore-destination.html?destination=london" class="destinations"
                   >London</a
                 ><a
-                  href="explore-destination.html?id=barcelona"
+                  href="explore-destination.html?destination=barcelona"
                   class="destinations"
                   >Barcelona</a
-                ><a href="explore-destination.html?id=rome" class="destinations"
+                ><a href="explore-destination.html?destination=rome" class="destinations"
                   >Rome</a
                 >
               </p>
-              <a href="explore-tour.html?id=greatWallOfChina" class="btn"
+              <a href="explore-tour.html?tour=greatWallOfChina" class="btn"
                 >Explore Tour</a
               >
             </div>
@@ -223,17 +223,17 @@ function returnBaseContent() {
                 nostrum.
               </p>
               <p>
-                <a href="explore-destination.html?id=london" class="destinations"
+                <a href="explore-destination.html?destination=london" class="destinations"
                   >London</a
                 ><a
-                  href="explore-destination.html?id=barcelona"
+                  href="explore-destination.html?destination=barcelona"
                   class="destinations"
                   >Barcelona</a
-                ><a href="explore-destination.html?id=rome" class="destinations"
+                ><a href="explore-destination.html?destination=rome" class="destinations"
                   >Rome</a
                 >
               </p>
-              <a href="explore-tour.html?id=theCarribeans" class="btn"
+              <a href="explore-tour.html?tour=theCarribeans" class="btn"
                 >Explore Tour</a
               >
             </div>
@@ -298,7 +298,7 @@ async function destinationCardsTemplate(min, max) {
                 ${data[0][i].desc}
                 </p>
               <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
-                <a href="explore-destination.html?id=${data[0][i].id}" class="btn">Explore Destination</a>
+                <a href="explore-destination.html?destination=${data[0][i].id}" class="btn">Explore Destination</a>
             </div>
             `;
   }
@@ -312,7 +312,7 @@ async function tourCardsTemplate(min, max) {
     let destinationsVisited = data[1][i].destinationsVisited;
     let processedDestinationsVisited = destinationsVisited.map(
       (destination) => {
-        return `<a href="explore-destination.html?id=${destination}" class="destination">${destination.charAt(0) + destination.slice(1).toLowerCase()
+        return `<a href="explore-destination.html?destination=${destination}" class="destination">${destination.charAt(0) + destination.slice(1).toLowerCase()
           }`;
       }
     );
@@ -326,7 +326,7 @@ async function tourCardsTemplate(min, max) {
             ${data[1][i].desc}
             </p>
             <p>${processedDestinationsVisited}</p>
-            <a href="explore-tour.html?id=${data[1][i].id}" class="btn">Explore Tour</a>
+            <a href="explore-tour.html?tour=${data[1][i].id}" class="btn">Explore Tour</a>
         </div>
         `;
 
@@ -750,7 +750,7 @@ function filterDestinations() {
                 <span class="price info">${item.price}</span>
                 <span class="duration info">${item.duration}</span>
               </p>
-              <a href="explore-destination.html?id=${item.id}" class="btn">Explore destination</a>
+              <a href="explore-destination.html?destination=${item.id}" class="btn">Explore destination</a>
         </div>
       `;
 
@@ -799,7 +799,7 @@ async function filterTours(tourType) {
     let destinationsVisited = item.destinationsVisited;
     let destinationsVisitedLink = destinationsVisited
       .map((destination) => {
-        return `<a href="explore-destination.html?id=${destination}" class="destinations">${destination.charAt(0).toUpperCase() +
+        return `<a href="explore-destination.html?destination=${destination}" class="destinations">${destination.charAt(0).toUpperCase() +
           destination.slice(1).toLowerCase()
           }</a>`;
       })
@@ -812,7 +812,7 @@ async function filterTours(tourType) {
           <p>
                 ${destinationsVisitedLink}
               </p>
-              <a href="explore-tour.html?id=${item.id}" class="btn">Explore Tour</a>
+              <a href="explore-tour.html?tour=${item.id}" class="btn">Explore Tour</a>
         </div>
       `;
     resultsContainer.appendChild(card);

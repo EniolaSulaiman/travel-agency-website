@@ -69,34 +69,34 @@ async function retrieveJSON() {
 }
 
 async function loadRoute() {
-  try{
-  const data = await retrieveJSON();
-  const params = new URLSearchParams(window.location.search);
-  const destinationId = params.get(`id`);
+  try {
+    const data = await retrieveJSON();
+    const params = new URLSearchParams(window.location.search);
+    const destination = params.get(`destination`);
 
-   document.getElementById(`toursMain`).innerHTML = `
+    document.getElementById(`toursMain`).innerHTML = `
 <div class="container card">
-                    <img id="image" src="${data[2][destinationId].img1}" alt="Destination Image">
-                    <img id="image" src="${data[2][destinationId].img2}" alt="Destination Image">
-                    <img id="image" src="${data[2][destinationId].img3}" alt="Destination Image">
+                    <img id="image" src="${data[2][destination].img1}" alt="Destination Image">
+                    <img id="image" src="${data[2][destination].img2}" alt="Destination Image">
+                    <img id="image" src="${data[2][destination].img3}" alt="Destination Image">
                     <span id="prevBtn" class="prev-btn" onclick="prevSlide()">&#10094;</span>
                     <span id="nextBtn" class="next-btn" onclick="nextSlide()">&#10095;</span>
                     <span class="h1-container flex">
-                        <h1>${data[2][destinationId].name}</h1>
+                        <h1>${data[2][destination].name}</h1>
                     </span>
                     <div class="text">
                         <span class="about-text">
                             <h2>About the Tour</h2>
                         </span>
-                        <p>${data[2][destinationId].desc}</p>
+                        <p>${data[2][destination].desc}</p>
                         <div class="grid-3">
                             <span>
                                 <h3>Price</h3>
-                                ${data[2][destinationId].price}
+                                ${data[2][destination].price}
                             </span>
                             <span>
                                 <h3>Duration</h3>
-                                ${data[2][destinationId].duration}
+                                ${data[2][destination].duration}
                             </span>
                             <span>
                                 <a href="#" class="btn">Book Now</a>
@@ -104,9 +104,10 @@ async function loadRoute() {
                         </div>
                     </div>
                 </div>
-                `; 
+                `;
+  }
+  catch (error) {
+    console.error(`Failed to load data for route`, error)
+  }
 }
-catch(error){
-  console.error(`Failed to load data for route`, error)
-}}
 loadRoute();
