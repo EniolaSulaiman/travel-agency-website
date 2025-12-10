@@ -52,7 +52,7 @@ async function loadRoute() {
   try {
     const data = await retrieveJSON();
     const params = new URLSearchParams(window.location.search);
-    const tour = params.get(`id`);
+    const tour = params.get(`tour`);
 
     document.getElementById(`toursMain`).innerHTML = `
 <div class="container card">
