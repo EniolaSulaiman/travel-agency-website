@@ -102,28 +102,30 @@ body .ham-menu {
   display: none;
   transition: opacity 0.2s;
 }
+
 .ham-menu ul {
   width: 100%;
   padding-left: 1rem;
 }
+
 .ham-menu li {
   margin-bottom: 2rem;
   padding-bottom: 0.9rem;
   border-bottom: 3px solid var(--main-background-color);
 }
+
 .ham-menu a {
   width: min-content;
   margin-inline: 1rem auto;
 }
+
 .home-main {
   margin: 0;
   padding: 0;
-  background: linear-gradient(
-    180deg,
-    var(--main-background-color),
-    var(--primary-color),
-    var(--main-background-color)
-  );
+  background: linear-gradient(180deg,
+      var(--main-background-color),
+      var(--primary-color),
+      var(--main-background-color));
 }
 
 .home-main h2 {
@@ -133,6 +135,7 @@ body .ham-menu {
   margin: 2rem;
   font-weight: 700;
 }
+
 .home-main section {
   margin: 5rem;
 }
@@ -140,6 +143,7 @@ body .ham-menu {
 .home-main {
   padding: 1rem;
 }
+
 body .hero-text {
   position: absolute;
   height: calc(100vh - 70px);
@@ -215,9 +219,11 @@ section.home-about a.btn {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .home-popular-destinations .slider a:hover {
   transform: scale(1.1);
 }
+
 .home-popular-destinations .destination-name {
   position: absolute;
   width: 100%;
@@ -233,12 +239,15 @@ section.home-about a.btn {
 .home-popular-destinations .destination-name:hover {
   opacity: 1;
 }
+
 .tour-types .grid {
   place-items: center;
 }
+
 .tour-types a {
   width: fit-content;
 }
+
 .tour-types .card {
   width: fit-content;
   width: 20rem;
@@ -246,11 +255,13 @@ section.home-about a.btn {
   cursor: pointer;
   transition: all 0.2 ease;
 }
+
 .tour-types .card:hover {
   box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2),
     inset -2px -2px 6px rgba(255, 255, 255, 0.6);
   transform: translateY(1px);
 }
+
 /* .travel-tips {
   color: black;
   margin: 0;
@@ -347,6 +358,7 @@ section.home-about a.btn {
   height: fit-content;
   color: var(--secondary-text-color);
   width: 100vw;
+  padding-inline: 1rem;
 }
 
 .destination-cards {
@@ -388,6 +400,7 @@ section.home-about a.btn {
   font-size: 1rem;
   margin-inline: 20px;
 }
+
 .info {
   margin-right: 0.8rem;
   font-weight: 550;
@@ -396,9 +409,11 @@ section.home-about a.btn {
   padding: 0.5rem;
   border-radius: 10px;
 }
+
 .destinations a {
   margin-left: 20px;
 }
+
 .see-all {
   position: absolute;
   right: 0;
@@ -427,6 +442,7 @@ section.home-about a.btn {
   background: transparent;
   border: none;
 }
+
 .popular-tours {
   position: relative;
   padding-bottom: 4em;
@@ -506,6 +522,7 @@ section.home-about a.btn {
   text-decoration: none;
   margin-left: 20px;
 }
+
 a.destinations {
   cursor: pointer;
   background: var(--primary-color);
@@ -514,9 +531,11 @@ a.destinations {
   margin-right: 0.3rem;
   padding: 0.5rem;
 }
+
 a.destinations:hover {
   background: hsla(197, 100%, 40%, 0.7);
 }
+
 .clear {
   padding: 0.625rem 1.875rem;
   display: inline-block;
@@ -527,9 +546,11 @@ a.destinations:hover {
   border-radius: 5px;
   margin-left: 1.25rem;
 }
-.clear:hover{
-  background:#ff5522;
+
+.clear:hover {
+  background: #ff5522;
 }
+
 .about {
   width: 100vw;
   height: 200px;
@@ -684,10 +705,11 @@ a.destinations:hover {
 }
 
 @keyframes spin {
-  0%{
+  0% {
     transform: rotate(360deg);
   }
 }
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -705,6 +727,7 @@ a.destinations:hover {
     transform: translateY(0);
   }
 }
+
 @keyframes slide-In-From-Right {
   from {
     transform: translateX(100%);
@@ -771,14 +794,17 @@ a.destinations:hover {
     margin-inline: 1rem;
   }
 }
+
 @media (max-width: 825px) {
   .nav-bar nav {
     display: none;
   }
+
   .nav-bar i {
     display: block;
   }
 }
+
 /* 
 @media(max-width:900px) {
     .nav-bar {
