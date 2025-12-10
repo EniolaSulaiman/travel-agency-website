@@ -350,7 +350,7 @@
   </main>
 
   <script>
-    if (!sessionStorage.getItem(`secondAnimationLoaded`)) {
+    if (performance.navigation.type === 0) {
       const loadingAnimation = document.getElementById(`loadingAnimation`)
       function removeLoader() {
         loadingAnimation.style.display = `none`
@@ -365,8 +365,6 @@
               loadingAnimation.addEventListener(`animationend`, removeLoader)
             }, 5500
             )
-            sessionStorage.clear()
-            sessionStorage.setItem(`secondAnimationLoaded`, `true`)
           }
           )
         }
