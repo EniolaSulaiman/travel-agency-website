@@ -100,7 +100,7 @@ function returnBaseContent() {
           <div class="grid">
             <div class="card">
               <img loading="lazy" src="images/europe-2.jpg" alt="" />
-              <h3>Grand European Tour</h3>
+              <h3>Safari Gateway Adventure</h3>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
                 nostrum.
