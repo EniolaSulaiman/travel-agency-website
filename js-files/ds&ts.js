@@ -17,272 +17,185 @@ async function retrieveJSON() {
 }
 function returnBaseContent() {
   return `<section class="destination-cards" id="destinationCards">
-          <article class="flex">
-            <h2>POPULAR DESTINATIONS</h2>
-            <div class="grid">
-              <div class="destinations card" id="destinations">
-                <img
-                  loading="lazy"
-                  src="images/paris-2.jpg"
-                  alt="destination-picture"
-                />
-                <h3>Paris, France</h3>
-                <p>Experience the romance and charm of the City Of Lights.</p>
-                <p>
-                  <span class="price info">$2500</span
-                  ><span class="duration info">3-5 days</span>
-                </p>
-                <a href="explore-destination.html?destination=paris" class="btn"
-                  >Explore Tour</a
-                >
-              </div>
-  
-              <div class="destinations card" id="destinations">
-                <img
-                  loading="lazy"
-                  src="images/bahamas-3.jpg"
-                  alt="destination-picture"
-                />
-                <h3>Bahamas</h3>
-                <p>Relax on pristine beaches and enjoy crystal clear waters.</p>
-                <p>
-                  <span class="price info">$2500</span
-                  ><span class="duration info">3-5 days</span>
-                </p>
-                <a href="explore-destination.html?destination=bahamas" class="btn"
-                  >Explore Tour</a
-                >
-              </div>
-  
-              <div class="destinations card" id="destinations">
-                <img
-                  loading="lazy"
-                  src="images/sydney-1.jpg"
-                  alt="destination-picture"
-                />
-                <h3>Sydney, Australia</h3>
-                <p>Opera, ocean waves, and laid-back vibes.</p>
-                <p>
-                  <span class="price info">$2500</span
-                  ><span class="duration info">3-5 days</span>
-                </p>
-                <a href="explore-destination.html?destination=sydney" class="btn"
-                  >Explore Tour</a
-                >
-              </div>
-  
-              <div class="destinations card" id="destinations">
-                <img
-                  loading="lazy"
-                  src="images/japan-1.jpg"
-                  alt="destination-picture"
-                />
-                <h3>Tokyo, Japan</h3>
-                <p>A neon jungle where tradition meets high-tech future.</p>
-                <p>
-                  <span class="price info">$2500</span
-                  ><span class="duration info">3-5 days</span>
-                </p>
-                <a href="explore-destination.html?destination=tokyo" class="btn"
-                  >Explore Tour</a
-                >
-              </div>
-            </div>
-          </article>
-  
-          <button class="see-all" id="destinationsDisplay">
-            See more destinations
-          </button>
-        </section>
-  
-        <section class="popular-tours" id="toursContainer">
-          <h2>POPULAR TOURS</h2>
-          <div class="grid">
-            <div class="card">
-              <img loading="lazy" src="images/europe-2.jpg" alt="" />
-              <h3>Grand European Tour</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-                nostrum.
-              </p>
-              <p>
-                <a href="explore-destination.html?destination=london" class="destinations"
-                  >London</a
-                ><a
-                  href="explore-destination.html?destination=barcelona"
-                  class="destinations"
-                  >Barcelona</a
-                ><a href="explore-destination.html?destination=rome" class="destinations"
-                  >Rome</a
-                >
-              </p>
-              <a href="explore-tour.html?tour=grandEuropeanTour" class="btn"
-                >Explore Tour</a
-              >
-            </div>
-  
-            <div class="card">
-              <img loading="lazy" src="images/paris-2.jpg" alt="" />
-              <h3>Tropical Paradise Escape</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-                nostrum.
-              </p>
-              <p>
-                <a href="explore-destination.html?destination=london" class="destinations"
-                  >London</a
-                ><a
-                  href="explore-destination.html?destination=barcelona"
-                  class="destinations"
-                  >Barcelona</a
-                ><a href="explore-destination.html?destination=rome" class="destinations"
-                  >Rome</a
-                >
-              </p>
-              <a href="explore-tour.html?tour=tropicalParadiseEscape" class="btn"
-                >Explore Tour</a
-              >
-            </div>
-  
-            <div class="card">
-              <img loading="lazy" src="images/paris-2.jpg" alt="" />
-              <h3>Cultural Journey Through Asia</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-                nostrum.
-              </p>
-              <p>
-                <a href="explore-destination.html?destination=london" class="destinations"
-                  >London</a
-                ><a
-                  href="explore-destination.html?destination=barcelona"
-                  class="destinations"
-                  >Barcelona</a
-                ><a href="explore-destination.html?destination=rome" class="destinations"
-                  >Rome</a
-                >
-              </p>
-              <a
-                href="explore-tour.html?tour=culturalJourneyThroughAsia"
-                class="btn"
-                >Explore Tour</a
-              >
-            </div>
-  
-            <div class="card">
-              <img loading="lazy" src="images/paris-2.jpg" alt="" />
-              <h3>Kenyan Safari Tour</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-                nostrum.
-              </p>
-              <p>
-                <a href="explore-destination.html?destination=london" class="destinations"
-                  >London</a
-                ><a
-                  href="explore-destination.html?destination=barcelona"
-                  class="destinations"
-                  >Barcelona</a
-                ><a href="explore-destination.html?destination=rome" class="destinations"
-                  >Rome</a
-                >
-              </p>
-              <a href="explore-tour.html?tour=kenyanSafariTour" class="btn"
-                >Explore Tour</a
-              >
-            </div>
-  
-            <div class="card">
-              <img loading="lazy" src="images/paris-2.jpg" alt="" />
-              <h3>Great Wall Of China</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-                nostrum.
-              </p>
-              <p>
-                <a href="explore-destination.html?destination=london" class="destinations"
-                  >London</a
-                ><a
-                  href="explore-destination.html?destination=barcelona"
-                  class="destinations"
-                  >Barcelona</a
-                ><a href="explore-destination.html?destination=rome" class="destinations"
-                  >Rome</a
-                >
-              </p>
-              <a href="explore-tour.html?tour=greatWallOfChina" class="btn"
-                >Explore Tour</a
-              >
-            </div>
-  
-            <div class="card">
-              <img loading="lazy" src="images/paris-2.jpg" alt="" />
-              <h3>The Carribeans</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-                nostrum.
-              </p>
-              <p>
-                <a href="explore-destination.html?destination=london" class="destinations"
-                  >London</a
-                ><a
-                  href="explore-destination.html?destination=barcelona"
-                  class="destinations"
-                  >Barcelona</a
-                ><a href="explore-destination.html?destination=rome" class="destinations"
-                  >Rome</a
-                >
-              </p>
-              <a href="explore-tour.html?tour=theCarribeans" class="btn"
-                >Explore Tour</a
-              >
-            </div>
-          </div>
-          <span class="see-all" id="toursDisplay">See more tours</span>
-        </section>
-        <section class="about bg-primary">
-          <img
-            loading="lazy"
-            src="images/Discover-Your-Next-Adventure.png"
-            alt="About-us"
-          />
-          <div class="container">
-            <h2>Discover Your Next Adventure</h2>
+      <article class="flex">
+        <h2>POPULAR DESTINATIONS</h2>
+        <div class="grid">
+          <div class="destinations card" id="destinations">
+            <img loading="lazy" src="images/paris-2.jpg" alt="destination-picture" />
+            <h3>Paris, France</h3>
+            <p>Experience the romance and charm of the City Of Lights.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              expedita ullam magnam doloremque minima reiciendis unde modi sed
-              explicabo similique. <br />
+              <span class="price info">$2500</span><span class="duration info">3-5 days</span>
             </p>
-            <a href="#" class="btn">About Us</a>
+            <a href="explore-destination.html?destination=paris" class="btn">Explore Tour</a>
           </div>
-        </section>
-        <section class="plan-your-trip flex">
-          <h2 class="text-center">Plan Your Trip Easily</h2>
-          <div class="container">
-            <div class="card grid">
-              <span>
-                Departure<br />
-                <input type="text" placeholder="Date" />
-              </span>
-              <span>
-                Destination<br />
-                <input type="text" placeholder="Place" />
-              </span>
-              <span>
-                Length <br />
-                <select name="" id="">
-                  <option value="">Show All</option>
-                  <option value="">5 Days</option>
-                  <option value="">1 Week</option>
-                  <option value="">2 Weeks</option>
-                  <option value="">1 Month</option>
-                  <option value="">2 Month</option>
-                </select>
-              </span>
-              <a href="#" class="btn">Search</a>
-            </div>
+
+          <div class="destinations card" id="destinations">
+            <img loading="lazy" src="images/bahamas-3.jpg" alt="destination-picture" />
+            <h3>Bahamas</h3>
+            <p>Relax on pristine beaches and enjoy crystal clear waters.</p>
+            <p>
+              <span class="price info">$2500</span><span class="duration info">3-5 days</span>
+            </p>
+            <a href="explore-destination.html?destination=bahamas" class="btn">Explore Tour</a>
           </div>
-        </section>`;
+
+          <div class="destinations card" id="destinations">
+            <img loading="lazy" src="images/sydney-1.jpg" alt="destination-picture" />
+            <h3>Sydney, Australia</h3>
+            <p>Opera, ocean waves, and laid-back vibes.</p>
+            <p>
+              <span class="price info">$2500</span><span class="duration info">3-5 days</span>
+            </p>
+            <a href="explore-destination.html?destination=sydney" class="btn">Explore Tour</a>
+          </div>
+
+          <div class="destinations card" id="destinations">
+            <img loading="lazy" src="images/japan-1.jpg" alt="destination-picture" />
+            <h3>Tokyo, Japan</h3>
+            <p>A neon jungle where tradition meets high-tech future.</p>
+            <p>
+              <span class="price info">$2500</span><span class="duration info">3-5 days</span>
+            </p>
+            <a href="explore-destination.html?destination=tokyo" class="btn">Explore Tour</a>
+          </div>
+        </div>
+      </article>
+
+      <button class="see-all" id="destinationsDisplay">
+        See more destinations
+      </button>
+    </section>
+
+    <section class="popular-tours" id="toursContainer">
+      <h2>POPULAR TOURS</h2>
+      <div class="grid">
+        <div class="card">
+          <img loading="lazy" src="images/europe-2.jpg" alt="" />
+          <h3>Safari Gateway Adventure</h3>
+          <p>
+            Discover vibrant African cities that serve as gateways to legendary wildlife experiences.
+          </p>
+          <p>
+            <a href="explore-destination.html?destination=nairobi" class="destinations">Nairobi</a><a
+              href="explore-destination.html?destination=capeTown" class="destinations">Cape Town</a><a
+              href="explore-destination.html?destination=johannesburg" class="destinations">Johannesburg</a>
+          </p>
+          <a href="explore-tour.html?tour=safariGatewayAdventure" class="btn">Explore Tour</a>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="images/paris-2.jpg" alt="" />
+          <h3>Asian Nature Explorer</h3>
+          <p>
+            A journey through scenic Asian cities blending nature, culture, and urban excitement.
+          </p>
+          <p>
+            <a href="explore-destination.html?destination=bangkok" class="destinations">Bangkok</a><a
+              href="explore-destination.html?destination=kyoto" class="destinations">Kyoto</a><a
+              href="explore-destination.html?destination=seoul" class="destinations">Seoul</a>
+          </p>
+          <a href="explore-tour.html?tour=asianNatureExplorer" class="btn">Explore Tour</a>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="images/paris-2.jpg" alt="" />
+          <h3>Luxury Middle East Retreat</h3>
+          <p>
+            Indulge in high-end hotels, stunning sky lines, and glamarous desert experiences.
+          </p>
+          <p>
+            <a href="explore-destination.html?destination=dubai" class="destinations">Dubai</a><a
+              href="explore-destination.html?destination=doha" class="destinations">Doha</a><a
+              href="explore-destination.html?destination=amman" class="destinations">Amman</a>
+          </p>
+          <a href="explore-tour.html?tour=luxuryMiddleEastRetreat" class="btn">Explore Tour</a>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="images/paris-2.jpg" alt="" />
+          <h3>Southern Europe Escaape</h3>
+          <p>
+            Dive into sun-soaked streets, coastal charm, and vibrant Mediterranean culture.
+          </p>
+          <p>
+            <a href="explore-destination.html?destination=florence" class="destinations">Florence</a><a
+              href="explore-destination.html?destination=santorini" class="destinations">Santorini</a><a
+              href="explore-destination.html?destination=athens" class="destinations">Athens</a>
+          </p>
+          <a href="explore-tour.html?tour=southernEuropeEscape" class="btn">Explore Tour</a>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="images/paris-2.jpg" alt="" />
+          <h3>Americas Adventure Trail</h3>
+          <p>
+            Experience energetic cities across the Americas, packed with culture, colour, and excitement.
+          </p>
+          <p>
+            <a href="explore-destination.html?destination=buenosAires" class="destinations">BuenosAires</a><a
+              href="explore-destination.html?destination=mexicoCity" class="destinations">Mexico City</a><a
+              href="explore-destination.html?destination=newYorkCity" class="destinations">New York City</a>
+          </p>
+          <a href="explore-tour.html?tour=greatWallOfChina" class="btn">Explore Tour</a>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="images/paris-2.jpg" alt="" />
+          <h3>Pacific Island Discovery</h3>
+          <p>
+            A refreshing coastal-themed escape through vibrant cities known for beaches, culture, and stunning
+            waterfronts.
+          </p>
+          <p>
+            <a href="explore-destination.html?destination=capeTown" class="destinations">Cape Town</a><a
+              href="explore-destination.html?destination=barcelona" class="destinations">Barcelona</a><a
+              href="explore-destination.html?destination=santorini" class="destinations">Santorini</a>
+          </p>
+          <a href="explore-tour.html?tour=pacificIslandDiscovery" class="btn">Explore Tour</a>
+        </div>
+      </div>
+      <span class="see-all" id="toursDisplay">See more tours</span>
+    </section>
+    <section class="about bg-primary">
+      <img loading="lazy" src="images/Discover-Your-Next-Adventure.png" alt="About-us" />
+      <div class="container">
+        <h2>Discover Your Next Adventure</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+          expedita ullam magnam doloremque minima reiciendis unde modi sed
+          explicabo similique. <br />
+        </p>
+        <a href="#" class="btn">About Us</a>
+      </div>
+    </section>
+    <section class="plan-your-trip flex">
+      <h2 class="text-center">Plan Your Trip Easily</h2>
+      <div class="container">
+        <div class="card grid">
+          <span>
+            Departure<br />
+            <input type="text" placeholder="Date" />
+          </span>
+          <span>
+            Destination<br />
+            <input type="text" placeholder="Place" />
+          </span>
+          <span>
+            Length <br />
+            <select name="" id="">
+              <option value="">Show All</option>
+              <option value="">5 Days</option>
+              <option value="">1 Week</option>
+              <option value="">2 Weeks</option>
+              <option value="">1 Month</option>
+              <option value="">2 Month</option>
+            </select>
+          </span>
+          <a href="#" class="btn">Search</a>
+        </div>
+      </div>
+    </section>`;
 }
 async function destinationCardsTemplate(min, max) {
   const data = await retrieveJSON();

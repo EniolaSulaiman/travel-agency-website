@@ -472,7 +472,11 @@
       "desc": "A guided safari to see iconic African wildlife and learn from local guides.",
       "id": "africanSafariAdventure",
       "type": "adventure",
-      "destinationsVisited": ["nairobi", "capeTown", "johannesburg"]
+      "destinationsVisited": [
+        "nairobi",
+        "capeTown",
+        "johannesburg"
+      ]
     },
     {
       "name": "Alaskan Wildlife Cruise",
@@ -480,7 +484,10 @@
       "desc": "Cruise-style expedition focusing on glaciers and marine wildlife.",
       "id": "alaskanWildlifeCruise",
       "type": "nature",
-      "destinationsVisited": ["reykjavik", "vancouver"]
+      "destinationsVisited": [
+        "reykjavik",
+        "vancouver"
+      ]
     },
     {
       "name": "Amazon Rainforest Expedition",
@@ -488,7 +495,11 @@
       "desc": "Guided nature treks into lush rainforest with local naturalists.",
       "id": "amazonRainforestExpedition",
       "type": "adventure",
-      "destinationsVisited": ["lima", "machuPicchu", "rioDeJaneiro"]
+      "destinationsVisited": [
+        "lima",
+        "machuPicchu",
+        "rioDeJaneiro"
+      ]
     },
     {
       "name": "Antarctic Cruise",
@@ -496,7 +507,11 @@
       "desc": "An immersive voyage to the Antarctic for ice, wildlife, and polar scenery.",
       "id": "antarcticCruise",
       "type": "adventure",
-      "destinationsVisited": ["capeTown", "buenosAires", "reykjavik"]
+      "destinationsVisited": [
+        "capeTown",
+        "buenosAires",
+        "reykjavik"
+      ]
     },
     {
       "name": "Bali Wellness Retreat",
@@ -504,7 +519,9 @@
       "desc": "Relaxing retreat with yoga, spa treatments, and local wellness practices.",
       "id": "baliWellnessRetreat",
       "type": "luxury",
-      "destinationsVisited": ["bali"]
+      "destinationsVisited": [
+        "bali"
+      ]
     },
     {
       "name": "Bali Wellness Retreat (Extended)",
@@ -512,7 +529,10 @@
       "desc": "Longer version of the wellness program with deeper cultural immersion.",
       "id": "baliWellnessRetreat2",
       "type": "luxury",
-      "destinationsVisited": ["bali", "ubud"]
+      "destinationsVisited": [
+        "bali",
+        "ubud"
+      ]
     },
     {
       "name": "Bora Bora Romance Escape",
@@ -520,7 +540,10 @@
       "desc": "Luxury island escape ideal for couples.",
       "id": "boraBoraRomanceEscape",
       "type": "luxury",
-      "destinationsVisited": ["vancouver", "auckland"]
+      "destinationsVisited": [
+        "vancouver",
+        "auckland"
+      ]
     },
     {
       "name": "Canadian Rockies Expedition",
@@ -528,7 +551,10 @@
       "desc": "Hiking, lakeside views, and mountain exploration in Banff and Jasper regions.",
       "id": "canadianRockiesExpedition",
       "type": "nature",
-      "destinationsVisited": ["vancouver", "montreal"]
+      "destinationsVisited": [
+        "vancouver",
+        "montreal"
+      ]
     },
     {
       "name": "Caribbean Island Hopping",
@@ -536,7 +562,11 @@
       "desc": "Cruise and beach days across tropical Caribbean islands.",
       "id": "caribbeanIslandHopping",
       "type": "luxury",
-      "destinationsVisited": ["havana", "buenosAires", "mexicoCity"]
+      "destinationsVisited": [
+        "havana",
+        "buenosAires",
+        "mexicoCity"
+      ]
     },
     {
       "name": "Costa Rica Eco Adventure",
@@ -544,7 +574,10 @@
       "desc": "Rainforest hikes, canopy tours, and wildlife experiences focusing on conservation.",
       "id": "costaricaEcoAdventure",
       "type": "nature",
-      "destinationsVisited": ["lima", "manila"]
+      "destinationsVisited": [
+        "lima",
+        "manila"
+      ]
     },
     {
       "name": "Dubai Luxury Getaway",
@@ -552,7 +585,10 @@
       "desc": "Opulent hotels, desert activities, and high-end shopping in Dubai and nearby emirates.",
       "id": "dubaiLuxuryGetaway",
       "type": "luxury",
-      "destinationsVisited": ["dubai", "doha"]
+      "destinationsVisited": [
+        "dubai",
+        "doha"
+      ]
     },
     {
       "name": "Egyptian Pharaohs Tour",
@@ -560,7 +596,10 @@
       "desc": "Pyramids, temples, and Nile-side history led by Egyptology guides.",
       "id": "egyptianPharaohsTour",
       "type": "cultural",
-      "destinationsVisited": ["cairo", "petra"]
+      "destinationsVisited": [
+        "cairo",
+        "petra"
+      ]
     },
     {
       "name": "European Highlights Tour",
@@ -582,7 +621,10 @@
       "desc": "Multi-day hike along iconic sections of the Great Wall.",
       "id": "greatWallHikingChallenge",
       "type": "adventure",
-      "destinationsVisited": ["tokyo", "kyoto"]
+      "destinationsVisited": [
+        "tokyo",
+        "kyoto"
+      ]
     },
     {
       "name": "Greek Island Cruise",
@@ -590,7 +632,11 @@
       "desc": "Sail between whitewashed villages, historic sites, and scenic coves.",
       "id": "greekIslandCruise",
       "type": "luxury",
-      "destinationsVisited": ["santorini", "athens", "porto"]
+      "destinationsVisited": [
+        "santorini",
+        "athens",
+        "porto"
+      ]
     },
     {
       "name": "Hawaiian Paradise Experience",
@@ -598,7 +644,10 @@
       "image": "images/europe-3.jpg",
       "id": "hawaiianParadiseExperience",
       "type": "luxury",
-      "destinationsVisited": ["losAngeles", "auckland"]
+      "destinationsVisited": [
+        "losAngeles",
+        "auckland"
+      ]
     },
     {
       "name": "Himalayan Trekking Expedition",
@@ -606,7 +655,10 @@
       "desc": "Multi-day trekking through high mountain passes and remote mountain villages.",
       "id": "himalayanTrekkingExpedition",
       "type": "adventure",
-      "destinationsVisited": ["delhi", "jaipur"]
+      "destinationsVisited": [
+        "delhi",
+        "jaipur"
+      ]
     },
     {
       "name": "Iceland Northern Lights",
@@ -614,7 +666,9 @@
       "desc": "Chase the aurora and explore geothermal landscapes in Iceland.",
       "id": "icelandNorthernLights",
       "type": "nature",
-      "destinationsVisited": ["reykjavik"]
+      "destinationsVisited": [
+        "reykjavik"
+      ]
     },
     {
       "name": "India's Golden Triangle",
@@ -622,7 +676,11 @@
       "desc": "A classic route covering history, architecture, and culture in North India.",
       "id": "indiasGoldenTriangle",
       "type": "cultural",
-      "destinationsVisited": ["delhi", "jaipur", "agra"]
+      "destinationsVisited": [
+        "delhi",
+        "jaipur",
+        "agra"
+      ]
     },
     {
       "name": "Japan Heritage Tour",
@@ -630,7 +688,10 @@
       "desc": "Temples, gardens, and traditional culture across Japan's historic cities.",
       "id": "japanHeritageTour",
       "type": "cultural",
-      "destinationsVisited": ["tokyo", "kyoto"]
+      "destinationsVisited": [
+        "tokyo",
+        "kyoto"
+      ]
     },
     {
       "name": "Mediterranean Cruise",
@@ -638,7 +699,12 @@
       "desc": "Coastal cities, ancient ruins, and seaside cuisine on a relaxed cruise.",
       "id": "mediterraneanCruise",
       "type": "cultural",
-      "destinationsVisited": ["rome", "barcelona", "venice", "dubrovnik"]
+      "destinationsVisited": [
+        "rome",
+        "barcelona",
+        "venice",
+        "dubrovnik"
+      ]
     },
     {
       "name": "Maldives Overwater Retreat",
@@ -646,7 +712,10 @@
       "desc": "Luxury overwater villas and pristine lagoon snorkeling.",
       "id": "maldivesOverwaterRetreat",
       "type": "luxury",
-      "destinationsVisited": ["zanzibar", "bali"]
+      "destinationsVisited": [
+        "zanzibar",
+        "bali"
+      ]
     },
     {
       "name": "Mount Kilimanjaro Climb",
@@ -654,7 +723,10 @@
       "desc": "A guided ascent of Africa's highest peak suitable for fit trekkers.",
       "id": "mountKilimanjaroClimb",
       "type": "adventure",
-      "destinationsVisited": ["nairobi", "zanzibar"]
+      "destinationsVisited": [
+        "nairobi",
+        "zanzibar"
+      ]
     },
     {
       "name": "Namibia Desert Adventure",
@@ -662,7 +734,10 @@
       "desc": "Explore towering dunes, desert wildlife, and stark landscapes.",
       "id": "namibiaDesertAdventure",
       "type": "adventure",
-      "destinationsVisited": ["capeTown", "marrakech"]
+      "destinationsVisited": [
+        "capeTown",
+        "marrakech"
+      ]
     },
     {
       "name": "New Zealand Adventure",
@@ -670,7 +745,10 @@
       "desc": "Fjords, mountains, and extreme-sport options from a scenic base.",
       "id": "newZealandAdventure",
       "type": "nature",
-      "destinationsVisited": ["queenstown", "auckland"]
+      "destinationsVisited": [
+        "queenstown",
+        "auckland"
+      ]
     },
     {
       "name": "Outback Survival Trek",
@@ -678,7 +756,10 @@
       "desc": "Learn bushcraft and survival while exploring Australia's remote interior.",
       "id": "outbackSurvivalTrek",
       "type": "adventure",
-      "destinationsVisited": ["sydney", "aliceSprings"]
+      "destinationsVisited": [
+        "sydney",
+        "aliceSprings"
+      ]
     },
     {
       "name": "Patagonia Hiking Adventure",
@@ -686,7 +767,10 @@
       "desc": "Glaciers, wind-swept plains and dramatic mountain scenery in southern South America.",
       "id": "patagoniaHikingAdventure",
       "type": "adventure",
-      "destinationsVisited": ["buenosAires", "santiago"]
+      "destinationsVisited": [
+        "buenosAires",
+        "santiago"
+      ]
     },
     {
       "name": "Peruvian Andean Trail",
@@ -694,7 +778,10 @@
       "desc": "Highland villages, ancient terraces and spectacular mountain views en route to Inca sites.",
       "id": "peruvianAndeanTrail",
       "type": "adventure",
-      "destinationsVisited": ["machuPicchu", "lima"]
+      "destinationsVisited": [
+        "machuPicchu",
+        "lima"
+      ]
     },
     {
       "name": "Rockies Whitewater Rafting",
@@ -702,7 +789,10 @@
       "desc": "Paddle fast rivers framed by rugged mountain scenery and alpine forests.",
       "id": "rockiesWhitewaterRafting",
       "type": "adventure",
-      "destinationsVisited": ["vancouver", "montreal"]
+      "destinationsVisited": [
+        "vancouver",
+        "montreal"
+      ]
     },
     {
       "name": "Romantic Venice & Amalfi Coast",
@@ -710,7 +800,11 @@
       "desc": "Canals, coastal cliffs, and intimate dinners with sea views.",
       "id": "romanticVeniceAndAmalfiCoast",
       "type": "luxury",
-      "destinationsVisited": ["venice", "santorini", "florence"]
+      "destinationsVisited": [
+        "venice",
+        "santorini",
+        "florence"
+      ]
     },
     {
       "name": "South African Garden Route & Safari",
@@ -718,7 +812,10 @@
       "desc": "Coastal drives, nature reserves, and curated wildlife experiences.",
       "id": "safariGardenRoute",
       "type": "nature",
-      "destinationsVisited": ["capeTown", "portElizabeth"]
+      "destinationsVisited": [
+        "capeTown",
+        "portElizabeth"
+      ]
     },
     {
       "name": "Scottish Highlands Explorer",
@@ -726,7 +823,10 @@
       "desc": "Rugged mountains, lochs, and remote castles across Scotland.",
       "id": "scottishHighlandsExplorer",
       "type": "nature",
-      "destinationsVisited": ["edinburgh", "salzburg"]
+      "destinationsVisited": [
+        "edinburgh",
+        "salzburg"
+      ]
     },
     {
       "name": "Silk Road Expedition",
@@ -734,7 +834,11 @@
       "desc": "Historic trade cities, caravan routes, and cultural immersion across Central Asia.",
       "id": "silkRoadExpedition",
       "type": "cultural",
-      "destinationsVisited": ["istanbul", "amman", "petra"]
+      "destinationsVisited": [
+        "istanbul",
+        "amman",
+        "petra"
+      ]
     },
     {
       "name": "Swiss Alps Luxury Chalet",
@@ -742,7 +846,10 @@
       "desc": "Ski-in/ski-out chalets, gourmet dining, and alpine relaxation.",
       "id": "swissAlpsLuxuryChalet",
       "type": "luxury",
-      "destinationsVisited": ["zurich", "salzburg"]
+      "destinationsVisited": [
+        "zurich",
+        "salzburg"
+      ]
     },
     {
       "name": "Swiss Scenic Rail Journey",
@@ -750,7 +857,11 @@
       "desc": "Iconic alpine train routes with picture-postcard mountain vistas.",
       "id": "swissScenicRailJourney",
       "type": "nature",
-      "destinationsVisited": ["zurich", "salzburg", "vienna"]
+      "destinationsVisited": [
+        "zurich",
+        "salzburg",
+        "vienna"
+      ]
     },
     {
       "name": "Thai Street Food & Temples",
@@ -758,7 +869,10 @@
       "desc": "A tasty, sensory tour of local markets, street food, and temple culture.",
       "id": "thaiStreetFoodAndTemples",
       "type": "cultural",
-      "destinationsVisited": ["bangkok", "chiangMai"]
+      "destinationsVisited": [
+        "bangkok",
+        "chiangMai"
+      ]
     },
     {
       "name": "Tokyo & Kyoto Highlights",
@@ -766,7 +880,10 @@
       "desc": "Modern megacity energy paired with classic Japanese tradition.",
       "id": "tokyoAndKyotoHighlights",
       "type": "cultural",
-      "destinationsVisited": ["tokyo", "kyoto"]
+      "destinationsVisited": [
+        "tokyo",
+        "kyoto"
+      ]
     }
   ],
   {
@@ -1126,7 +1243,11 @@
       "price": "$4,500",
       "duration": "7-10 days",
       "type": "adventure",
-      "destinationsVisited": ["nairobi", "capeTown", "johannesburg"]
+      "destinationsVisited": [
+        "nairobi",
+        "capeTown",
+        "johannesburg"
+      ]
     },
     "alaskanWildlifeCruise": {
       "name": "Alaskan Wildlife Cruise",
@@ -1134,7 +1255,10 @@
       "price": "$5,800",
       "duration": "7-12 days",
       "type": "nature",
-      "destinationsVisited": ["reykjavik", "vancouver"]
+      "destinationsVisited": [
+        "reykjavik",
+        "vancouver"
+      ]
     },
     "amazonRainforestExpedition": {
       "name": "Amazon Rainforest Expedition",
@@ -1142,7 +1266,23 @@
       "price": "$4,000",
       "duration": "6-8 days",
       "type": "adventure",
-      "destinationsVisited": ["lima", "machuPicchu", "rioDeJaneiro"]
+      "destinationsVisited": [
+        "lima",
+        "machuPicchu",
+        "rioDeJaneiro"
+      ]
+    },
+    "americasAdventureTrail": {
+      "name": "Americas Adventure Trail",
+      "desc": "Experience energetic cities across the Americas, packed with culture, color, and excitement.",
+      "price": "$4,100",
+      "duration": "7 days",
+      "type": "adventure",
+      "destinationsVisited": [
+        "BuenosAires",
+        "MexicoCity",
+        "NewYorkCity"
+      ]
     },
     "antarcticCruise": {
       "name": "Antarctic Cruise",
@@ -1150,7 +1290,23 @@
       "price": "$9,000",
       "duration": "10-14 days",
       "type": "adventure",
-      "destinationsVisited": ["capeTown", "buenosAires", "reykjavik"]
+      "destinationsVisited": [
+        "capeTown",
+        "buenosAires",
+        "reykjavik"
+      ]
+    },
+    "asianNatureExplorer": {
+      "name": "Asian Nature Explorer",
+      "desc": "A journey through scenic Asian cities blending nature, culture, and urban excitement.",
+      "price": "$3,200",
+      "duration": "7 days",
+      "type": "nature",
+      "destinationsVisited": [
+        "Bangkok",
+        "Kyoto",
+        "Seoul"
+      ]
     },
     "baliWellnessRetreat": {
       "name": "Bali Wellness Retreat",
@@ -1158,7 +1314,9 @@
       "price": "$3,200",
       "duration": "5-7 days",
       "type": "luxury",
-      "destinationsVisited": ["bali"]
+      "destinationsVisited": [
+        "bali"
+      ]
     },
     "baliWellnessRetreat2": {
       "name": "Bali Wellness Retreat (Extended)",
@@ -1166,7 +1324,10 @@
       "price": "$4,600",
       "duration": "9-12 days",
       "type": "luxury",
-      "destinationsVisited": ["bali", "ubud"]
+      "destinationsVisited": [
+        "bali",
+        "ubud"
+      ]
     },
     "boraBoraRomanceEscape": {
       "name": "Bora Bora Romance Escape",
@@ -1174,7 +1335,10 @@
       "price": "$4,500",
       "duration": "5-7 days",
       "type": "luxury",
-      "destinationsVisited": ["vancouver", "auckland"]
+      "destinationsVisited": [
+        "vancouver",
+        "auckland"
+      ]
     },
     "canadianRockiesExpedition": {
       "name": "Canadian Rockies Expedition",
@@ -1182,7 +1346,10 @@
       "price": "$3,500",
       "duration": "5-7 days",
       "type": "nature",
-      "destinationsVisited": ["vancouver", "montreal"]
+      "destinationsVisited": [
+        "vancouver",
+        "montreal"
+      ]
     },
     "caribbeanIslandHopping": {
       "name": "Caribbean Island Hopping",
@@ -1190,7 +1357,11 @@
       "price": "$3,800",
       "duration": "7-9 days",
       "type": "luxury",
-      "destinationsVisited": ["havana", "buenosAires", "mexicoCity"]
+      "destinationsVisited": [
+        "havana",
+        "buenosAires",
+        "mexicoCity"
+      ]
     },
     "costaricaEcoAdventure": {
       "name": "Costa Rica Eco Adventure",
@@ -1198,7 +1369,10 @@
       "price": "$3,000",
       "duration": "6-8 days",
       "type": "nature",
-      "destinationsVisited": ["lima", "manila"]
+      "destinationsVisited": [
+        "lima",
+        "manila"
+      ]
     },
     "dubaiLuxuryGetaway": {
       "name": "Dubai Luxury Getaway",
@@ -1206,7 +1380,10 @@
       "price": "$3,800",
       "duration": "4-6 days",
       "type": "luxury",
-      "destinationsVisited": ["dubai", "doha"]
+      "destinationsVisited": [
+        "dubai",
+        "doha"
+      ]
     },
     "egyptianPharaohsTour": {
       "name": "Egyptian Pharaohs Tour",
@@ -1214,7 +1391,10 @@
       "price": "$3,200",
       "duration": "5-7 days",
       "type": "cultural",
-      "destinationsVisited": ["cairo", "petra"]
+      "destinationsVisited": [
+        "cairo",
+        "petra"
+      ]
     },
     "europeanHighlightsTour": {
       "name": "European Highlights Tour",
@@ -1236,7 +1416,10 @@
       "price": "$2,900",
       "duration": "5-8 days",
       "type": "adventure",
-      "destinationsVisited": ["tokyo", "kyoto"]
+      "destinationsVisited": [
+        "tokyo",
+        "kyoto"
+      ]
     },
     "greekIslandCruise": {
       "name": "Greek Island Cruise",
@@ -1244,7 +1427,11 @@
       "price": "$3,000",
       "duration": "6-9 days",
       "type": "luxury",
-      "destinationsVisited": ["santorini", "athens", "porto"]
+      "destinationsVisited": [
+        "santorini",
+        "athens",
+        "porto"
+      ]
     },
     "hawaiianParadiseExperience": {
       "name": "Hawaiian Paradise Experience",
@@ -1252,7 +1439,10 @@
       "price": "$3,900",
       "duration": "6-8 days",
       "type": "luxury",
-      "destinationsVisited": ["losAngeles", "auckland"]
+      "destinationsVisited": [
+        "losAngeles",
+        "auckland"
+      ]
     },
     "himalayanTrekkingExpedition": {
       "name": "Himalayan Trekking Expedition",
@@ -1260,7 +1450,10 @@
       "price": "$3,500",
       "duration": "8-12 days",
       "type": "adventure",
-      "destinationsVisited": ["delhi", "jaipur"]
+      "destinationsVisited": [
+        "delhi",
+        "jaipur"
+      ]
     },
     "icelandNorthernLights": {
       "name": "Iceland Northern Lights",
@@ -1268,7 +1461,9 @@
       "price": "$3,400",
       "duration": "4-6 days",
       "type": "nature",
-      "destinationsVisited": ["reykjavik"]
+      "destinationsVisited": [
+        "reykjavik"
+      ]
     },
     "indiasGoldenTriangle": {
       "name": "India's Golden Triangle",
@@ -1276,7 +1471,11 @@
       "price": "$2,200",
       "duration": "5-7 days",
       "type": "cultural",
-      "destinationsVisited": ["delhi", "jaipur", "agra"]
+      "destinationsVisited": [
+        "delhi",
+        "jaipur",
+        "agra"
+      ]
     },
     "japanHeritageTour": {
       "name": "Japan Heritage Tour",
@@ -1284,15 +1483,22 @@
       "price": "$4,200",
       "duration": "8-10 days",
       "type": "cultural",
-      "destinationsVisited": ["tokyo", "kyoto"]
+      "destinationsVisited": [
+        "tokyo",
+        "kyoto"
+      ]
     },
-    "mediterraneanCruise": {
-      "name": "Mediterranean Cruise",
-      "desc": "Coastal cities, ancient ruins, and seaside cuisine on a relaxed cruise.",
-      "price": "$3,200",
-      "duration": "7-10 days",
-      "type": "cultural",
-      "destinationsVisited": ["rome", "barcelona", "venice", "dubrovnik"]
+    "luxuryMiddleEastRetreat": {
+      "name": "Luxury Middle East Retreat",
+      "desc": "Indulge in high-end hotels, stunning skylines, and glamorous desert experiences.",
+      "price": "$5,400",
+      "duration": "5 days",
+      "type": "luxury",
+      "destinationsVisited": [
+        "Dubai",
+        "Doha",
+        "Amman"
+      ]
     },
     "maldivesOverwaterRetreat": {
       "name": "Maldives Overwater Retreat",
@@ -1300,7 +1506,23 @@
       "price": "$5,200",
       "duration": "5-8 days",
       "type": "luxury",
-      "destinationsVisited": ["zanzibar", "bali"]
+      "destinationsVisited": [
+        "zanzibar",
+        "bali"
+      ]
+    },
+    "mediterraneanCruise": {
+      "name": "Mediterranean Cruise",
+      "desc": "Coastal cities, ancient ruins, and seaside cuisine on a relaxed cruise.",
+      "price": "$3,200",
+      "duration": "7-10 days",
+      "type": "cultural",
+      "destinationsVisited": [
+        "rome",
+        "barcelona",
+        "venice",
+        "dubrovnik"
+      ]
     },
     "mountKilimanjaroClimb": {
       "name": "Mount Kilimanjaro Climb",
@@ -1308,7 +1530,10 @@
       "price": "$3,800",
       "duration": "7-10 days",
       "type": "adventure",
-      "destinationsVisited": ["nairobi", "zanzibar"]
+      "destinationsVisited": [
+        "nairobi",
+        "zanzibar"
+      ]
     },
     "namibiaDesertAdventure": {
       "name": "Namibia Desert Adventure",
@@ -1316,7 +1541,10 @@
       "price": "$3,200",
       "duration": "6-8 days",
       "type": "adventure",
-      "destinationsVisited": ["capeTown", "marrakech"]
+      "destinationsVisited": [
+        "capeTown",
+        "marrakech"
+      ]
     },
     "newZealandAdventure": {
       "name": "New Zealand Adventure",
@@ -1324,7 +1552,10 @@
       "price": "$4,000",
       "duration": "7-10 days",
       "type": "nature",
-      "destinationsVisited": ["queenstown", "auckland"]
+      "destinationsVisited": [
+        "queenstown",
+        "auckland"
+      ]
     },
     "outbackSurvivalTrek": {
       "name": "Outback Survival Trek",
@@ -1332,7 +1563,22 @@
       "price": "$3,600",
       "duration": "6-9 days",
       "type": "adventure",
-      "destinationsVisited": ["sydney", "aliceSprings"]
+      "destinationsVisited": [
+        "sydney",
+        "aliceSprings"
+      ]
+    },
+    "pacificIslandDiscovery": {
+      "name": "Pacific Island Discovery",
+      "desc": "A refreshing coastal-themed escape through vibrant cities known for beaches, culture, and stunning waterfronts.",
+      "price": "$3,700",
+      "duration": "6 days",
+      "type": "nature",
+      "destinationsvisited": [
+        "CapeTown",
+        "Barcelona",
+        "Santorini"
+      ]
     },
     "patagoniaHikingAdventure": {
       "name": "Patagonia Hiking Adventure",
@@ -1340,7 +1586,10 @@
       "price": "$3,800",
       "duration": "7-10 days",
       "type": "adventure",
-      "destinationsVisited": ["buenosAires", "santiago"]
+      "destinationsVisited": [
+        "buenosAires",
+        "santiago"
+      ]
     },
     "peruvianAndeanTrail": {
       "name": "Peruvian Andean Trail",
@@ -1348,7 +1597,10 @@
       "price": "$2,900",
       "duration": "4-6 days",
       "type": "adventure",
-      "destinationsVisited": ["machuPicchu", "lima"]
+      "destinationsVisited": [
+        "machuPicchu",
+        "lima"
+      ]
     },
     "rockiesWhitewaterRafting": {
       "name": "Rockies Whitewater Rafting",
@@ -1356,7 +1608,10 @@
       "price": "$2,700",
       "duration": "3-5 days",
       "type": "adventure",
-      "destinationsVisited": ["vancouver", "montreal"]
+      "destinationsVisited": [
+        "vancouver",
+        "montreal"
+      ]
     },
     "romanticVeniceAndAmalfiCoast": {
       "name": "Romantic Venice & Amalfi Coast",
@@ -1364,7 +1619,11 @@
       "price": "$3,700",
       "duration": "6-8 days",
       "type": "luxury",
-      "destinationsVisited": ["venice", "santorini", "florence"]
+      "destinationsVisited": [
+        "venice",
+        "santorini",
+        "florence"
+      ]
     },
     "safariGardenRoute": {
       "name": "South African Garden Route & Safari",
@@ -1372,7 +1631,22 @@
       "price": "$3,100",
       "duration": "7-9 days",
       "type": "nature",
-      "destinationsVisited": ["capeTown", "portElizabeth"]
+      "destinationsVisited": [
+        "capeTown",
+        "portElizabeth"
+      ]
+    },
+    "safariGatewayAdventure": {
+      "name": "Safari Gateway Adventure",
+      "desc": "Discover vibrant African cities that serve as gateways to legendary wildlife experiences.",
+      "price": "$2,900",
+      "duration": "5 days",
+      "type": "adventure",
+      "destinationsVisited": [
+        "Nairobi",
+        "CapeTown",
+        "Johannesburg"
+      ]
     },
     "scottishHighlandsExplorer": {
       "name": "Scottish Highlands Explorer",
@@ -1380,7 +1654,10 @@
       "price": "$2,900",
       "duration": "5-7 days",
       "type": "nature",
-      "destinationsVisited": ["edinburgh", "salzburg"]
+      "destinationsVisited": [
+        "edinburgh",
+        "salzburg"
+      ]
     },
     "silkRoadExpedition": {
       "name": "Silk Road Expedition",
@@ -1388,7 +1665,23 @@
       "price": "$4,000",
       "duration": "9-12 days",
       "type": "cultural",
-      "destinationsVisited": ["istanbul", "amman", "petra"]
+      "destinationsVisited": [
+        "istanbul",
+        "amman",
+        "petra"
+      ]
+    },
+    "southernEuropeEscape": {
+      "name": "Southern Europe Escape",
+      "desc": "Dive into sun-soaked streets, coastal charm, and vibrant Mediterranean culture.",
+      "price": "$3,100",
+      "duration": "5 days",
+      "type": "cultural",
+      "destinationsVisited": [
+        "Florence",
+        "Santorini",
+        "Athens"
+      ]
     },
     "swissAlpsLuxuryChalet": {
       "name": "Swiss Alps Luxury Chalet",
@@ -1396,7 +1689,10 @@
       "price": "$5,000",
       "duration": "5-8 days",
       "type": "luxury",
-      "destinationsVisited": ["zurich", "salzburg"]
+      "destinationsVisited": [
+        "zurich",
+        "salzburg"
+      ]
     },
     "swissScenicRailJourney": {
       "name": "Swiss Scenic Rail Journey",
@@ -1404,7 +1700,11 @@
       "price": "$2,800",
       "duration": "3-6 days",
       "type": "nature",
-      "destinationsVisited": ["zurich", "salzburg", "vienna"]
+      "destinationsVisited": [
+        "zurich",
+        "salzburg",
+        "vienna"
+      ]
     },
     "thaiStreetFoodAndTemples": {
       "name": "Thai Street Food & Temples",
@@ -1412,7 +1712,10 @@
       "price": "$1,900",
       "duration": "4-6 days",
       "type": "cultural",
-      "destinationsVisited": ["bangkok", "chiangMai"]
+      "destinationsVisited": [
+        "bangkok",
+        "chiangMai"
+      ]
     },
     "tokyoAndKyotoHighlights": {
       "name": "Tokyo & Kyoto Highlights",
@@ -1420,7 +1723,10 @@
       "price": "$4,200",
       "duration": "7-10 days",
       "type": "cultural",
-      "destinationsVisited": ["tokyo", "kyoto"]
+      "destinationsVisited": [
+        "tokyo",
+        "kyoto"
+      ]
     }
   }
 ]
