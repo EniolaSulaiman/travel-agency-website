@@ -1396,18 +1396,6 @@
         "petra"
       ]
     },
-    "europeanCulturalOdyssey": {
-      "name": "European Cultural Odyssey",
-      "desc": "Explore iconic European cities rich in history, food, and unforgettable architecture.",
-      "price": "$3,600",
-      "duration": "6 days",
-      "type": "cultural",
-      "destinationsVisited": [
-        "Athens",
-        "Barcelona",
-        "Rome"
-      ]
-    },
     "europeanHighlightsTour": {
       "name": "European Highlights Tour",
       "desc": "A whirlwind trip through Europe's most iconic cities.",
@@ -1578,6 +1566,18 @@
       "destinationsVisited": [
         "sydney",
         "aliceSprings"
+      ]
+    },
+    "pacificIslandDiscovery": {
+      "name": "Pacific Island Discovery",
+      "desc": "A refreshing coastal-themed escape through vibrant cities known for beaches, culture, and stunning waterfronts.",
+      "price": "$3,700",
+      "duration": "6 days",
+      "type": "nature",
+      "destinationsvisited": [
+        "CapeTown",
+        "Barcelona",
+        "Santorini"
       ]
     },
     "patagoniaHikingAdventure": {
