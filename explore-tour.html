@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Explore Tour</title>
     <link rel="stylesheet" href="css-files/styles.css">
     <link rel="stylesheet" href="css-files/utilities.css">
-     <link rel="stylesheet" href="css-files/explore-tour.css">
+    <link rel="stylesheet" href="css-files/explore-tour.css">
 </head>
+
 <body>
     <div class="nav-bar bg-primary">
         <div class="container flex">
@@ -24,40 +26,42 @@
             </nav>
         </div>
     </div>
-        <main>
-            <div>
-                <div class="container card">
-                    <img id="image" src="" alt="">
-                    <img id="image" src="" alt="">
-                    <img id="image" src="" alt="">
-                    <span id="prevBtn" class="prev-btn" onclick="prevSlide()">&#10094;</span>
-                    <span id="nextBtn" class="next-btn" onclick="nextSlide()">&#10095;</span>
-                    <span class="h1-container flex">
-                        <h1></h1>
+    <main>
+        <div>
+            <div class="container card">
+                <img id="image" src="" alt="">
+                <img id="image" src="" alt="">
+                <img id="image" src="" alt="">
+                <span id="prevBtn" class="prev-btn" onclick="prevSlide()">&#10094;</span>
+                <span id="nextBtn" class="next-btn" onclick="nextSlide()">&#10095;</span>
+                <span class="h1-container flex">
+                    <h1 id="tourNmae"></h1>
+                </span>
+                <div class="text">
+                    <span class="about-text">
+                        <h2>About the Tour</h2>
+                        <p id="aboutTour"></p>
                     </span>
-                    <div class="text">
-                        <span class="about-text">
-                            <h2>About the Tour</h2>
+                    <p></p>
+                    <div class="grid-3">
+                        <span>
+                            <h3>Price</h3>
+                            <span id="tourPrice"></span>
                         </span>
-                        <p></p>
-                        <div class="grid-3">
-                            <span>
-                                <h3>Price</h3>
-                                
-                            </span>
-                            <span>
-                                <h3>Duration</h3>
-                               
-                            </span>
-                            <span>
-                                <a href="#" class="btn">Book Now</a>
-                            </span>
-                        </div>
+                        <span>
+                            <h3>Duration</h3>
+                            <select id="tourDuration"></select>
+                        </span>
+                        <span>
+                            <a href="#" class="btn">Book Now</a>
+                        </span>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
     <script src="js-files/explore-tour.js"></script>
 </body>
+
 </html>
