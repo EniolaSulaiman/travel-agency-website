@@ -75,7 +75,7 @@ async function loadRoute() {
   try {
   const data = await retrieveJSON();
     const destination = returnDestination()
-
+    document.title = data[2][destination].name.split(`,`)[0]
     document.getElementById(`destinationName`).innerHTML= data[2][destination].name
     document.getElementById(`aboutDestination`).innerHTML= data[2][destination].desc
     document.getElementById(`destinationPrice`).innerHTML = `$${data[2][destination].pricePerNight * Number(document.getElementById("travelDuration").value.split(" ")[0])}`
@@ -90,5 +90,4 @@ async function returnTravelPrice() {
   const destination = returnDestination()
   document.getElementById("destinationPrice").innerHTML = `$${data[2][destination].pricePerNight * Number(document.getElementById("travelDuration").value.split(" ")[0])}`
 }
-
 document.getElementById(`travelDuration`).addEventListener(`change`,returnTravelPrice)
