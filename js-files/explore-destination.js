@@ -67,47 +67,28 @@ async function retrieveJSON() {
     console.error(error);
   }
 }
-
+function returnDestination() { 
+  const params = new URLSearchParams(window.location.search);
+return params.get(`destination`);
+}
 async function loadRoute() {
   try {
-    const data = await retrieveJSON();
-    const params = new URLSearchParams(window.location.search);
-    const destination = params.get(`destination`);
+  const data = await retrieveJSON();
+    const destination = returnDestination()
 
-    document.getElementById(`toursMain`).innerHTML = `
-<div class="container card">
-                    <img id="image" src="${data[2][destination].img1}" alt="Destination Image">
-                    <img id="image" src="${data[2][destination].img2}" alt="Destination Image">
-                    <img id="image" src="${data[2][destination].img3}" alt="Destination Image">
-                    <span id="prevBtn" class="prev-btn" onclick="prevSlide()">&#10094;</span>
-                    <span id="nextBtn" class="next-btn" onclick="nextSlide()">&#10095;</span>
-                    <span class="h1-container flex">
-                        <h1>${data[2][destination].name}</h1>
-                    </span>
-                    <div class="text">
-                        <span class="about-text">
-                            <h2>About the Tour</h2>
-                        </span>
-                        <p>${data[2][destination].desc}</p>
-                        <div class="grid-3">
-                            <span>
-                                <h3>Price</h3>
-                                ${data[2][destination].price}
-                            </span>
-                            <span>
-                                <h3>Duration</h3>
-                                ${data[2][destination].duration}
-                            </span>
-                            <span>
-                                <a href="#" class="btn">Book Now</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                `;
+    document.getElementById(`destinationName`).innerHTML= data[2][destination].name
+    document.getElementById(`aboutDestination`).innerHTML= data[2][destination].desc
+    document.getElementById(`destinationPrice`).innerHTML = `$${data[2][destination].price * Number(document.getElementById("travelDuration").value.split(" ")[0])}`
   }
   catch (error) {
     console.error(`Failed to load data for route`, error)
   }
 }
 loadRoute();
+async function returnTravelPrice() {
+  const data = await retrieveJSON()
+  const destination = returnDestination()
+  document.getElementById("destinationPrice").innerHTML = `$${data[2][destination].price * Number(document.getElementById("travelDuration").value.split(" ")[0])}`
+}
+
+document.getElementById(`travelDuration`).addEventListener(`change`,returnTravelPrice)

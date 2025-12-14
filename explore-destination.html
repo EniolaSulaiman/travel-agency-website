@@ -35,21 +35,28 @@
                     <span id="prevBtn" class="prev-btn" onclick="prevSlide()">&#10094;</span>
                     <span id="nextBtn" class="next-btn" onclick="nextSlide()">&#10095;</span>
                     <span class="h1-container flex">
-                        <h1></h1>
+                        <h1 id="destinationName"></h1>
                     </span>
                     <div class="text">
                         <span class="about-text">
                             <h2>About the Tour</h2>
                         </span>
-                        <p></p>
+                        <p id="aboutDestination"></p>
                         <div class="grid-3">
                             <span>
                                 <h3>Price</h3>
-                                
+                                <span id="destinationPrice"></span>
                             </span>
                             <span>
                                 <h3>Duration</h3>
-                               
+                            <select id="travelDuration">
+                                <option>0 days</option>
+                                <option>3 days</option>
+                                <option>7 days</option>
+                                <option>14 days</option>
+                                <option>30 days</option>
+                                <option>60 days</option>
+                            </select>
                             </span>
                             <span>
                                 <a href="#" class="btn">Book Now</a>
