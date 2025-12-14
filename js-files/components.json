@@ -890,350 +890,292 @@
     "amsterdam": {
       "name": "Amsterdam, Netherlands",
       "desc": "Canals, bicycles, and Dutch charm in every corner.",
-      "price": "$2,200",
-      "duration": "3-5 days"
+      "pricePerNight": 260
     },
     "amman": {
       "name": "Amman, Jordan",
       "desc": "Hills of ancient history and Middle Eastern warmth.",
-      "price": "$2,600",
-      "duration": "3-5 days"
+      "pricePerNight": 240
     },
     "athens": {
       "name": "Athens, Greece",
       "desc": "The cradle of Western civilization and mythology.",
-      "price": "$2,100",
-      "duration": "3-5 days"
+      "pricePerNight": 230
     },
     "auckland": {
       "name": "Auckland, New Zealand",
       "desc": "A harbor city of sails and volcanic hills.",
-      "price": "$3,700",
-      "duration": "4-6 days"
+      "pricePerNight": 360
     },
     "bahamas": {
       "name": "The Bahamas",
       "desc": "A tropical paradise of temples and tranquility.",
-      "price": "$2,500",
-      "duration": "5-7 days"
+      "pricePerNight": 320
     },
     "bali": {
       "name": "Bali, Indonesia",
       "desc": "A tropical paradise of temples and tranquility.",
-      "price": "$2,500",
-      "duration": "5-7 days"
+      "pricePerNight": 220
     },
     "bangkok": {
       "name": "Bangkok, Thailand",
       "desc": "Street food heaven with golden temples galore.",
-      "price": "$1,600",
-      "duration": "4-6 days"
+      "pricePerNight": 180
     },
     "barcelona": {
       "name": "Barcelona, Spain",
       "desc": "Gaudí dreams, beach scenes, and tapas bites.",
-      "price": "$2,400",
-      "duration": "3-5 days"
+      "pricePerNight": 250
     },
     "berlin": {
       "name": "Berlin, Germany",
       "desc": "History, hipster culture, and techno nights.",
-      "price": "$2,400",
-      "duration": "3-5 days"
+      "pricePerNight": 240
     },
     "brussels": {
       "name": "Brussels, Belgium",
       "desc": "Waffles, chocolate, and EU power.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "pricePerNight": 260
     },
     "buenosAires": {
       "name": "Buenos Aires, Argentina",
       "desc": "Tango, steak, and sultry Latin energy.",
-      "price": "$2,900",
-      "duration": "4-6 days"
+      "pricePerNight": 230
     },
     "budapest": {
       "name": "Budapest, Hungary",
       "desc": "Thermal baths, ruin bars, and Danube views.",
-      "price": "$2,600",
-      "duration": "3-5 days"
+      "pricePerNight": 220
     },
     "cairo": {
       "name": "Cairo, Egypt",
       "desc": "Pyramids, pharaohs, and timeless desert sands.",
-      "price": "$2,600",
-      "duration": "4-6 days"
+      "pricePerNight": 240
     },
     "capeTown": {
       "name": "Cape Town, South Africa",
       "desc": "A coastal gem with mountains, beaches, and penguins.",
-      "price": "$2,800",
-      "duration": "4-6 days"
+      "pricePerNight": 260
     },
     "casablanca": {
       "name": "Casablanca, Morocco",
       "desc": "Modern meets mystical in a North African hub.",
-      "price": "$2,600",
-      "duration": "3-5 days"
+      "pricePerNight": 240
     },
     "delhi": {
       "name": "Delhi, India",
       "desc": "A chaotic charm of spice, history, and color.",
-      "price": "$2,400",
-      "duration": "4-6 days"
+      "pricePerNight": 200
     },
     "doha": {
       "name": "Doha, Qatar",
       "desc": "Desert glam, skyscrapers, and cultural richness.",
-      "price": "$2,800",
-      "duration": "3-5 days"
+      "pricePerNight": 320
     },
     "dubrovnik": {
       "name": "Dubrovnik, Croatia",
       "desc": "Game of Thrones city walls and Adriatic beauty.",
-      "price": "$2,800",
-      "duration": "3-5 days"
+      "pricePerNight": 280
     },
     "dubai": {
       "name": "Dubai, UAE",
       "desc": "Luxury skyscrapers rising from the golden desert.",
-      "price": "$3,300",
-      "duration": "3-5 days"
+      "pricePerNight": 380
     },
     "edinburgh": {
       "name": "Edinburgh, Scotland",
       "desc": "Castles, kilts, and literary legends.",
-      "price": "$3,000",
-      "duration": "3-5 days"
+      "pricePerNight": 300
     },
     "florence": {
       "name": "Florence, Italy",
       "desc": "Renaissance art, architecture, and irresistible gelato.",
-      "price": "$3,100",
-      "duration": "3-5 days"
+      "pricePerNight": 290
     },
     "havana": {
       "name": "Havana, Cuba",
       "desc": "Classic cars, salsa rhythms, and faded colonial beauty.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "pricePerNight": 240
     },
     "hoChiMinhCity": {
       "name": "Ho Chi Minh City, Vietnam",
       "desc": "Motorbikes, markets, and spicy street eats.",
-      "price": "$2,500",
-      "duration": "3-5 days"
+      "pricePerNight": 190
     },
     "istanbul": {
       "name": "Istanbul, Turkey",
       "desc": "Where East kisses West across the Bosphorus.",
-      "price": "$2,800",
-      "duration": "3-5 days"
+      "pricePerNight": 260
     },
     "jaipur": {
       "name": "Jaipur, India",
       "desc": "The Pink City of palaces and vibrant bazaars.",
-      "price": "$2,400",
-      "duration": "3-5 days"
+      "pricePerNight": 200
     },
     "johannesburg": {
       "name": "Johannesburg, South Africa",
       "desc": "Urban energy with a strong historical heart.",
-      "price": "$2,500",
-      "duration": "3-5 days"
+      "pricePerNight": 230
     },
     "kyoto": {
       "name": "Kyoto, Japan",
       "desc": "A serene city of shrines, geishas, and gardens.",
-      "price": "$3,000",
-      "duration": "4-6 days"
+      "pricePerNight": 300
     },
     "lagos": {
       "name": "Lagos, Nigeria",
       "desc": "Africa's heartbeat with booming energy and jollof fire.",
-      "price": "$2,300",
-      "duration": "3-5 days"
+      "pricePerNight": 220
     },
     "lima": {
       "name": "Lima, Peru",
       "desc": "Culinary capital perched on Pacific cliffs.",
-      "price": "$2,900",
-      "duration": "3-5 days"
+      "pricePerNight": 260
     },
     "london": {
       "name": "London, UK",
       "desc": "Royal sights and punk energy wrapped in foggy charm.",
-      "price": "$3,500",
-      "duration": "4-6 days"
+      "pricePerNight": 420
     },
     "losAngeles": {
       "name": "Los Angeles, USA",
       "desc": "Hollywood glitz, beaches, and endless sunshine.",
-      "price": "$3,100",
-      "duration": "3-5 days"
+      "pricePerNight": 360
     },
     "machuPicchu": {
       "name": "Machu Picchu, Peru",
       "desc": "Lost Incan city nestled high in the Andes.",
-      "price": "$3,500",
-      "duration": "4-6 days"
+      "pricePerNight": 340
     },
     "manila": {
       "name": "Manila, Philippines",
       "desc": "A bustling city of contrasts and colonial heritage.",
-      "price": "$2,400",
-      "duration": "3-5 days"
+      "pricePerNight": 210
     },
     "marrakech": {
       "name": "Marrakech, Morocco",
       "desc": "A sensory feast of spices, souks, and sand-colored walls.",
-      "price": "$2,600",
-      "duration": "3-5 days"
+      "pricePerNight": 240
     },
     "mexicoCity": {
       "name": "Mexico City, Mexico",
       "desc": "Aztec roots, tacos, and buzzing city life.",
-      "price": "$2,500",
-      "duration": "4-6 days"
+      "pricePerNight": 230
     },
     "montreal": {
       "name": "Montreal, Canada",
       "desc": "French flair meets North American cool.",
-      "price": "$3,000",
-      "duration": "3-5 days"
+      "pricePerNight": 280
     },
     "munich": {
       "name": "Munich, Germany",
       "desc": "Oktoberfest fun and Bavarian traditions.",
-      "price": "$2,800",
-      "duration": "3-5 days"
+      "pricePerNight": 270
     },
     "nairobi": {
       "name": "Nairobi, Kenya",
       "desc": "Safari gateways with a city twist.",
-      "price": "$2,500",
-      "duration": "3-5 days"
+      "pricePerNight": 230
     },
     "newYorkCity": {
       "name": "New York City, USA",
       "desc": "The city that never sleeps and never stops inspiring.",
-      "price": "$3,900",
-      "duration": "4-6 days"
+      "pricePerNight": 450
     },
     "oslo": {
       "name": "Oslo, Norway",
       "desc": "Fjords, forests, and a minimalist vibe.",
-      "price": "$3,200",
-      "duration": "3-5 days"
+      "pricePerNight": 390
     },
     "paris": {
       "name": "Paris, France",
       "desc": "The City of Light, love, and the iconic Eiffel Tower.",
-      "price": "$3,500",
-      "duration": "3-5 days"
+      "pricePerNight": 420
     },
     "petra": {
       "name": "Petra, Jordan",
       "desc": "Rose-red ruins carved into desert cliffs.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "pricePerNight": 260
     },
     "porto": {
       "name": "Porto, Portugal",
       "desc": "Wine by the river in colorful, hilly streets.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "pricePerNight": 250
     },
     "prague": {
       "name": "Prague, Czech Republic",
       "desc": "Gothic beauty and beer in a fairy tale setting.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "pricePerNight": 240
     },
     "queenstown": {
       "name": "Queenstown, New Zealand",
       "desc": "Adrenaline capital with jaw-dropping mountain views.",
-      "price": "$4,300",
-      "duration": "5-7 days"
+      "pricePerNight": 420
     },
     "reykjavik": {
       "name": "Reykjavik, Iceland",
       "desc": "Hot springs, volcanoes, and Northern Lights.",
-      "price": "$3,400",
-      "duration": "4-6 days"
+      "pricePerNight": 390
     },
     "rome": {
       "name": "Rome, Italy",
       "desc": "A timeless city of ruins, romance, and rich pasta plates.",
-      "price": "$3,100",
-      "duration": "3-5 days"
+      "pricePerNight": 290
     },
     "salzburg": {
       "name": "Salzburg, Austria",
       "desc": "Mozart's hometown with Alpine charm.",
-      "price": "$3,000",
-      "duration": "3-5 days"
+      "pricePerNight": 280
     },
     "santorini": {
       "name": "Santorini, Greece",
       "desc": "Whitewashed cliffs, blue domes, and sunset magic.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "pricePerNight": 300
     },
     "seoul": {
       "name": "Seoul, South Korea",
       "desc": "K-pop vibes and ancient palaces collide in style.",
-      "price": "$3,100",
-      "duration": "4-6 days"
+      "pricePerNight": 320
     },
     "siemReap": {
       "name": "Siem Reap, Cambodia",
       "desc": "Gateway to the majestic Angkor Wat ruins.",
-      "price": "$2,400",
-      "duration": "3-5 days"
+      "pricePerNight": 210
     },
     "sydney": {
       "name": "Sydney, Australia",
       "desc": "Opera, ocean waves, and laid-back vibes.",
-      "price": "$4,100",
-      "duration": "5-7 days"
+      "pricePerNight": 430
     },
     "tallinn": {
       "name": "Tallinn, Estonia",
       "desc": "A fairytale old town with digital innovation.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "pricePerNight": 240
     },
     "tokyo": {
       "name": "Tokyo, Japan",
       "desc": "A neon jungle where tradition meets high-tech future.",
-      "price": "$4,200",
-      "duration": "5-7 days"
+      "pricePerNight": 450
     },
     "venice": {
       "name": "Venice, Italy",
       "desc": "Gondolas glide through romance-soaked canals.",
-      "price": "$3,000",
-      "duration": "3-5 days"
+      "pricePerNight": 310
     },
     "vancouver": {
       "name": "Vancouver, Canada",
       "desc": "Nature meets urban cool in a scenic wonderland.",
-      "price": "$3,200",
-      "duration": "4-6 days"
+      "pricePerNight": 320
     },
     "zanzibar": {
       "name": "Zanzibar, Tanzania",
       "desc": "White sands, turquoise waters, and spice island soul.",
-      "price": "$2,800",
-      "duration": "4-6 days"
+      "pricePerNight": 280
     },
     "zurich": {
       "name": "Zurich, Switzerland",
       "desc": "Alpine beauty with precision and chocolate.",
-      "price": "$3,500",
-      "duration": "3-5 days"
+      "pricePerNight": 400
     }
   },
   {
