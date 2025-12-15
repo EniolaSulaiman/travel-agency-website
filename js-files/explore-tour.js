@@ -64,7 +64,7 @@ async function loadRoute() {
     document.getElementById(`tourDuration`).innerHTML = ((data[3][tour].durationArray).map((duration) => {
       return `<option>${duration}</option>`
     }))
-    document.getElementById(`tourPrice`).innerHTML=`$${data[3][tour].pricePerNight * Number(tourDuration.value.split(` `)[0])}`
+    document.getElementById(`tourPrice`).innerHTML = `$${data[3][tour].pricePerNight * Number(tourDuration.value.split(` `)[0]) * Number(document.getElementById(`noOfPeople`).value.split(` `)[0]) }`
   } catch (error) {
     console.error(`Failed to load data for route`, error);
   }
@@ -73,6 +73,7 @@ loadRoute();
 async function updatePrice() {
   const data = await retrieveJSON();
   const tour = returnTour()
-  document.getElementById(`tourPrice`).innerHTML = `$${data[3][tour].pricePerNight * Number(tourDuration.value.split(` `)[0])}`
+  document.getElementById(`tourPrice`).innerHTML = `$${data[3][tour].pricePerNight * Number(tourDuration.value.split(` `)[0]) * Number(document.getElementById(`noOfPeople`).value.split(` `)[0])}`
 }
 document.getElementById(`tourDuration`).addEventListener(`change`,updatePrice)
+document.getElementById(`noOfPeople`).addEventListener(`change`,updatePrice)
