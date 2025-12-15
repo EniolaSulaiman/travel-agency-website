@@ -54,8 +54,10 @@ function returnTour(){
 }
 async function loadRoute() {
   try {
-    const data = await retrieveJSON();
+    const data = await retrieveJSON()
     const tour = returnTour()
+
+    document.title=data[3][tour].name
 
     document.getElementById(`tourName`).innerHTML=data[3][tour].name
     document.getElementById(`aboutTour`).innerHTML=data[3][tour].desc
