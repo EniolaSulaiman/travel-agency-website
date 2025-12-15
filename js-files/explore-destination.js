@@ -56,7 +56,7 @@ function nextSlide() {
 }
 async function retrieveJSON() {
   try {
-    const response = await fetch(`js-files/components.json`);
+    const response = await fetch(`/js-files/components.json`);
 
     if (!response.ok) {
       throw new Error(`Could not fetch resource ${response.status}`);
