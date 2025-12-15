@@ -36,7 +36,7 @@ function nextSlide() {
 }
 async function retrieveJSON() {
   try {
-    const response = await fetch(`js-files/components.json`);
+    const response = await fetch(`/js-files/components.json`);
 
     if (!response.ok) {
       throw new Error(`Could not fetch resource ${response.status}`);
@@ -48,18 +48,29 @@ async function retrieveJSON() {
   }
 }
 
+function returnTour(){
+  const params = new URLSearchParams(window.location.search);
+  return params.get(`tour`);
+}
 async function loadRoute() {
   try {
     const data = await retrieveJSON();
-    const params = new URLSearchParams(window.location.search);
-    const tour = params.get(`tour`);
+    const tour = returnTour()
 
     document.getElementById(`tourName`).innerHTML=data[3][tour].name
-    document.getElementById(`tourAbout`).innerHTML=data[3][tour].desc
-    document.getElementById(`tourDuration`).innerHTML=data[3][tour].
-    document.getElementById(`tourPrice`).innerHTML=data[3][tour].pricePerNight * Number(tourDuration.value.split(` `)[0])
+    document.getElementById(`aboutTour`).innerHTML=data[3][tour].desc
+    document.getElementById(`tourDuration`).innerHTML = ((data[3][tour].durationArray).map((duration) => {
+      return `<option>${duration}</option>`
+    }))
+    document.getElementById(`tourPrice`).innerHTML=`$${data[3][tour].pricePerNight * Number(tourDuration.value.split(` `)[0])}`
   } catch (error) {
     console.error(`Failed to load data for route`, error);
   }
 }
 loadRoute();
+async function updatePrice() {
+  const data = await retrieveJSON();
+  const tour = returnTour()
+  document.getElementById(`tourPrice`).innerHTML = `$${data[3][tour].pricePerNight * Number(tourDuration.value.split(` `)[0])}`
+}
+document.getElementById(`tourDuration`).addEventListener(`change`,updatePrice)
