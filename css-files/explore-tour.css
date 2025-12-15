@@ -73,8 +73,12 @@ main h1 {
     font-weight: 500;
 }
 
+main .grid{
+    grid-template-columns: repeat(4,1fr);
+}
+
 .text {
-    margin: 0 4em;
+    margin: 0 2em;
 }
 
 .text p {
