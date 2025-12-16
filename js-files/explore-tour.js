@@ -1,39 +1,52 @@
-const slides = document.querySelectorAll(`#image`);
-let slideIndex = 0;
-let intervalId = null;
-
-initializeSlider();
-
-function initializeSlider() {
-  slides[slideIndex].classList.add(`displaySlide`);
-  intervalId = setInterval(nextSlide, 5000);
-}
+const slides = document.querySelectorAll('.slide');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+let currentSlide = 0;
+let intervalId;
+const intervalTime = 7000;
 
 function showSlide(index) {
-  if (index >= slides.length) {
-    index = 0;
-  } else if (index < 0) {
-    index = slides.length - 1;
-  } else {
-    slides.forEach((slide) => {
-      slide.classList.remove(`displaySlide`);
-    });
-    slides[index].classList.add(`displaySlide`);
-  }
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) slide.classList.add('active');
+  });
 }
 
-function prevSlide() {
-  clearInterval(intervalId);
-  slideIndex--;
-  console.log(slideIndex);
-  showSlide(slideIndex);
+function startAutoSlide(){
+  intervalId = setInterval(() => {
+    currentSlide += 1;
+    if (currentSlide > slides.length - 1) {
+      currentSlide = 0
+    } 
+    showSlide(currentSlide);
+  }, intervalTime);
 }
 
-function nextSlide() {
+function resetAutoSlide() {
   clearInterval(intervalId);
-  slideIndex++;
-  showSlide(slideIndex);
+  startAutoSlide();
 }
+
+prev.addEventListener('click', () => {
+  currentSlide -= 1
+  if(currentSlide < 0){
+    currentSlide = slides.length-1
+  } 
+  showSlide(currentSlide);
+  resetAutoSlide();
+});
+
+next.addEventListener('click', () => {
+  currentSlide += 1
+  if (currentSlide > slides.length - 1) {
+    currentSlide = 0
+  } 
+  showSlide(currentSlide);
+  resetAutoSlide();
+});
+
+startAutoSlide();
+
 async function retrieveJSON() {
   try {
     const response = await fetch(`/js-files/components.json`);

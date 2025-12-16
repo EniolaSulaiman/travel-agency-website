@@ -3,16 +3,6 @@ body {
     overflow: hidden;
 }
 
-main img {
-    height: 40vh;
-    width: 100%;
-    object-fit: cover;
-    display: none;
-}
-img.displaySlide{
-    display: block;
-    animation: opacity-full 1.5s;
-}
 main {
     width: 100%;
     height: 100vh;
@@ -32,28 +22,45 @@ main .container {
     border-radius: 20px;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2), -10px -10px 10px rgba(0, 0, 0, 0.2);
 }
-
-.prev-btn {
-    font-size: 2.5rem;
-    color: rgba(0, 0, 0, 0.473);
-    position: absolute;
-    top: 20%;
-    left: 0.3em;
+.slider {
+    position: relative;
+    width: 100%;
+    height: 14rem;
+    overflow: hidden;
 }
 
-.next-btn {
-    font-size: 2.5rem;
-    color: rgba(0, 0, 0, 0.473);
+.slide {
+    width: 100%;
+    height:100%;
     position: absolute;
-    top: 20%;
-    right: 0.3em;
-    width: fit-content;
-    height: fit-content;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    object-fit: cover;
+    transition: opacity 1s;
 }
 
-.prev-btn:hover,
-.next-btn:hover {
-    color: black;
+.slide.active {
+    opacity: 1;
+}
+
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 main .h1-container {
