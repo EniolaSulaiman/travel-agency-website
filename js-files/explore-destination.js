@@ -1,59 +1,52 @@
-/* const images = [`images/paris-1.jpg`, `images/paris-2.jpg`, `images/paris-3.jpg`];
-let idx = 0;
-
-function slider() {
-    if (idx > 2) { idx = 0 }
-    if (idx < 0) { idx = 2 }
-    const img = document.getElementById(`image`)
-    img.src = images[idx]
-    idx++;
-}
-
-document.getElementById(`nextBtn`).addEventListener(`click`, () => {
-    idx++
-    slider()
-})
-document.getElementById(`prevBtn`).addEventListener(`click`, () => {
-    idx--
-    slider()
-})
-setInterval(slider, 5000); */
-const slides = document.querySelectorAll(`#image`);
-let slideIndex = 0;
-let intervalId = null;
-
-initializeSlider();
-
-function initializeSlider() {
-  slides[slideIndex].classList.add(`displaySlide`);
-  intervalId = setInterval(nextSlide, 5000);
-}
+const slides = document.querySelectorAll('.slide');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+let currentSlide = 0;
+let intervalId;
+const intervalTime = 7000;
 
 function showSlide(index) {
-  if (index >= slides.length) {
-    index = 0;
-  } else if (index < 0) {
-    index = slides.length - 1;
-  } else {
-    slides.forEach((slide) => {
-      slide.classList.remove(`displaySlide`);
-    });
-    slides[index].classList.add(`displaySlide`);
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) slide.classList.add('active');
+  });
+}
+
+function startAutoSlide() {
+  intervalId = setInterval(() => {
+    currentSlide += 1;
+    if (currentSlide > slides.length - 1) {
+      currentSlide = 0
+    }
+    showSlide(currentSlide);
+  }, intervalTime);
+}
+
+function resetAutoSlide() {
+  clearInterval(intervalId);
+  startAutoSlide();
+}
+
+prev.addEventListener('click', () => {
+  currentSlide -= 1
+  if (currentSlide < 0) {
+    currentSlide = slides.length - 1
   }
-}
+  showSlide(currentSlide);
+  resetAutoSlide();
+});
 
-function prevSlide() {
-  clearInterval(intervalId);
-  slideIndex--;
-  console.log(slideIndex);
-  showSlide(slideIndex);
-}
+next.addEventListener('click', () => {
+  currentSlide += 1
+  if (currentSlide > slides.length - 1) {
+    currentSlide = 0
+  }
+  showSlide(currentSlide);
+  resetAutoSlide();
+});
 
-function nextSlide() {
-  clearInterval(intervalId);
-  slideIndex++;
-  showSlide(slideIndex);
-}
+startAutoSlide();
+
 async function retrieveJSON() {
   try {
     const response = await fetch(`/js-files/components.json`);
