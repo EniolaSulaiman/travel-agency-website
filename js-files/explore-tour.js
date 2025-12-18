@@ -93,6 +93,10 @@ document.getElementById(`noOfPeople`).addEventListener(`change`, updatePrice)
 
 
 document.getElementById(`openBtn`).addEventListener(`click`, () => {
+document.getElementById(`modalName`).innerHTML = document.getElementById(`tourName`).innerHTML
+document.getElementById(`modalNoOfPeople`).innerHTML = document.getElementById(`noOfPeople`).value.split(` `)[0]
+document.getElementById(`modalNoOfDays`).innerHTML = document.getElementById(`tourDuration`).value.split(` `)[0]
+document.getElementById(`modalTotalPrice`).innerHTML = document.getElementById(`tourPrice`).innerHTML
   document.getElementById(`modal`).classList.add(`active`)
 })
 
