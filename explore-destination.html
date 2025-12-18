@@ -72,13 +72,42 @@
                                 <span id="destinationPrice"></span>
                             </span>
                             <span>
-                                <a href="#" class="btn">Book Now</a>
+                                <a href="#" class="btn" id="openBtn">Book Now</a>
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+
+        <div class="modal-overlay" id="modal">
+            <div class="modal">
+                <h2 class="modal-title">Confirm Purchase</h2>
+                <div class="modal-details">
+                    <div class="detail">
+                        <span>Tour</span>
+                        <strong id="modalName"></strong>
+                    </div>
+                    <div class="detail">
+                        <span>Person(s)</span>
+                        <strong id="modalNoOfPeople"></strong>
+                    </div>
+                    <div class="detail">
+                        <span>Days</span>
+                        <strong id="modalNoOfDays"></strong>
+                    </div>
+                    <div class="detail total">
+                        <span>Total Price</span>
+                        <strong id="modalTotalPrice"></strong>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-outline" id="closeBtn">Cancel</button>
+                    <button class="btn confirm">Confirm</button>
+                </div>
+            </div>
+        </div>
+
         <script src="js-files/explore-destination.js"></script>
 </body>
 
