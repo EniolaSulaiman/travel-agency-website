@@ -85,3 +85,14 @@ async function returnTravelPrice() {
 }
 document.getElementById(`travelDuration`).addEventListener(`change`,returnTravelPrice)
 document.getElementById(`noOfPeople`).addEventListener(`change`,returnTravelPrice)
+
+document.getElementById(`openBtn`).addEventListener(`click`, () => {
+  document.getElementById(`modalName`).innerHTML = document.getElementById(`destinationName`).innerHTML
+  document.getElementById(`modalNoOfPeople`).innerHTML = document.getElementById(`noOfPeople`).value.split(` `)[0]
+  document.getElementById(`modalNoOfDays`).innerHTML = document.getElementById(`travelDuration`).value.split(` `)[0]
+  document.getElementById(`modalTotalPrice`).innerHTML = document.getElementById(`destinationPrice`).innerHTML
+  document.getElementById(`modal`).classList.add(`active`)
+})
+
+document.getElementById(`closeBtn`).addEventListener(`click`, () => {
+  document.getElementById(`modal`).classList.remove(`active`)})
