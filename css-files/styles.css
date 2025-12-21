@@ -119,13 +119,16 @@ body .ham-menu {
   margin-inline: 1rem auto;
 }
 
-.home-main {
-  margin: 0;
-  padding: 0;
+.home-body {
   background: linear-gradient(180deg,
       var(--main-background-color),
       var(--primary-color),
       var(--main-background-color));
+}
+
+.home-main {
+  margin: 0;
+  padding: 0;
 }
 
 .home-main h2 {
