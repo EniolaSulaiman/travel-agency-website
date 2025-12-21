@@ -597,6 +597,10 @@ a.destinations:hover {
   padding: .3125rem .9375rem;
 }
 
+.plan-your-trip{
+  margin-top: 5rem;
+}
+
 .plan-your-trip .grid {
   box-shadow: 0 .1875rem .625rem rgba(0, 0, 0, 0.2);
   grid-template-columns: 1fr 1fr 1fr 0.3fr;
