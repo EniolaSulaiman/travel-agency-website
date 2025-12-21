@@ -36,16 +36,16 @@ a {
 h1,
 h2 {
   line-height: 1.2;
-  margin: 10px 0;
+  margin: .625rem 0;
 }
 
 p {
-  margin: 10px 0;
+  margin: .625rem 0;
   font-size: 1.5rem;
 }
 
 /* section {
-    margin: 0 20px 50px 20px;
+    margin: 0 1.25rem 3.125rem 1.25rem;
 } */
 
 input:focus::placeholder {
@@ -53,7 +53,7 @@ input:focus::placeholder {
 }
 
 .nav-bar {
-  height: 70px;
+  height: 4.375rem;
   width: 100vw;
 }
 
@@ -64,8 +64,8 @@ input:focus::placeholder {
 
 .nav-bar a {
   font-size: 1.5rem;
-  padding: 10px;
-  margin: 0 5px;
+  padding: .625rem;
+  margin: 0 .3125rem;
   display: inline-block;
   position: relative;
   transition: color 0.2s;
@@ -86,7 +86,7 @@ input:focus::placeholder {
 }
 
 .logo {
-  width: 120px;
+  width: 7.5rem;
   height: 100%;
   object-fit: cover;
 }
@@ -111,7 +111,7 @@ body .ham-menu {
 .ham-menu li {
   margin-bottom: 2rem;
   padding-bottom: 0.9rem;
-  border-bottom: 3px solid var(--main-background-color);
+  border-bottom: .1875rem solid var(--main-background-color);
 }
 
 .ham-menu a {
@@ -146,7 +146,7 @@ body .ham-menu {
 
 body .hero-text {
   position: absolute;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 4.375rem);
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
@@ -171,7 +171,7 @@ body .hero-text {
 
 .hero-img {
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 4.375rem);
   background-image: url(../images/hero-img.jpg);
   background-position: center;
   background-size: cover;
@@ -194,7 +194,7 @@ body .hero-text {
   width: 100%;
   height: 15rem;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: .625rem;
 }
 
 section.home-about a.btn {
@@ -213,7 +213,7 @@ section.home-about a.btn {
   width: 7em;
   height: 10em;
   margin: 1rem;
-  border-radius: 5px;
+  border-radius: .3125rem;
   background-image: url("../images/beach-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -227,7 +227,7 @@ section.home-about a.btn {
 .home-popular-destinations .destination-name {
   position: absolute;
   width: 100%;
-  border-radius: 5px;
+  border-radius: .3125rem;
   top: 0;
   left: 0;
   opacity: 0;
@@ -257,9 +257,9 @@ section.home-about a.btn {
 }
 
 .tour-types .card:hover {
-  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2),
-    inset -2px -2px 6px rgba(255, 255, 255, 0.6);
-  transform: translateY(1px);
+  box-shadow: inset .125rem .125rem .375rem rgba(0, 0, 0, 0.2),
+    inset -0.125rem -0.125rem .375rem rgba(255, 255, 255, 0.6);
+  transform: translateY(.0625rem);
 }
 
 /* .travel-tips {
@@ -279,7 +279,7 @@ section.home-about a.btn {
   width: 23rem;
   height: min-content;
   background: hsl(650, 50%, 100%);
-  border-radius: 10px;
+  border-radius: .625rem;
   overflow: hidden;
   padding-bottom: 1rem;
 }
@@ -320,10 +320,10 @@ section.home-about a.btn {
 .ds-header .input {
   background: white;
   border: none;
-  padding: 5px;
-  margin: 0 10px;
-  border-radius: 5px;
-  width: 150px;
+  padding: .3125rem;
+  margin: 0 .625rem;
+  border-radius: .3125rem;
+  width: 9.375rem;
   font-size: 0.8rem;
 }
 
@@ -386,19 +386,19 @@ section.home-about a.btn {
 
 .destinations img {
   width: 100%;
-  height: 200px;
-  border-radius: 10px 10px 0 0;
+  height: 12.5rem;
+  border-radius: .625rem .625rem 0 0;
 }
 
 .destinations h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-inline: 20px;
+  margin-inline: 1.25rem;
 }
 
 .destinations p {
   font-size: 1rem;
-  margin-inline: 20px;
+  margin-inline: 1.25rem;
 }
 
 .info {
@@ -407,11 +407,11 @@ section.home-about a.btn {
   font-size: 1rem;
   background: var(--main-background-color);
   padding: 0.5rem;
-  border-radius: 10px;
+  border-radius: .625rem;
 }
 
 .destinations a {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .see-all {
@@ -489,7 +489,7 @@ section.home-about a.btn {
   font-size: 0.9rem;
   margin: 0 0 1rem;
   color: #666;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .popular-tours img,
@@ -498,7 +498,7 @@ section.home-about a.btn {
   width: 100%;
   height: 9rem;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: .625rem .625rem 0 0;
 }
 
 .popular-tours .grid {
@@ -511,7 +511,7 @@ section.home-about a.btn {
   margin: 1rem 0 0.5rem;
   font-size: 1rem;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .popular-tours .btn,
@@ -520,14 +520,14 @@ section.home-about a.btn {
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 a.destinations {
   cursor: pointer;
   background: var(--primary-color);
   color: var(--main-background-color);
-  border-radius: 10px;
+  border-radius: .625rem;
   margin-right: 0.3rem;
   padding: 0.5rem;
 }
@@ -543,7 +543,7 @@ a.destinations:hover {
   background: var(--secondary-color);
   color: #f4f4f4;
   border: none;
-  border-radius: 5px;
+  border-radius: .3125rem;
   margin-left: 1.25rem;
 }
 
@@ -553,7 +553,7 @@ a.destinations:hover {
 
 .about {
   width: 100vw;
-  height: 200px;
+  height: 12.5rem;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   overflow: hidden;
@@ -573,33 +573,33 @@ a.destinations:hover {
 }
 
 .about h3 {
-  margin: 20px;
-  margin-bottom: 10px;
+  margin: 1.25rem;
+  margin-bottom: .625rem;
   font-size: 1.5rem;
 }
 
 .about p {
-  margin: 20px;
+  margin: 1.25rem;
   margin-top: 0;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.692);
 }
 
 .about a {
-  padding: 5px 15px;
+  padding: .3125rem .9375rem;
 }
 
 .plan-your-trip .grid {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 .1875rem .625rem rgba(0, 0, 0, 0.2);
   grid-template-columns: 1fr 1fr 1fr 0.3fr;
 }
 
 .plan-your-trip input {
-  margin: 0 10px;
-  border-radius: 5px;
-  border: 1px solid rgba(139, 139, 139, 0.267);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  padding: 5px;
+  margin: 0 .625rem;
+  border-radius: .3125rem;
+  border: .0625rem solid rgba(139, 139, 139, 0.267);
+  box-shadow: 0 .0625rem .0625rem rgba(0, 0, 0, 0.2);
+  padding: .3125rem;
 }
 
 .plan-your-trip h2 {
@@ -609,12 +609,12 @@ a.destinations:hover {
 
 .plan-your-trip select {
   background-color: white;
-  padding: 5px 10px;
-  border: 1px solid rgba(139, 139, 139, 0.267);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  margin: 0 10px;
-  width: 160px;
+  padding: .3125rem .625rem;
+  border: .0625rem solid rgba(139, 139, 139, 0.267);
+  box-shadow: 0 .0625rem .0625rem rgba(0, 0, 0, 0.2);
+  border-radius: .3125rem;
+  margin: 0 .625rem;
+  width: 10rem;
 }
 
 .above-the-fold {
@@ -627,9 +627,9 @@ a.destinations:hover {
 }
 
 .above-the-fold img {
-  border-radius: 10px;
-  width: 500px;
-  height: 350px;
+  border-radius: .625rem;
+  width: 31.25rem;
+  height: 21.875rem;
 }
 
 .above-the-fold :first-child p {
@@ -638,7 +638,7 @@ a.destinations:hover {
 
 .above-the-fold form {
   background: #f4f4f4;
-  width: 400px;
+  width: 25rem;
   margin: 0 3em 0 2em;
   line-height: 1;
   padding: 1em;
@@ -654,9 +654,9 @@ a.destinations:hover {
 
 .above-the-fold form input {
   width: 100%;
-  border: rgb(207, 206, 206) 2px solid;
-  border-radius: 5px;
-  padding: 5px;
+  border: rgb(207, 206, 206) .125rem solid;
+  border-radius: .3125rem;
+  padding: .3125rem;
 }
 
 .above-the-fold form input:focus {
@@ -701,10 +701,10 @@ a.destinations:hover {
 .about-main img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: .625rem;
 }
 
-footer{
+footer {
   display: grid;
   grid-template-rows: 80% 20%;
   height: 20rem;
@@ -712,61 +712,62 @@ footer{
   margin-top: 5rem;
 }
 
-.footer-columns{
+.footer-columns {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   background: hsl(197, 100%, 15%);
   height: 100%;
 }
 
-.footer-columns div{
+.footer-columns div {
   height: 90%;
 }
 
-footer div{
+footer div {
   padding: 2rem;
 }
 
-.profile-picture img{
+.profile-picture img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.social-links{
+.social-links {
   gap: 1rem;
-} 
+}
 
-.social-links .icons:hover{
+.social-links .icons:hover {
   opacity: .5;
 }
 
-.site-map{
+.site-map {
   gap: 1rem;
   flex-direction: column;
 }
 
-.site-map a{
+.site-map a {
   color: hsla(0, 0%, 100%, 0.664);
 }
 
-.site-map a:hover{
+.site-map a:hover {
   color: white;
 }
 
-.project-info{
+.project-info {
   height: 100%;
   width: 100%;
   display: flex;
 }
 
-.project-info .social-links{
+.project-info .social-links {
   display: flex;
   margin-left: auto;
   gap: 1rem;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(360deg);
@@ -779,7 +780,7 @@ footer div{
   }
 
   50% {
-    transform: translateY(-30px);
+    transform: translateY(-1.875rem);
   }
 
   80% {
@@ -851,14 +852,14 @@ footer div{
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .nav-bar .container {
     width: 100%;
     margin-inline: 1rem;
   }
 }
 
-@media (max-width: 825px) {
+@media (max-width: 51.5625rem) {
   .nav-bar nav {
     display: none;
   }
@@ -869,7 +870,7 @@ footer div{
 }
 
 /* 
-@media(max-width:900px) {
+@media(max-width:56.25rem) {
     .nav-bar {
         position: absolute;
     }
@@ -891,7 +892,7 @@ footer div{
 
     .nav-bar nav {
         position: absolute;
-        top: 60px;
+        top: 3.75rem;
         display: none;
         justify-content: flex-end;
         width: 100vw;
@@ -902,7 +903,7 @@ footer div{
     .nav-bar a {
         width: 100vw;
         padding-left: 1em;
-        border-bottom: 1px solid #f4f4f4;
+        border-bottom: .0625rem solid #f4f4f4;
     }
 
     .nav-bar ul {
@@ -974,7 +975,7 @@ footer div{
     }
 }
 
-@media(max-width: 650px) {
+@media(max-width: 40.625rem) {
 
 
     .ds-header h1 {
@@ -1022,7 +1023,7 @@ footer div{
 
     .popular-tours .grid .card {
         width: 70%;
-        max-width: 300px;
+        max-width: 18.75rem;
         flex: 0 0 auto;
         scroll-snap-align: start;
         margin: 0;
@@ -1054,7 +1055,7 @@ footer div{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-left: 50px;
+        margin-left: 3.125rem;
     }
 
     .plan-your-trip .container {

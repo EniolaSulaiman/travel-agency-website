@@ -60,17 +60,17 @@ async function retrieveJSON() {
     console.error(error);
   }
 }
-function returnDestination() { 
+function returnDestination() {
   const params = new URLSearchParams(window.location.search);
-return params.get(`destination`);
+  return params.get(`destination`);
 }
 async function loadRoute() {
   try {
-  const data = await retrieveJSON();
+    const data = await retrieveJSON();
     const destination = returnDestination()
     document.title = data[2][destination].name.split(`,`)[0]
-    document.getElementById(`destinationName`).innerHTML= data[2][destination].name
-    document.getElementById(`aboutDestination`).innerHTML= data[2][destination].desc
+    document.getElementById(`destinationName`).innerHTML = data[2][destination].name
+    document.getElementById(`aboutDestination`).innerHTML = data[2][destination].desc
     document.getElementById(`destinationPrice`).innerHTML = `$${data[2][destination].pricePerNight * Number(document.getElementById("travelDuration").value.split(" ")[0]) * Number(document.getElementById("noOfPeople").value.split(" ")[0])}`
   }
   catch (error) {
@@ -83,8 +83,8 @@ async function returnTravelPrice() {
   const destination = returnDestination()
   document.getElementById("destinationPrice").innerHTML = `$${data[2][destination].pricePerNight * Number(document.getElementById("travelDuration").value.split(" ")[0]) * Number(document.getElementById("noOfPeople").value.split(" ")[0])}`
 }
-document.getElementById(`travelDuration`).addEventListener(`change`,returnTravelPrice)
-document.getElementById(`noOfPeople`).addEventListener(`change`,returnTravelPrice)
+document.getElementById(`travelDuration`).addEventListener(`change`, returnTravelPrice)
+document.getElementById(`noOfPeople`).addEventListener(`change`, returnTravelPrice)
 
 document.getElementById(`openBtn`).addEventListener(`click`, () => {
   document.getElementById(`modalName`).innerHTML = document.getElementById(`destinationName`).innerHTML
@@ -95,4 +95,5 @@ document.getElementById(`openBtn`).addEventListener(`click`, () => {
 })
 
 document.getElementById(`closeBtn`).addEventListener(`click`, () => {
-  document.getElementById(`modal`).classList.remove(`active`)})
+  document.getElementById(`modal`).classList.remove(`active`)
+})

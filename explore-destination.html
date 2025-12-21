@@ -25,90 +25,90 @@
             </nav>
         </div>
     </div>
-        <main>
-            <div class="destination-main" id="destinationMain">
-                <div class="container card">
-                    <div class="slider">
-                        <img src="/images/paris-5.jpg" class="slide active">
-                        <img src="/images/beach-2.jpg" class="slide">
-                        <img src="/images/beach-3.jpg" class="slide">
-                        <button class="prev slider-control">&#10094;</button>
-                        <button class="next slider-control">&#10095;</button>
-                    </div>
-                    <span class="h1-container flex">
-                        <h1 id="destinationName"></h1>
+    <main>
+        <div class="destination-main" id="destinationMain">
+            <div class="container card">
+                <div class="slider">
+                    <img src="/images/paris-5.jpg" class="slide active">
+                    <img src="/images/beach-2.jpg" class="slide">
+                    <img src="/images/beach-3.jpg" class="slide">
+                    <button class="prev slider-control">&#10094;</button>
+                    <button class="next slider-control">&#10095;</button>
+                </div>
+                <span class="h1-container flex">
+                    <h1 id="destinationName"></h1>
+                </span>
+                <div class="text">
+                    <span class="about-text">
+                        <h2>About the Tour</h2>
                     </span>
-                    <div class="text">
-                        <span class="about-text">
-                            <h2>About the Tour</h2>
+                    <p id="aboutDestination"></p>
+                    <div class="grid">
+                        <span>
+                            <h3>Duration</h3>
+                            <select id="travelDuration">
+                                <option>0 days</option>
+                                <option>3 days</option>
+                                <option>7 days</option>
+                                <option>14 days</option>
+                                <option>30 days</option>
+                                <option>60 days</option>
+                            </select>
                         </span>
-                        <p id="aboutDestination"></p>
-                        <div class="grid">
-                            <span>
-                                <h3>Duration</h3>
-                                <select id="travelDuration">
-                                    <option>0 days</option>
-                                    <option>3 days</option>
-                                    <option>7 days</option>
-                                    <option>14 days</option>
-                                    <option>30 days</option>
-                                    <option>60 days</option>
-                                </select>
-                            </span>
-                            <span>
-                                <h3>No. of People</h3>
-                                <select id="noOfPeople">
-                                    <option>1 person</option>
-                                    <option>2 people</option>
-                                    <option>3 people</option>
-                                    <option>4 people</option>
-                                    <option>5 people</option>
-                                    <option>6 people</option>
-                                    <option>7 people</option>
-                                </select>
-                            </span>
-                            <span>
-                                <h3>Price</h3>
-                                <span id="destinationPrice"></span>
-                            </span>
-                            <span>
-                                <a href="#" class="btn" id="openBtn">Book Now</a>
-                            </span>
-                        </div>
+                        <span>
+                            <h3>No. of People</h3>
+                            <select id="noOfPeople">
+                                <option>1 person</option>
+                                <option>2 people</option>
+                                <option>3 people</option>
+                                <option>4 people</option>
+                                <option>5 people</option>
+                                <option>6 people</option>
+                                <option>7 people</option>
+                            </select>
+                        </span>
+                        <span>
+                            <h3>Price</h3>
+                            <span id="destinationPrice"></span>
+                        </span>
+                        <span>
+                            <a href="#" class="btn" id="openBtn">Book Now</a>
+                        </span>
                     </div>
-                </div>
-            </div>
-        </main>
-
-        <div class="modal-overlay" id="modal">
-            <div class="modal">
-                <h2 class="modal-title">Confirm Purchase</h2>
-                <div class="modal-details">
-                    <div class="detail">
-                        <span>Tour</span>
-                        <strong id="modalName"></strong>
-                    </div>
-                    <div class="detail">
-                        <span>Person(s)</span>
-                        <strong id="modalNoOfPeople"></strong>
-                    </div>
-                    <div class="detail">
-                        <span>Days</span>
-                        <strong id="modalNoOfDays"></strong>
-                    </div>
-                    <div class="detail total">
-                        <span>Total Price</span>
-                        <strong id="modalTotalPrice"></strong>
-                    </div>
-                </div>
-                <div class="modal-actions">
-                    <button class="btn btn-outline" id="closeBtn">Cancel</button>
-                    <button class="btn confirm">Confirm</button>
                 </div>
             </div>
         </div>
+    </main>
 
-        <script src="js-files/explore-destination.js"></script>
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <h2 class="modal-title">Confirm Purchase</h2>
+            <div class="modal-details">
+                <div class="detail">
+                    <span>Tour</span>
+                    <strong id="modalName"></strong>
+                </div>
+                <div class="detail">
+                    <span>Person(s)</span>
+                    <strong id="modalNoOfPeople"></strong>
+                </div>
+                <div class="detail">
+                    <span>Days</span>
+                    <strong id="modalNoOfDays"></strong>
+                </div>
+                <div class="detail total">
+                    <span>Total Price</span>
+                    <strong id="modalTotalPrice"></strong>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-outline" id="closeBtn">Cancel</button>
+                <button class="btn confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js-files/explore-destination.js"></script>
 </body>
 
 </html>

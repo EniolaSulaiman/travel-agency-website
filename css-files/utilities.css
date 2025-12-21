@@ -1,38 +1,42 @@
 .container {
-    max-width: 1100px;
+    max-width: 68.75rem;
     margin: 0 auto;
     overflow: auto;
-    padding: 0 40px;
+    padding: 0 2.5rem;
 }
 
 .card {
     color: #333;
     background: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 10px;
+    border-radius: .625rem;
+    box-shadow: .1875rem .1875rem .625rem rgba(0, 0, 0, 0.2);
+    padding: 1.25rem;
+    margin: .625rem;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 30px;
+    padding: .625rem 1.875rem;
     cursor: pointer;
     background: var(--secondary-color);
     color: #f4f4f4;
     border: none;
-    border-radius: 5px;
+    border-radius: .3125rem;
 }
+
 .btn:hover {
     background-color: #ff5522;
 }
-.btn:active{
+
+.btn:active {
     transform: scale(1.1);
 }
+
 .btn-outline {
     background-color: transparent;
-    border: 1px #f4f4f4 solid;
+    border: .0625rem #f4f4f4 solid;
 }
+
 .text-center {
     text-align: center;
 }
@@ -80,26 +84,27 @@
 .btn-light a {
     color: white;
 }
+
 /* Text colors */
-#text-primary{
+#text-primary {
     color: var(--primary-color);
 }
 
-.text-secondary{
+.text-secondary {
     color: var(--secondary-text-color);
 }
 
-.text-dark{
+.text-dark {
     color: var(--dark-color);
 }
 
-.text-light{
+.text-light {
     color: var(--light-color);
 }
 
 /* Text sizes */
 .lead {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .sm {
@@ -121,19 +126,21 @@
 /* Alert */
 .alert {
     background: var(--light-color);
-    padding: 10px 20px;
+    padding: .625rem 1.25rem;
     font-weight: bold;
-    margin: 15px 0;
+    margin: .9375rem 0;
 }
 
 .alert i {
-    margin-right: 10px;
+    margin-right: .625rem;
 }
-.alert-success{
+
+.alert-success {
     background: var(--success-color);
     color: white;
 }
-.alert-error{
+
+.alert-error {
     background: var(--error-color);
     color: white;
 }
@@ -142,7 +149,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* repeat(2, 1fr) means repeat 1fr twice*/
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -151,14 +158,16 @@
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-.section-grid{
+
+.section-grid {
     grid-template-columns: 2fr 1fr;
 }
+
 /*Margin*/
 .my-1 {
     margin: 1rem 0;
@@ -240,4 +249,5 @@
 .p-5 {
     padding: 4rem;
 }
+
 /* Animation Classes */

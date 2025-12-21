@@ -10,7 +10,7 @@ navIcon.addEventListener(`click`, () => {
         hamMenu.style.opacity = `0`
     }
 })
- 
+
 
 /* function sliderHover() {
     const images = document.querySelectorAll(`#slides`)

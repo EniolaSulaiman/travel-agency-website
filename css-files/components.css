@@ -1,7 +1,7 @@
 .card img {
     width: 100%;
-    height: 200px;
-    border-radius: 10px;
+    height: 12.5rem;
+    border-radius: .625rem;
 }
 
 .card {
@@ -40,11 +40,13 @@ section h2 {
     margin: 0 0 1rem;
     color: #666;
 }
-.destination-components{
-    width:100%;
+
+.destination-components {
+    width: 100%;
     padding: 2em;
     border-radius: 50%;
 }
+
 .destination-components h2 {
     font-size: 3rem;
     justify-self: center;
@@ -56,7 +58,7 @@ section h2 {
     background: #e9e8e8;
 }
 
-@media(max-width: 650px) {
+@media(max-width: 40.625rem) {
 
     .grid,
     .flex {
