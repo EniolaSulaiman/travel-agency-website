@@ -709,6 +709,7 @@ footer{
   grid-template-rows: 80% 20%;
   height: 20rem;
   overflow: hidden;
+  margin-top: 5rem;
 }
 
 .footer-columns{
