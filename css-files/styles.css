@@ -704,6 +704,68 @@ a.destinations:hover {
   border-radius: 10px;
 }
 
+footer{
+  display: grid;
+  grid-template-rows: 80% 20%;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.footer-columns{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+  background: hsl(197, 100%, 15%);
+  height: 100%;
+}
+
+.footer-columns div{
+  height: 90%;
+}
+
+footer div{
+  padding: 2rem;
+}
+
+.profile-picture img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-links{
+  gap: 1rem;
+} 
+
+.social-links .icons:hover{
+  opacity: .5;
+}
+
+.site-map{
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.site-map a{
+  color: hsla(0, 0%, 100%, 0.664);
+}
+
+.site-map a:hover{
+  color: white;
+}
+
+.project-info{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.project-info .social-links{
+  display: flex;
+  margin-left: auto;
+  gap: 1rem;
+}
 @keyframes spin {
   0% {
     transform: rotate(360deg);
