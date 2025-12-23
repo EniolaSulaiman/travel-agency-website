@@ -2,6 +2,20 @@ function clearFilterInputs() {
   document.getElementById("tourTypes").value = `All Tours`
   document.getElementById("destinationInput").value = ``
 }
+
+function sendToast(title, text, type) {
+  const toast = document.getElementById(`toast`)
+  document.getElementById(`toastTitle`).textContent = title
+  document.getElementById(`toastText`).textContent = text
+  toast.classList.add(type)
+  toast.classList.add(`notify`)
+
+  setTimeout(() => {
+    toast.classList.remove(`notify`)
+  }, 5000);
+  setTimeout(() => toast.classList.remove(type), 7000)
+}
+
 async function retrieveJSON() {
   try {
     const response = await fetch(`/js-files/components.json`);
@@ -12,9 +26,16 @@ async function retrieveJSON() {
 
     return await response.json();
   } catch (error) {
-    console.error(`JSON was not retrieved successfully`, error);
+    if (error instanceof TypeError) {
+      document.addEventListener(`DOMContentLoaded`, () => {
+        setTimeout(sendToast(`Error loading page`, `Please refresh the page`, `error`), 6000)
+      })
+    } else {
+      console.error(`Error Loading Page`, error);
+    }
   }
 }
+
 function returnBaseContent() {
   return `<section class="destination-cards" id="destinationCards">
       <article class="flex">
