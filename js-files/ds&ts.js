@@ -9,10 +9,17 @@ function sendToast(title, text, type) {
   document.getElementById(`toastText`).textContent = text
   toast.classList.add(type)
   toast.classList.add(`notify`)
-
+  //Remove toast on click
+  toast.addEventListener(`click`, () => {
+    toast.classList.remove(`notify`)
+    //Wait for toast to leave the page before removing styles
+    setTimeout(() => toast.classList.remove(type), 2000)
+  })
+  //Wait for loading animation to finish before removing toast  
   setTimeout(() => {
     toast.classList.remove(`notify`)
   }, 5000);
+  //Wait for toast to leave the page before removing styles
   setTimeout(() => toast.classList.remove(type), 7000)
 }
 
