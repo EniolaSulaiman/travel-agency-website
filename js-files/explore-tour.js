@@ -47,17 +47,43 @@ next.addEventListener('click', () => {
 
 startAutoSlide();
 
+function sendToast(title, text, type) {
+  const toast = document.getElementById(`toast`)
+  document.getElementById(`toastTitle`).textContent = title
+  document.getElementById(`toastText`).textContent = text
+  toast.classList.add(type)
+  toast.classList.add(`notify`)
+  //Remove toast on click
+  toast.addEventListener(`click`, () => {
+    toast.classList.remove(`notify`)
+    //Wait for toast to leave the page before removing styles
+    setTimeout(() => toast.classList.remove(type), 2000)
+  })
+  //Wait for loading animation to finish before removing toast  
+  setTimeout(() => {
+    toast.classList.remove(`notify`)
+  }, 5000);
+  //Wait for toast to leave the page before removing styles
+  setTimeout(() => toast.classList.remove(type), 7000)
+}
+
 async function retrieveJSON() {
   try {
     const response = await fetch(`/js-files/components.json`);
 
     if (!response.ok) {
-      throw new Error(`Could not fetch resource ${response.status}`);
+      throw new Error(`Could not fetch resource`);
     }
 
     return await response.json();
   } catch (error) {
-    console.error(error);
+    if (error instanceof TypeError) {
+      document.addEventListener(`DOMContentLoaded`, () => {
+        setTimeout(sendToast(`Error loading page`, `Please refresh the page`, `error`), 6000)
+      })
+    } else {
+      console.error(`Error Loading Page`, error);
+    }
   }
 }
 
