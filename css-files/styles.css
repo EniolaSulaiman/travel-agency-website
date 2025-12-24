@@ -61,7 +61,7 @@ input:focus::placeholder {
   padding: 1rem;
   background: var(--main-background-color);
   border-radius: .625rem;
-  transition: transform 1s ease;
+  transition: transform .5s ease;
   z-index: 999;
 }
 

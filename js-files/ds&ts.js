@@ -7,20 +7,18 @@ function sendToast(title, text, type) {
   const toast = document.getElementById(`toast`)
   document.getElementById(`toastTitle`).textContent = title
   document.getElementById(`toastText`).textContent = text
+  //Remove previous styles before adding new ones
+  toast.classList = `toast`
   toast.classList.add(type)
   toast.classList.add(`notify`)
   //Remove toast on click
   toast.addEventListener(`click`, () => {
     toast.classList.remove(`notify`)
-    //Wait for toast to leave the page before removing styles
-    setTimeout(() => toast.classList.remove(type), 2000)
   })
-  //Wait for loading animation to finish before removing toast  
+  //Remove toast automatically after 4 seconds
   setTimeout(() => {
     toast.classList.remove(`notify`)
-  }, 5000);
-  //Wait for toast to leave the page before removing styles
-  setTimeout(() => toast.classList.remove(type), 7000)
+  }, 4000);
 }
 
 async function retrieveJSON() {
