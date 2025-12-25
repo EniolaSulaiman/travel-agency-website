@@ -111,7 +111,8 @@ input:focus::placeholder {
   transition: color 0.2s;
 }
 
-.nav-bar a:hover, body .ham-menu a:hover {
+.nav-bar a:hover,
+body .ham-menu a:hover {
   color: hsla(0, 0%, 100%, 0.808);
 }
 
@@ -199,7 +200,7 @@ body .hero-text {
 }
 
 .hero-text h1 {
-  font-size: clamp(2rem, 6vw, 4em);
+  font-size: clamp(1rem, 6vw, 4em);
   font-weight: 700;
   margin-left: 0.7em;
   margin-bottom: 0;
@@ -286,6 +287,10 @@ section.home-about a.btn {
 
 .tour-types .grid {
   place-items: center;
+}
+
+.tour-types .container {
+  overflow-x: hidden;
 }
 
 .tour-types a {
@@ -918,7 +923,7 @@ footer div {
     display: block;
   }
 
-  .home-about .grid p{
+  .home-about .grid p {
     margin: 0;
     margin-bottom: 2rem;
   }
@@ -933,46 +938,94 @@ footer div {
     display: block;
   }
 
-  body .ham-menu{
+  body .ham-menu {
     pointer-events: none;
     display: flex;
   }
 }
 
 @media (max-width: 760px) {
-  .home-popular-destinations .container{
-    scroll-snap-type: mandatory;
-  }
-  .home-popular-destinations .flex{
-    display: block;
+  .home-popular-destinations .container {
+    padding: 0;
   }
 
-  .home-popular-destinations .flex a{
+  .home-popular-destinations .flex {
     display: block;
     width: 100%;
-  }  
+  }
 
-    .home-popular-destinations .flex .destination-name{
-      display: flex;
-    }
+  .home-popular-destinations .flex a {
+    display: block;
+    width: 90%;
+  }
+
+  .home-popular-destinations .flex .destination-name {
+    display: flex;
+  }
 }
+
+@media (max-width: 710px) {
+  .tour-types .grid {
+    grid-template-columns: none;
+    grid-template-rows: none;
+    place-items: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .footer-columns div {
+    height: 100%;
+    padding: 0;
+  }
+}
+
 @media (max-width: 620px) {
-  .nav-bar .container{
+  .nav-bar .container {
     margin: 0;
+    padding: 5px;
     width: 100vw;
     max-width: none;
   }
 
-  .nav-bar .icon{
+  .nav-bar .icon {
     margin-right: 0;
   }
 }
 
+@media (max-width: 610px) {
+  .hero-text p{
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  footer {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 550px) {
+  footer img {
+    max-height: 200px;
+  }
+
+  .footer-columns div {
+    height: fit-content;
+  }
+
+  .footer-columns {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+}
+
 @media (max-width: 450px) {
-  .home-about .container{
+  .home-about .container {
     padding: 0;
   }
 }
+
 /* 
 @media(max-width:56.25rem) {
     .nav-bar {
