@@ -1,16 +1,11 @@
-const navIcon = document.querySelector(`.icon`)
-navIcon.addEventListener(`click`, () => {
+function showMenu() {
+    const navIcon = document.querySelector(`.icon`)
     const hamMenu = document.querySelector(`.ham-menu`)
-
-    if (hamMenu.style.opacity == `0`) {
-        hamMenu.style.opacity = `1`
-        hamMenu.style.opacity = `1`
-    }
-    else {
-        hamMenu.style.opacity = `0`
-    }
-})
-
+    navIcon.addEventListener(`click`, () => {
+        hamMenu.classList.toggle(`menu-active`)
+    })
+}
+showMenu()
 
 /* function sliderHover() {
     const images = document.querySelectorAll(`#slides`)
