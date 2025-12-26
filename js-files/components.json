@@ -4,465 +4,349 @@
       "name": "Amsterdam, Netherlands",
       "image": "images/europe-1.jpg",
       "id": "amsterdam",
-      "desc": "Canals, bicycles, and Dutch charm in every corner.",
-      "price": "$2,200",
-      "duration": "3-5 days"
+      "desc": "Canals, bicycles, and Dutch charm in every corner."
     },
     {
       "name": "Amman, Jordan",
       "image": "images/europe-1.jpg",
       "id": "amman",
-      "desc": "Hills of ancient history and Middle Eastern warmth.",
-      "price": "$2,600",
-      "duration": "3-5 days"
+      "desc": "Hills of ancient history and Middle Eastern warmth."
     },
     {
       "name": "Athens, Greece",
       "image": "images/europe-1.jpg",
       "id": "athens",
-      "desc": "The cradle of Western civilization and mythology.",
-      "price": "$2,100",
-      "duration": "3-5 days"
+      "desc": "The cradle of Western civilization and mythology."
     },
     {
       "name": "Auckland, New Zealand",
       "image": "images/europe-1.jpg",
       "id": "auckland",
-      "desc": "A harbor city of sails and volcanic hills.",
-      "price": "$3,700",
-      "duration": "4-6 days"
+      "desc": "A harbor city of sails and volcanic hills."
     },
     {
       "name": "The Bahamas",
       "image": "images/europe-1.jpg",
       "id": "bahamas",
-      "desc": "A tropical paradise of temples and tranquility.",
-      "price": "$2,500",
-      "duration": "5-7 days"
+      "desc": "A tropical paradise of temples and tranquility."
     },
     {
       "name": "Bali, Indonesia",
       "image": "images/europe-1.jpg",
       "id": "bali",
-      "desc": "A tropical paradise of temples and tranquility.",
-      "price": "$2,500",
-      "duration": "5-7 days"
+      "desc": "A tropical paradise of temples and tranquility."
     },
     {
       "name": "Bangkok, Thailand",
       "image": "images/europe-1.jpg",
       "id": "bangkok",
-      "desc": "Street food heaven with golden temples galore.",
-      "price": "$1,600",
-      "duration": "4-6 days"
+      "desc": "Street food heaven with golden temples galore."
     },
     {
       "name": "Barcelona, Spain",
       "image": "images/europe-1.jpg",
       "id": "barcelona",
-      "desc": "Gaudí dreams, beach scenes, and tapas bites.",
-      "price": "$2,400",
-      "duration": "3-5 days"
+      "desc": "Gaudí dreams, beach scenes, and tapas bites."
     },
     {
       "name": "Berlin, Germany",
       "image": "images/europe-1.jpg",
       "id": "berlin",
-      "desc": "History, hipster culture, and techno nights.",
-      "price": "$2,400",
-      "duration": "3-5 days"
+      "desc": "History, hipster culture, and techno nights."
     },
     {
       "name": "Brussels, Belgium",
       "image": "images/europe-1.jpg",
       "id": "brussels",
-      "desc": "Waffles, chocolate, and EU power.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "desc": "Waffles, chocolate, and EU power."
     },
     {
       "name": "Buenos Aires, Argentina",
       "image": "images/europe-1.jpg",
       "id": "buenosAires",
-      "desc": "Tango, steak, and sultry Latin energy.",
-      "price": "$2,900",
-      "duration": "4-6 days"
+      "desc": "Tango, steak, and sultry Latin energy."
     },
     {
       "name": "Budapest, Hungary",
       "image": "images/europe-1.jpg",
       "id": "budapest",
-      "desc": "Thermal baths, ruin bars, and Danube views.",
-      "price": "$2,600",
-      "duration": "3-5 days"
+      "desc": "Thermal baths, ruin bars, and Danube views."
     },
     {
       "name": "Cairo, Egypt",
       "image": "images/europe-1.jpg",
       "id": "cairo",
-      "desc": "Pyramids, pharaohs, and timeless desert sands.",
-      "price": "$2,600",
-      "duration": "4-6 days"
+      "desc": "Pyramids, pharaohs, and timeless desert sands."
     },
     {
       "name": "Cape Town, South Africa",
       "image": "images/europe-1.jpg",
       "id": "capeTown",
-      "desc": "A coastal gem with mountains, beaches, and penguins.",
-      "price": "$2,800",
-      "duration": "4-6 days"
+      "desc": "A coastal gem with mountains, beaches, and penguins."
     },
     {
       "name": "Casablanca, Morocco",
       "image": "images/europe-1.jpg",
       "id": "casablanca",
-      "desc": "Modern meets mystical in a North African hub.",
-      "price": "$2,600",
-      "duration": "3-5 days"
+      "desc": "Modern meets mystical in a North African hub."
     },
     {
       "name": "Delhi, India",
       "image": "images/europe-1.jpg",
       "id": "delhi",
-      "desc": "A chaotic charm of spice, history, and color.",
-      "price": "$2,400",
-      "duration": "4-6 days"
+      "desc": "A chaotic charm of spice, history, and color."
     },
     {
       "name": "Doha, Qatar",
       "image": "images/europe-1.jpg",
       "id": "doha",
-      "desc": "Desert glam, skyscrapers, and cultural richness.",
-      "price": "$2,800",
-      "duration": "3-5 days"
+      "desc": "Desert glam, skyscrapers, and cultural richness."
     },
     {
       "name": "Dubrovnik, Croatia",
       "image": "images/europe-1.jpg",
       "id": "dubronvik",
-      "desc": "Game of Thrones city walls and Adriatic beauty.",
-      "price": "$2,800",
-      "duration": "3-5 days"
+      "desc": "Game of Thrones city walls and Adriatic beauty."
     },
     {
       "name": "Dubai, UAE",
       "image": "images/europe-1.jpg",
       "id": "dubai",
-      "desc": "Luxury skyscrapers rising from the golden desert.",
-      "price": "$3,300",
-      "duration": "3-5 days"
+      "desc": "Luxury skyscrapers rising from the golden desert."
     },
     {
       "name": "Edinburgh, Scotland",
       "image": "images/europe-1.jpg",
       "id": "edinburgh",
-      "desc": "Castles, kilts, and literary legends.",
-      "price": "$3,000",
-      "duration": "3-5 days"
+      "desc": "Castles, kilts, and literary legends."
     },
     {
       "name": "Florence, Italy",
       "image": "images/europe-1.jpg",
       "id": "florence",
-      "desc": "Renaissance art, architecture, and irresistible gelato.",
-      "price": "$3,100",
-      "duration": "3-5 days"
+      "desc": "Renaissance art, architecture, and irresistible gelato."
     },
     {
       "name": "Havana, Cuba",
       "image": "images/europe-1.jpg",
       "id": "havana",
-      "desc": "Classic cars, salsa rhythms, and faded colonial beauty.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "desc": "Classic cars, salsa rhythms, and faded colonial beauty."
     },
     {
       "name": "Ho Chi Minh City, Vietnam",
       "image": "images/europe-1.jpg",
       "id": "hoChiMinhCity",
-      "desc": "Motorbikes, markets, and spicy street eats.",
-      "price": "$2,500",
-      "duration": "3-5 days"
+      "desc": "Motorbikes, markets, and spicy street eats."
     },
     {
       "name": "Istanbul, Turkey",
       "image": "images/europe-1.jpg",
       "id": "istanbul",
-      "desc": "Where East kisses West across the Bosphorus.",
-      "price": "$2,800",
-      "duration": "3-5 days"
+      "desc": "Where East kisses West across the Bosphorus."
     },
     {
       "name": "Jaipur, India",
       "image": "images/europe-1.jpg",
       "id": "jaipur",
-      "desc": "The Pink City of palaces and vibrant bazaars.",
-      "price": "$2,400",
-      "duration": "3-5 days"
+      "desc": "The Pink City of palaces and vibrant bazaars."
     },
     {
       "name": "Johannesburg, South Africa",
       "image": "images/europe-1.jpg",
       "id": "johannesburg",
-      "desc": "Urban energy with a strong historical heart.",
-      "price": "$2,500",
-      "duration": "3-5 days"
+      "desc": "Urban energy with a strong historical heart."
     },
     {
       "name": "Kyoto, Japan",
       "image": "images/europe-1.jpg",
       "id": "kyoto",
-      "desc": "A serene city of shrines, geishas, and gardens.",
-      "price": "$3,000",
-      "duration": "4-6 days"
+      "desc": "A serene city of shrines, geishas, and gardens."
     },
     {
       "name": "Lagos, Nigeria",
       "image": "images/europe-1.jpg",
       "id": "lagos",
-      "desc": "Africa's heartbeat with booming energy and jollof fire.",
-      "price": "$2,300",
-      "duration": "3-5 days"
+      "desc": "Africa's heartbeat with booming energy and jollof fire."
     },
     {
       "name": "Lima, Peru",
       "image": "images/europe-1.jpg",
       "id": "lima",
-      "desc": "Culinary capital perched on Pacific cliffs.",
-      "price": "$2,900",
-      "duration": "3-5 days"
+      "desc": "Culinary capital perched on Pacific cliffs."
     },
     {
       "name": "London, UK",
       "image": "images/europe-1.jpg",
       "id": "london",
-      "desc": "Royal sights and punk energy wrapped in foggy charm.",
-      "price": "$3,500",
-      "duration": "4-6 days"
+      "desc": "Royal sights and punk energy wrapped in foggy charm."
     },
     {
       "name": "Los Angeles, USA",
       "image": "images/europe-1.jpg",
       "id": "losAngeles",
-      "desc": "Hollywood glitz, beaches, and endless sunshine.",
-      "price": "$3,100",
-      "duration": "3-5 days"
+      "desc": "Hollywood glitz, beaches, and endless sunshine."
     },
     {
       "name": "Machu Picchu, Peru",
       "image": "images/europe-1.jpg",
       "id": "machuPicchu",
-      "desc": "Lost Incan city nestled high in the Andes.",
-      "price": "$3,500",
-      "duration": "4-6 days"
+      "desc": "Lost Incan city nestled high in the Andes."
     },
     {
       "name": "Manila, Philippines",
       "image": "images/europe-1.jpg",
       "id": "manila",
-      "desc": "A bustling city of contrasts and colonial heritage.",
-      "price": "$2,400",
-      "duration": "3-5 days"
+      "desc": "A bustling city of contrasts and colonial heritage."
     },
     {
       "name": "Marrakech, Morocco",
       "desc": "A sensory feast of spices, souks, and sand-colored walls.",
       "image": "images/europe-1.jpg",
-      "id": "marrakech",
-      "price": "$2,600",
-      "duration": "3-5 days"
+      "id": "marrakech"
     },
     {
       "name": "Mexico City, Mexico",
       "image": "images/europe-1.jpg",
       "id": "mexicoCity",
-      "desc": "Aztec roots, tacos, and buzzing city life.",
-      "price": "$2,500",
-      "duration": "4-6 days"
+      "desc": "Aztec roots, tacos, and buzzing city life."
     },
     {
       "name": "Montreal, Canada",
       "image": "images/europe-1.jpg",
       "id": "montreal",
-      "desc": "French flair meets North American cool.",
-      "price": "$3,000",
-      "duration": "3-5 days"
+      "desc": "French flair meets North American cool."
     },
     {
       "name": "Munich, Germany",
       "image": "images/europe-1.jpg",
       "id": "munich",
-      "desc": "Oktoberfest fun and Bavarian traditions.",
-      "price": "$2,800",
-      "duration": "3-5 days"
+      "desc": "Oktoberfest fun and Bavarian traditions."
     },
     {
       "name": "Nairobi, Kenya",
       "image": "images/europe-1.jpg",
       "id": "nairobi",
-      "desc": "Safari gateways with a city twist.",
-      "price": "$2,500",
-      "duration": "3-5 days"
+      "desc": "Safari gateways with a city twist."
     },
     {
       "name": "New York City, USA",
       "image": "images/europe-1.jpg",
       "id": "newYorkCity",
-      "desc": "The city that never sleeps and never stops inspiring.",
-      "price": "$3,900",
-      "duration": "4-6 days"
+      "desc": "The city that never sleeps and never stops inspiring."
     },
     {
       "name": "Oslo, Norway",
       "image": "images/europe-1.jpg",
       "id": "oslo",
-      "desc": "Fjords, forests, and a minimalist vibe.",
-      "price": "$3,200",
-      "duration": "3-5 days"
+      "desc": "Fjords, forests, and a minimalist vibe."
     },
     {
       "name": "Paris, France",
       "image": "images/europe-1.jpg",
       "id": "paris",
-      "desc": "The City of Light, love, and the iconic Eiffel Tower.",
-      "price": "$3,500",
-      "duration": "3-5 days"
+      "desc": "The City of Light, love, and the iconic Eiffel Tower."
     },
     {
       "name": "Petra, Jordan",
       "image": "images/europe-1.jpg",
       "id": "petra",
-      "desc": "Rose-red ruins carved into desert cliffs.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "desc": "Rose-red ruins carved into desert cliffs."
     },
     {
       "name": "Porto, Portugal",
       "image": "images/europe-1.jpg",
       "id": "porto",
-      "desc": "Wine by the river in colorful, hilly streets.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "desc": "Wine by the river in colorful, hilly streets."
     },
     {
       "name": "Prague, Czech Republic",
       "image": "images/europe-1.jpg",
       "id": "prague",
-      "desc": "Gothic beauty and beer in a fairy tale setting.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "desc": "Gothic beauty and beer in a fairy tale setting."
     },
     {
       "name": "Queenstown, New Zealand",
       "image": "images/europe-1.jpg",
       "id": "queenstown",
-      "desc": "Adrenaline capital with jaw-dropping mountain views.",
-      "price": "$4,300",
-      "duration": "5-7 days"
+      "desc": "Adrenaline capital with jaw-dropping mountain views."
     },
     {
       "name": "Reykjavik, Iceland",
       "image": "images/europe-1.jpg",
       "id": "reykjavik",
-      "desc": "Hot springs, volcanoes, and Northern Lights.",
-      "price": "$3,400",
-      "duration": "4-6 days"
+      "desc": "Hot springs, volcanoes, and Northern Lights."
     },
     {
       "name": "Rome, Italy",
       "image": "images/europe-1.jpg",
       "id": "rome",
-      "desc": "A timeless city of ruins, romance, and rich pasta plates.",
-      "price": "$3,100",
-      "duration": "3-5 days"
+      "desc": "A timeless city of ruins, romance, and rich pasta plates."
     },
     {
       "name": "Salzburg, Austria",
       "image": "images/europe-1.jpg",
       "id": "salzburg",
-      "desc": "Mozart's hometown with Alpine charm.",
-      "price": "$3,000",
-      "duration": "3-5 days"
+      "desc": "Mozart's hometown with Alpine charm."
     },
     {
       "name": "Santorini, Greece",
       "image": "images/europe-1.jpg",
       "id": "santorini",
-      "desc": "Whitewashed cliffs, blue domes, and sunset magic.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "desc": "Whitewashed cliffs, blue domes, and sunset magic."
     },
     {
       "name": "Seoul, South Korea",
       "image": "images/europe-1.jpg",
       "id": "seoul",
-      "desc": "K-pop vibes and ancient palaces collide in style.",
-      "price": "$3,100",
-      "duration": "4-6 days"
+      "desc": "K-pop vibes and ancient palaces collide in style."
     },
     {
       "name": "Siem Reap, Cambodia",
       "image": "images/europe-1.jpg",
       "id": "siemReap",
-      "desc": "Gateway to the majestic Angkor Wat ruins.",
-      "price": "$2,400",
-      "duration": "3-5 days"
+      "desc": "Gateway to the majestic Angkor Wat ruins."
     },
     {
       "name": "Sydney, Australia",
       "image": "images/europe-1.jpg",
       "id": "sydney",
-      "desc": "Opera, ocean waves, and laid-back vibes.",
-      "price": "$4,100",
-      "duration": "5-7 days"
+      "desc": "Opera, ocean waves, and laid-back vibes."
     },
     {
       "name": "Tallinn, Estonia",
       "image": "images/europe-1.jpg",
       "id": "tallinn",
-      "desc": "A fairytale old town with digital innovation.",
-      "price": "$2,700",
-      "duration": "3-5 days"
+      "desc": "A fairytale old town with digital innovation."
     },
     {
       "name": "Tokyo, Japan",
       "image": "images/europe-1.jpg",
       "id": "tokyo",
-      "desc": "A neon jungle where tradition meets high-tech future.",
-      "price": "$4,200",
-      "duration": "5-7 days"
+      "desc": "A neon jungle where tradition meets high-tech future."
     },
     {
       "name": "Venice, Italy",
       "desc": "Gondolas glide through romance-soaked canals.",
       "image": "images/europe-1.jpg",
-      "id": "venice",
-      "price": "$3,000",
-      "duration": "3-5 days"
+      "id": "venice"
     },
     {
       "name": "Vancouver, Canada",
       "image": "images/europe-1.jpg",
       "id": "vancouver",
-      "desc": "Nature meets urban cool in a scenic wonderland.",
-      "price": "$3,200",
-      "duration": "4-6 days"
+      "desc": "Nature meets urban cool in a scenic wonderland."
     },
     {
       "name": "Zanzibar, Tanzania",
       "image": "images/europe-1.jpg",
       "id": "zanzibar",
-      "desc": "White sands, turquoise waters, and spice island soul.",
-      "price": "$2,800",
-      "duration": "4-6 days"
+      "desc": "White sands, turquoise waters, and spice island soul."
     },
     {
       "name": "Zurich, Switzerland",
       "image": "images/europe-1.jpg",
       "id": "zurich",
-      "desc": "Alpine beauty with precision and chocolate.",
-      "price": "$3,500",
-      "duration": "3-5 days"
+      "desc": "Alpine beauty with precision and chocolate."
     }
   ],
   [

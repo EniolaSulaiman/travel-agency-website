@@ -236,7 +236,6 @@ async function destinationCardsTemplate(min, max) {
                 <p>
                 ${data[0][i].desc}
                 </p>
-              <p><span class="price info">${data[0][i].price}</span><span class="duration info">${data[0][i].duration}</span></p>
                 <a href="explore-destination.html?destination=${data[0][i].id}" class="btn">Explore Destination</a>
             </div>
             `;
