@@ -42,6 +42,7 @@ h2 {
 p {
   margin: .625rem 0;
   font-size: 1.5rem;
+  text-align: justify;
 }
 
 /* section {
@@ -210,7 +211,7 @@ body .hero-text {
 
 .hero-text p {
   font-size: clamp(1.7rem, 4vw, 2em);
-  margin-left: 2em;
+  margin-inline: 2em;
   margin-top: 0;
 }
 
@@ -221,6 +222,10 @@ body .hero-text {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.home-body section{
+  margin-bottom:  10rem;
 }
 
 .home-about {
@@ -271,19 +276,16 @@ section.home-about a.btn {
 
 .home-popular-destinations .destination-name {
   position: absolute;
+  place-items: center;
   width: 100%;
   border-radius: .3125rem;
   top: 0;
   left: 0;
-  opacity: 0;
+  opacity: 1;
   background: hsla(0, 0%, 0%, 0.2);
   z-index: 1;
-  transition: opacity 0.1s;
 }
 
-.home-popular-destinations .destination-name:hover {
-  opacity: 1;
-}
 
 .tour-types .grid {
   place-items: center;
@@ -294,15 +296,15 @@ section.home-about a.btn {
 }
 
 .tour-types a {
-  width: fit-content;
+  max-width: 20rem;
+  width: 100%;
 }
 
 .tour-types .card {
-  width: fit-content;
-  width: 20rem;
+  width: 100%;
   text-align: center;
   cursor: pointer;
-  transition: all 0.2 ease;
+  transition: all 0.2s ease;
 }
 
 .tour-types .card:hover {
@@ -947,28 +949,19 @@ footer div {
 @media (max-width: 760px) {
   .home-popular-destinations .container {
     padding: 0;
+    overflow-x: hidden;
   }
 
-  .home-popular-destinations .flex {
+  .home-popular-destinations .slider.flex {
     display: block;
     width: 100%;
+    padding-inline: 20px;
   }
 
   .home-popular-destinations .flex a {
     display: block;
-    width: 90%;
-  }
-
-  .home-popular-destinations .flex .destination-name {
-    display: flex;
-  }
-}
-
-@media (max-width: 710px) {
-  .tour-types .grid {
-    grid-template-columns: none;
-    grid-template-rows: none;
-    place-items: center;
+    width: 100%;
+    margin-inline: 0;
   }
 }
 
@@ -1016,8 +1009,28 @@ footer div {
   .footer-columns {
     grid-template-columns: none;
     grid-template-rows: repeat(3, 1fr);
+    padding-bottom: 2rem;
   }
 
+  .project-info{
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+    place-items: center;
+  }
+
+  .project-info .social-links{
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 455px) {
+  .tour-types .grid {
+    grid-template-columns: none;
+    grid-template-rows: none;
+    place-items: center;
+  }
 }
 
 @media (max-width: 450px) {
