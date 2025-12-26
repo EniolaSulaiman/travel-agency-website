@@ -224,8 +224,8 @@ body .hero-text {
   background-repeat: no-repeat;
 }
 
-.home-body section{
-  margin-bottom:  10rem;
+.home-body section {
+  margin-bottom: 10rem;
 }
 
 .home-about {
@@ -371,6 +371,7 @@ section.home-about a.btn {
 
 .ds-header h1 {
   justify-self: center;
+  font-size: clamp(1rem, 6vw, 3rem);
 }
 
 .ds-header .input {
@@ -384,7 +385,9 @@ section.home-about a.btn {
 }
 
 .ds-header p {
-  font-size: 1rem;
+  font-size: clamp(0.5rem, 4vw, 1rem);
+  margin-right: 2rem;
+  text-align: center;
 }
 
 .ds-header span.datalists {
@@ -920,6 +923,21 @@ footer div {
   }
 }
 
+@media (max-width: 950px) {
+  .ds-header span.links {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .ds-header span.links ul {
+    display: flex;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 880px) {
   .home-about .grid {
     display: block;
@@ -986,7 +1004,7 @@ footer div {
 }
 
 @media (max-width: 610px) {
-  .hero-text p{
+  .hero-text p {
     display: none;
   }
 }
@@ -1012,14 +1030,14 @@ footer div {
     padding-bottom: 2rem;
   }
 
-  .project-info{
+  .project-info {
     text-align: center;
     flex-direction: column;
     gap: 2rem;
     place-items: center;
   }
 
-  .project-info .social-links{
+  .project-info .social-links {
     margin-left: 0;
   }
 
@@ -1039,6 +1057,22 @@ footer div {
   }
 }
 
+@media (max-width: 400px) {
+  .ds-header ul :nth-child(2){
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .ds-header .datalists{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .ds-header .datalists .input{
+    margin: 0;
+  }
+}
 /* 
 @media(max-width:56.25rem) {
     .nav-bar {
