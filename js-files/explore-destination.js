@@ -48,21 +48,25 @@ next.addEventListener('click', () => {
 startAutoSlide();
 
 function sendToast(title, text, type) {
-  const toast = document.getElementById(`toast`)
-  document.getElementById(`toastTitle`).textContent = title
-  document.getElementById(`toastText`).textContent = text
-  //Remove previous styles before adding new ones
-  toast.classList = `toast`
+  const toastContainer = document.getElementById(`toastContainer`)
+  let toast = document.createElement(`div`)
+  toast.classList.add(`toast`)
+  toast.innerHTML = `<h1 class="toast-title">${title}</h1>
+                        <p class="text">${text}</p>`
+  //Add styles for toast type
   toast.classList.add(type)
+  //Send toast
+  toastContainer.appendChild(toast)
   toast.classList.add(`notify`)
-  //Remove toast on click
-  toast.addEventListener(`click`, () => {
-    toast.classList.remove(`notify`)
-  })
   //Remove toast automatically after 4 seconds
   setTimeout(() => {
     toast.classList.remove(`notify`)
+    toastContainer
   }, 4000);
+  //Remove toast from container when transition is done
+  setTimeout(() => {
+    toastContainer.removeChild(toast)
+  }, 4600);
 }
 
 async function retrieveJSON() {

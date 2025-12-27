@@ -53,17 +53,30 @@ input:focus::placeholder {
   opacity: 0;
 }
 
-.toast {
+.toast-container{
   position: absolute;
-  right: .1875rem;
-  top: .3125rem;
-  transform: translateX(102%);
-  min-width: 20vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.toast {
+  position: relative;
+  right: 0;
+  top: 0;
+  margin-block: 2rem;
+  margin-right: 1rem;
+  margin-left: auto;
+  opacity: 0;
+  width: 20%;
   padding: 1rem;
   background: var(--main-background-color);
   border-radius: .625rem;
-  transition: transform .5s ease;
-  z-index: 999;
+  transition: opacity .5s ease;
 }
 
 .toast.info {
@@ -82,7 +95,7 @@ input:focus::placeholder {
 }
 
 .toast.notify {
-  transform: translateX(0);
+  opacity: 1;
 }
 
 .toast .title {
