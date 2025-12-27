@@ -254,8 +254,8 @@ async function tourCardsTemplate(min, max) {
     let destinationsVisited = data[1][i].destinationsVisited;
     let processedDestinationsVisited = destinationsVisited.map(
       (destination) => {
-        return `<a href="explore-destination.html?destination=${destination}" class="destination">${destination.charAt(0) + destination.slice(1).toLowerCase()
-          }`;
+        return `<a href="explore-destination.html?destination=${destination}" class="destinations">${destination.charAt(0) + destination.slice(1).toLowerCase()
+          }</a>`;
       }
     );
     content += `
