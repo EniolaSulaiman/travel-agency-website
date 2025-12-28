@@ -1,8 +1,12 @@
 function showMenu() {
-    const navIcon = document.querySelector(`.icon`)
+    const openIcon = document.querySelector(`.icon`)
+    const closeIcon = document.querySelector(`.menu-close`)
     const hamMenu = document.querySelector(`.ham-menu`)
-    navIcon.addEventListener(`click`, () => {
-        hamMenu.classList.toggle(`menu-active`)
+    openIcon.addEventListener(`click`, () => {
+        hamMenu.classList.add(`menu-active`)
+    })
+    closeIcon.addEventListener(`click`, () => {
+        hamMenu.classList.remove(`menu-active`)
     })
 }
 showMenu()
