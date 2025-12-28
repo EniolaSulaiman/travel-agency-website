@@ -752,6 +752,7 @@ a.destinations:hover {
 .about-main img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: .625rem;
 }
 
@@ -912,6 +913,21 @@ footer div {
 
   a.destinations{
     width: fit-content;
+  }
+}
+
+@media (max-width: 960px) {
+  .about-main{
+    padding-inline: 2rem;
+  }
+
+  .about-main .grid{
+  gap: 1rem;
+    grid-template-columns: none;
+  }
+
+  .about-main img{
+    max-height: 20rem;
   }
 }
 
@@ -1121,3 +1137,12 @@ footer div {
   }
 }
 
+@media (max-width: 375px) {
+  .about-main h3{
+    display: none;
+  }
+  
+  .about-main p{
+    text-align: left;
+  }
+}
