@@ -147,31 +147,56 @@ body .ham-menu a:hover {
   object-fit: cover;
 }
 
-body .ham-menu {
-  font-size: 1.5rem;
-  white-space: nowrap;
-  position: absolute;
-  height: min-content;
+.ham-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
-  z-index: 1;
+  height: 100vh;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
   opacity: 0;
-  display: none;
-  transition: opacity 0.2s;
+  pointer-events: none;
+  transition: opacity 0.5s;
 }
 
 .ham-menu ul {
-  width: 100%;
-  padding-left: 1rem;
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
 .ham-menu li {
-  margin-bottom: 2rem;
-  padding-bottom: 0.9rem;
-  border-bottom: .1875rem solid var(--main-background-color);
+  margin: 1.5rem 0;
 }
 
 .ham-menu a {
-  margin-inline: 1rem auto;
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Close button */
+.menu-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-close svg {
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 body .ham-menu.menu-active {
