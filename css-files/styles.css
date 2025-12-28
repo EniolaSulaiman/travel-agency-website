@@ -668,38 +668,6 @@ a.destinations:hover {
   padding: .3125rem .9375rem;
 }
 
-.plan-your-trip {
-  margin-top: 5rem;
-}
-
-.plan-your-trip .grid {
-  box-shadow: 0 .1875rem .625rem rgba(0, 0, 0, 0.2);
-  grid-template-columns: 1fr 1fr 1fr 0.3fr;
-}
-
-.plan-your-trip input {
-  margin: 0 .625rem;
-  border-radius: .3125rem;
-  border: .0625rem solid rgba(139, 139, 139, 0.267);
-  box-shadow: 0 .0625rem .0625rem rgba(0, 0, 0, 0.2);
-  padding: .3125rem;
-}
-
-.plan-your-trip h2 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.plan-your-trip select {
-  background-color: white;
-  padding: .3125rem .625rem;
-  border: .0625rem solid rgba(139, 139, 139, 0.267);
-  box-shadow: 0 .0625rem .0625rem rgba(0, 0, 0, 0.2);
-  border-radius: .3125rem;
-  margin: 0 .625rem;
-  width: 10rem;
-}
-
 .above-the-fold {
   flex-wrap: wrap;
 }
