@@ -106,7 +106,7 @@ function returnBaseContent() {
           <p>
             Discover vibrant African cities that serve as gateways to legendary wildlife experiences.
           </p>
-          <p>
+          <p class="destinations-visited">
             <a href="explore-destination.html?destination=nairobi" class="destinations">Nairobi</a><a
               href="explore-destination.html?destination=capeTown" class="destinations">Cape Town</a><a
               href="explore-destination.html?destination=johannesburg" class="destinations">Johannesburg</a>
@@ -120,7 +120,7 @@ function returnBaseContent() {
           <p>
             A journey through scenic Asian cities blending nature, culture, and urban excitement.
           </p>
-          <p>
+          <p class="destinations-visited">
             <a href="explore-destination.html?destination=bangkok" class="destinations">Bangkok</a><a
               href="explore-destination.html?destination=kyoto" class="destinations">Kyoto</a><a
               href="explore-destination.html?destination=seoul" class="destinations">Seoul</a>
@@ -134,7 +134,7 @@ function returnBaseContent() {
           <p>
             Indulge in high-end hotels, stunning sky lines, and glamarous desert experiences.
           </p>
-          <p>
+          <p class="destinations-visited">
             <a href="explore-destination.html?destination=dubai" class="destinations">Dubai</a><a
               href="explore-destination.html?destination=doha" class="destinations">Doha</a><a
               href="explore-destination.html?destination=amman" class="destinations">Amman</a>
@@ -148,7 +148,7 @@ function returnBaseContent() {
           <p>
             Dive into sun-soaked streets, coastal charm, and vibrant Mediterranean culture.
           </p>
-          <p>
+          <p class="destinations-visited">
             <a href="explore-destination.html?destination=florence" class="destinations">Florence</a><a
               href="explore-destination.html?destination=santorini" class="destinations">Santorini</a><a
               href="explore-destination.html?destination=athens" class="destinations">Athens</a>
@@ -162,7 +162,7 @@ function returnBaseContent() {
           <p>
             Experience energetic cities across the Americas, packed with culture, colour, and excitement.
           </p>
-          <p>
+          <p class="destinations-visited">
             <a href="explore-destination.html?destination=buenosAires" class="destinations">BuenosAires</a><a
               href="explore-destination.html?destination=mexicoCity" class="destinations">Mexico City</a><a
               href="explore-destination.html?destination=newYorkCity" class="destinations">New York City</a>
@@ -177,7 +177,7 @@ function returnBaseContent() {
             A refreshing coastal-themed escape through vibrant cities known for beaches, culture, and stunning
             waterfronts.
           </p>
-          <p>
+          <p class="destinations-visited">
             <a href="explore-destination.html?destination=capeTown" class="destinations">Cape Town</a><a
               href="explore-destination.html?destination=barcelona" class="destinations">Barcelona</a><a
               href="explore-destination.html?destination=santorini" class="destinations">Santorini</a>
@@ -267,7 +267,7 @@ async function tourCardsTemplate(min, max) {
             <p>
             ${data[1][i].desc}
             </p>
-            <p>${processedDestinationsVisited}</p>
+            <p class="destinations-visited">${processedDestinationsVisited}</p>
             <a href="explore-tour.html?tour=${data[1][i].id}" class="btn">Explore Tour</a>
         </div>
         `;
