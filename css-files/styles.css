@@ -518,6 +518,7 @@ section.home-about a.btn {
 .popular-tours {
   position: relative;
   padding-bottom: 4em;
+  margin-bottom: 10rem;
 }
 
 .destination-cards .moreContent,
@@ -594,6 +595,12 @@ section.home-about a.btn {
   font-size: 0.9rem;
   text-decoration: none;
   margin-left: 1.25rem;
+}
+
+.popular-tours .destinations-visited{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
 }
 
 a.destinations {
@@ -935,6 +942,10 @@ footer div {
     width: 100%;
     margin-inline: 1rem;
   }
+
+  a.destinations{
+    width: fit-content;
+  }
 }
 
 @media (max-width: 950px) {
@@ -986,10 +997,14 @@ footer div {
     pointer-events: none;
     display: flex;
   }
+
+    .popular-tours .grid {
+      grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 800px) {
-  .moreContent.grid-3 {
+  .moreContent.grid-3, .popular-tours .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -1021,7 +1036,11 @@ footer div {
 }
 
 @media (max-width: 650px) {
-  .destination-cards .grid, .destination-cards .moreContent.grid-3{
+  .popular-tours{
+    margin-block: 10rem;
+  }
+
+  .destination-cards .grid, .moreContent.grid-3, .popular-tours .grid{
     grid-template-columns: 1fr;
   }
 
