@@ -709,12 +709,6 @@ a.destinations:hover {
   font-weight: 600;
 }
 
-.above-the-fold img {
-  border-radius: .625rem;
-  width: 31.25rem;
-  height: 21.875rem;
-}
-
 .above-the-fold :first-child p {
   color: hsl(0, 0%, 81%);
 }
