@@ -1048,7 +1048,6 @@ footer div {
 @media (max-width: 620px) {
   .nav-bar .container {
     margin: 0;
-    padding: 5px;
     width: 100vw;
     max-width: none;
   }
@@ -1096,6 +1095,12 @@ footer div {
     margin-left: 0;
   }
 
+}
+
+@media (max-width: 470px) {
+  .nav-bar .container{
+    padding-inline: 7px;
+  }
 }
 
 @media (max-width: 455px) {
