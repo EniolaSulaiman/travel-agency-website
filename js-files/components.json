@@ -1402,22 +1402,6 @@
         "kyoto"
       ]
     },
-    "luxuryMiddleEastRetreat": {
-      "name": "Luxury Middle East Retreat",
-      "desc": "Indulge in high-end hotels, stunning skylines, and glamorous desert experiences.",
-      "pricePerNight": 540,
-      "durationArray": [
-        "0 days",
-        "3 days",
-        "5 days"
-      ],
-      "type": "luxury",
-      "destinationsVisited": [
-        "Dubai",
-        "Doha",
-        "Amman"
-      ]
-    },
     "maldivesOverwaterRetreat": {
       "name": "Maldives Overwater Retreat",
       "desc": "Luxury overwater villas and pristine lagoon snorkeling.",
@@ -1510,22 +1494,6 @@
         "aliceSprings"
       ]
     },
-    "pacificIslandDiscovery": {
-      "name": "Pacific Island Discovery",
-      "desc": "A refreshing coastal-themed escape through vibrant cities known for beaches, culture, and stunning waterfronts.",
-      "pricePerNight": 370,
-      "durationArray": [
-        "0 days",
-        "3 days",
-        "6 days"
-      ],
-      "type": "nature",
-      "destinationsvisited": [
-        "CapeTown",
-        "Barcelona",
-        "Santorini"
-      ]
-    },
     "patagoniaHikingAdventure": {
       "name": "Patagonia Hiking Adventure",
       "desc": "Glaciers, wind-swept plains and dramatic mountain scenery in southern South America.",
@@ -1587,37 +1555,6 @@
         "florence"
       ]
     },
-    "safariGardenRoute": {
-      "name": "South African Garden Route & Safari",
-      "desc": "Coastal drives, nature reserves, and curated wildlife experiences.",
-      "pricePerNight": 310,
-      "durationArray": [
-        "0 days",
-        "7 days",
-        "9 days"
-      ],
-      "type": "nature",
-      "destinationsVisited": [
-        "capeTown",
-        "portElizabeth"
-      ]
-    },
-    "safariGatewayAdventure": {
-      "name": "Safari Gateway Adventure",
-      "desc": "Discover vibrant African cities that serve as gateways to legendary wildlife experiences.",
-      "pricePerNight": 290,
-      "durationArray": [
-        "0 days",
-        "3 days",
-        "5 days"
-      ],
-      "type": "adventure",
-      "destinationsVisited": [
-        "Nairobi",
-        "CapeTown",
-        "Johannesburg"
-      ]
-    },
     "scottishHighlandsExplorer": {
       "name": "Scottish Highlands Explorer",
       "desc": "Rugged mountains, lochs, and remote castles across Scotland.",
@@ -1647,22 +1584,6 @@
         "istanbul",
         "amman",
         "petra"
-      ]
-    },
-    "southernEuropeEscape": {
-      "name": "Southern Europe Escape",
-      "desc": "Dive into sun-soaked streets, coastal charm, and vibrant Mediterranean culture.",
-      "pricePerNight": 310,
-      "durationArray": [
-        "0 days",
-        "3 days",
-        "5 days"
-      ],
-      "type": "cultural",
-      "destinationsVisited": [
-        "Florence",
-        "Santorini",
-        "Athens"
       ]
     },
     "swissAlpsLuxuryChalet": {
