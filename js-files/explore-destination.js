@@ -127,6 +127,9 @@ document.getElementById(`closeBtn`).addEventListener(`click`, () => {
 })
 
 document.getElementById(`confirmBtn`).addEventListener(`click`, () => {
-  sendToast(`Purchase Successful`, ``, `success`)
-  document.getElementById(`modal`).classList.remove(`active`)
+  if (document.getElementById(`modalNoOfDays`).innerHTML == 0) {
+    sendToast(`Purchase Unsuccesful`, `Please specify number of days greater than 0`, `error`)
+  } else {
+    sendToast(`Purchase Successful`, ``, `success`)
+  } document.getElementById(`modal`).classList.remove(`active`)
 })
