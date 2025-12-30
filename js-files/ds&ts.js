@@ -25,16 +25,23 @@ function sendToast(title, text, type) {
   }, 4600);
 }
 
+let dataPromise;
+
 async function retrieveJSON() {
   try {
-    const response = await fetch(`/js-files/components.json`);
+    if (!dataPromise) {
+      dataPromise = (async () => {
+        const res = await fetch(`/js-files/components.json`);
 
-    if (!response.ok) {
-      throw new Error(`Could not fetch resource`);
+        if (!res.ok) {
+          throw new Error(`Could not fetch resource`);
+        }
+        return await res.json()
+      })()
     }
-
-    return await response.json();
-  } catch (error) {
+    return dataPromise
+  }
+  catch (error) {
     if (error instanceof TypeError) {
       document.addEventListener(`DOMContentLoaded`, () => {
         setTimeout(sendToast(`Error loading page`, `Please refresh the page`, `error`), 6000)
@@ -228,7 +235,7 @@ function returnBaseContent() {
     </section>`;
 }
 async function destinationCardsTemplate(min, max) {
-  const data = await retrieveJSON();
+  const data = await retrieveJSON()
   let content = ``;
   for (let i = min; i < max + 1; i++) {
     content += `
@@ -248,8 +255,8 @@ async function destinationCardsTemplate(min, max) {
 }
 
 async function tourCardsTemplate(min, max) {
-  const data = await retrieveJSON();
   let content = ``;
+  const data = await retrieveJSON()
   for (let i = min; i < max + 1; i++) {
     let destinationsVisited = data[1][i].destinationsVisited;
     let processedDestinationsVisited = destinationsVisited.map(
@@ -629,16 +636,16 @@ async function displayTours() {
   }
 }
 
-function filterDestinations() {
+async function filterDestinations() {
   const destinationInput = document.getElementById("destinationInput");
   const resultsContainer = document.createElement(`div`);
   const baseContent = returnBaseContent()
+  const data = await retrieveJSON()
   resultsContainer.classList.add(`grid-3`, `moreContent`);
 
   destinationInput.addEventListener("keydown", async function (event) {
     try {
       if (event.key === "Enter") {
-        const data = await retrieveJSON();
 
         let filteredContent;
         if (destinationInput.value.trim() === "") {

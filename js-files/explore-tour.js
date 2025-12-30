@@ -69,16 +69,23 @@ function sendToast(title, text, type) {
   }, 4600);
 }
 
+let dataPromise;
+
 async function retrieveJSON() {
   try {
-    const response = await fetch(`/js-files/components.json`);
+    if (!dataPromise) {
+      dataPromise = (async () => {
+        const res = await fetch(`/js-files/components.json`);
 
-    if (!response.ok) {
-      throw new Error(`Could not fetch resource`);
+        if (!res.ok) {
+          throw new Error(`Could not fetch resource`);
+        }
+        return await res.json()
+      })()
     }
-
-    return await response.json();
-  } catch (error) {
+    return dataPromise
+  }
+  catch (error) {
     if (error instanceof TypeError) {
       document.addEventListener(`DOMContentLoaded`, () => {
         setTimeout(sendToast(`Error loading page`, `Please refresh the page`, `error`), 6000)
