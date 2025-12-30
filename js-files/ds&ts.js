@@ -61,9 +61,6 @@ function returnBaseContent() {
             <img loading="lazy" src="images/paris-2.jpg" alt="destination-picture" />
             <h3>Paris, France</h3>
             <p>Experience the romance and charm of the City Of Lights.</p>
-            <p>
-              <span class="price info">$2500</span><span class="duration info">3-5 days</span>
-            </p>
             <a href="explore-destination.html?destination=paris" class="btn">Explore Tour</a>
           </div>
 
@@ -71,9 +68,6 @@ function returnBaseContent() {
             <img loading="lazy" src="images/bahamas-3.jpg" alt="destination-picture" />
             <h3>Bahamas</h3>
             <p>Relax on pristine beaches and enjoy crystal clear waters.</p>
-            <p>
-              <span class="price info">$2500</span><span class="duration info">3-5 days</span>
-            </p>
             <a href="explore-destination.html?destination=bahamas" class="btn">Explore Tour</a>
           </div>
 
@@ -81,9 +75,6 @@ function returnBaseContent() {
             <img loading="lazy" src="images/sydney-1.jpg" alt="destination-picture" />
             <h3>Sydney, Australia</h3>
             <p>Opera, ocean waves, and laid-back vibes.</p>
-            <p>
-              <span class="price info">$2500</span><span class="duration info">3-5 days</span>
-            </p>
             <a href="explore-destination.html?destination=sydney" class="btn">Explore Tour</a>
           </div>
 
@@ -91,9 +82,6 @@ function returnBaseContent() {
             <img loading="lazy" src="images/japan-1.jpg" alt="destination-picture" />
             <h3>Tokyo, Japan</h3>
             <p>A neon jungle where tradition meets high-tech future.</p>
-            <p>
-              <span class="price info">$2500</span><span class="duration info">3-5 days</span>
-            </p>
             <a href="explore-destination.html?destination=tokyo" class="btn">Explore Tour</a>
           </div>
         </div>
@@ -695,10 +683,6 @@ async function filterDestinations() {
         <div class="card-body">
           <h3 class="card-title">${item.name}</h3>
           <p class="card-desc">${item.desc}</p>
-          <p>
-                <span class="price info">${item.price}</span>
-                <span class="duration info">${item.duration}</span>
-              </p>
               <a href="explore-destination.html?destination=${item.id}" class="btn">Explore destination</a>
         </div>
       `;
