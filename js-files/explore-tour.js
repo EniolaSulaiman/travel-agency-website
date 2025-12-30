@@ -105,6 +105,9 @@ async function loadRoute() {
     document.getElementById(`tourDuration`).innerHTML = ((data[3][tour].durationArray).map((duration) => {
       return `<option>${duration}</option>`
     }))
+    document.getElementById(`destinationsVisited`).innerHTML = data[3][tour].destinationsVisited.map( destination => {
+      return `<a href="explore-destination.html?destination=${destination}" class="destinations">${destination.charAt(0).toUpperCase() + destination.slice(1)}</a>`
+    }).join("")
     document.getElementById(`tourPrice`).innerHTML = `$${data[3][tour].pricePerNight * Number(tourDuration.value.split(` `)[0]) * Number(document.getElementById(`noOfPeople`).value.split(` `)[0])}`
   } catch (error) {
     console.error(`Failed to load data for route`, error);
