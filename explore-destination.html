@@ -17,8 +17,12 @@
 <body>
     <div class="nav-bar bg-primary">
         <div class="container flex">
-            <i class="fa-solid fa-bars" onclick="showNavBar()"></i>
-            <img class="logo" src="images/logo.png" alt="">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <svg class="icon" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
             <nav class="links-nav">
                 <ul class="index-links flex ">
                     <li><a href="index.html">Home</a></li>
@@ -29,59 +33,72 @@
             </nav>
         </div>
     </div>
+    <nav class="flex ham-menu bg-primary">
+        <button class="menu-close" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ds&ts.html">Destinations & Tours</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
     <section class="toast-container" id="toastContainer"></section>
-    
-    <main>
-        <div class="destination-main" id="destinationMain">
-            <div class="container card">
-                <div class="slider">
-                    <img src="/images/paris-5.jpg" class="slide active">
-                    <img src="/images/beach-2.jpg" class="slide">
-                    <img src="/images/beach-3.jpg" class="slide">
-                    <button class="prev slider-control">&#10094;</button>
-                    <button class="next slider-control">&#10095;</button>
-                </div>
-                <span class="h1-container flex">
-                    <h1 id="destinationName"></h1>
+
+    <main class="destination-main" id="destinationMain">
+        <div class="container card">
+            <div class="slider">
+                <img src="/images/paris-5.jpg" class="slide active">
+                <img src="/images/beach-2.jpg" class="slide">
+                <img src="/images/beach-3.jpg" class="slide">
+                <button class="prev slider-control">&#10094;</button>
+                <button class="next slider-control">&#10095;</button>
+            </div>
+            <span class="h1-container flex">
+                <h1 id="destinationName"></h1>
+            </span>
+            <div class="text">
+                <span class="about-text">
+                    <h2>About the Tour</h2>
                 </span>
-                <div class="text">
-                    <span class="about-text">
-                        <h2>About the Tour</h2>
+                <p id="aboutDestination"></p>
+                <div class="grid">
+                    <span>
+                        <h3>Duration</h3>
+                        <select id="travelDuration">
+                            <option>0 days</option>
+                            <option>3 days</option>
+                            <option>7 days</option>
+                            <option>14 days</option>
+                            <option>30 days</option>
+                            <option>60 days</option>
+                        </select>
                     </span>
-                    <p id="aboutDestination"></p>
-                    <div class="grid">
-                        <span>
-                            <h3>Duration</h3>
-                            <select id="travelDuration">
-                                <option>0 days</option>
-                                <option>3 days</option>
-                                <option>7 days</option>
-                                <option>14 days</option>
-                                <option>30 days</option>
-                                <option>60 days</option>
-                            </select>
-                        </span>
-                        <span>
-                            <h3>No. of People</h3>
-                            <select id="noOfPeople">
-                                <option>1 person</option>
-                                <option>2 people</option>
-                                <option>3 people</option>
-                                <option>4 people</option>
-                                <option>5 people</option>
-                                <option>6 people</option>
-                                <option>7 people</option>
-                            </select>
-                        </span>
-                        <span>
-                            <h3>Price</h3>
-                            <span id="destinationPrice"></span>
-                        </span>
-                        <span>
-                            <a href="#" class="btn" id="openBtn">Book Now</a>
-                        </span>
-                    </div>
+                    <span>
+                        <h3>No. of People</h3>
+                        <select id="noOfPeople">
+                            <option>1 person</option>
+                            <option>2 people</option>
+                            <option>3 people</option>
+                            <option>4 people</option>
+                            <option>5 people</option>
+                            <option>6 people</option>
+                            <option>7 people</option>
+                        </select>
+                    </span>
+                    <span>
+                        <h3>Price</h3>
+                        <span id="destinationPrice"></span>
+                    </span>
+                    <span>
+                        <a href="#" class="btn" id="openBtn">Book Now</a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -116,6 +133,7 @@
     </div>
 
     <script src="js-files/explore-destination.js"></script>
+    <script src="js-files/index.js"></script>
 </body>
 
 </html>

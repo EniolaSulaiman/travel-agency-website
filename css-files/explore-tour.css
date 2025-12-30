@@ -1,6 +1,5 @@
 body {
     background-color: var(--primary-color);
-    overflow: hidden;
 }
 
 main {
@@ -82,7 +81,7 @@ main h1 {
 }
 
 main .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 0.5fr;
 }
 
 .text {
@@ -121,7 +120,7 @@ select {
 
 .modal {
     background: var(--secondary-color);
-    width: 50vw;
+    width: fit-content;
     padding: 1.5rem;
     border-radius: .75rem;
     box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.2);
@@ -179,4 +178,20 @@ select {
 
 .modal-overlay.active .modal {
     transform: scale(1);
+}
+
+@media (max-width:670px){
+    main{
+        padding-inline: 5px;
+    }
+
+    main .container{
+        width: 100%;
+    }
+}
+
+@media (max-width:385px) {
+   main .grid{
+        grid-template-columns: 1fr;
+    }
 }
