@@ -631,27 +631,25 @@ async function filterDestinations() {
   const data = await retrieveJSON()
   resultsContainer.classList.add(`grid-3`, `moreContent`);
 
-  destinationInput.addEventListener("keydown", async function (event) {
+  destinationInput.addEventListener("input", async function () {
     try {
-      if (event.key === "Enter") {
+      let filteredContent;
+      if (destinationInput.value.trim() === "") {
+        filteredContent = data[0];
+      }
+      filteredContent = data[0].filter((item) =>
+        item.name.toLowerCase().includes(destinationInput.value.toLowerCase())
+      );
 
-        let filteredContent;
-        if (destinationInput.value.trim() === "") {
-          filteredContent = data[0];
-        }
-        filteredContent = data[0].filter((item) =>
-          item.name.toLowerCase().includes(destinationInput.value.toLowerCase())
-        );
+      // Clear old results
+      resultsContainer.innerHTML = "";
 
-        // Clear old results
-        resultsContainer.innerHTML = "";
+      if (filteredContent.length === 0) {
+        // Show "not found" card
+        const noResultCard = document.createElement("div");
+        noResultCard.classList.add("card");
 
-        if (filteredContent.length === 0) {
-          // Show "not found" card
-          const noResultCard = document.createElement("div");
-          noResultCard.classList.add("card");
-
-          noResultCard.innerHTML = `
+        noResultCard.innerHTML = `
         <div class="card-body">
           <h3 class="card-title">No destinations found</h3>
           <p class="card-desc">Try another destination or check your spelling.</p>
@@ -659,26 +657,26 @@ async function filterDestinations() {
         </div>
       `;
 
-          resultsContainer.appendChild(noResultCard);
-          document.getElementById(`dsMain`).innerHTML = ``;
-          document.getElementById(`dsMain`).appendChild(resultsContainer);
-          document
-            .getElementById(`clearFilterBtn`)
-            .addEventListener(`click`, () => {
-              document.getElementById(`dsMain`).removeChild(resultsContainer);
-              document.getElementById(`dsMain`).innerHTML = baseContent;
+        resultsContainer.appendChild(noResultCard);
+        document.getElementById(`dsMain`).innerHTML = ``;
+        document.getElementById(`dsMain`).appendChild(resultsContainer);
+        document
+          .getElementById(`clearFilterBtn`)
+          .addEventListener(`click`, () => {
+            document.getElementById(`dsMain`).removeChild(resultsContainer);
+            document.getElementById(`dsMain`).innerHTML = baseContent;
 
-              destinationInput.value = ``;
-            });
-          return; // stop execution here
-        }
+            destinationInput.value = ``;
+          });
+        return; // stop execution here
+      }
 
-        // Otherwise, show matching cards
-        filteredContent.forEach((item) => {
-          const card = document.createElement("div");
-          card.classList.add("card");
+      // Otherwise, show matching cards
+      filteredContent.forEach((item) => {
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-          card.innerHTML = `
+        card.innerHTML = `
         <img src="${item.image}" alt="${item.name}" class="card-img">
         <div class="card-body">
           <h3 class="card-title">${item.name}</h3>
@@ -687,29 +685,29 @@ async function filterDestinations() {
         </div>
       `;
 
-          resultsContainer.appendChild(card);
-        });
-        resultsContainer.innerHTML += `<div class="card">
+        resultsContainer.appendChild(card);
+      });
+      resultsContainer.innerHTML += `<div class="card">
           <h3 class="card-title">No more destinations</h3>
           <p class="card-desc">Try another destination name or explore one above.</p>
           <button class="clear" id="clearFilterBtn">Clear Results</button>
         </div>`;
-        document.getElementById(`dsMain`).innerHTML = ``;
-        document.getElementById(`dsMain`).appendChild(resultsContainer);
-        document
-          .getElementById(`clearFilterBtn`)
-          .addEventListener(`click`, () => {
-            document.getElementById(`dsMain`).removeChild(resultsContainer);
-            document.getElementById(`dsMain`).innerHTML = baseContent;
-            displayDestinations()
-            displayTours()
-            destinationInput.value = ``;
-          });
-      }
+      document.getElementById(`dsMain`).innerHTML = ``;
+      document.getElementById(`dsMain`).appendChild(resultsContainer);
+      document
+        .getElementById(`clearFilterBtn`)
+        .addEventListener(`click`, () => {
+          document.getElementById(`dsMain`).removeChild(resultsContainer);
+          document.getElementById(`dsMain`).innerHTML = baseContent;
+          displayDestinations()
+          displayTours()
+          destinationInput.value = ``;
+        });
+    
     } catch (error) {
-      console.error(`Filtered content failed to load`, error);
-    }
-  });
+    console.error(`Filtered content failed to load`, error);
+  }
+});
 }
 
 async function filterTours(tourType) {
