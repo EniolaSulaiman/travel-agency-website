@@ -82,13 +82,14 @@ input:focus::placeholder {
 
 
 .toast-title {
-  margin: 0 0 4px;
+  margin: 0 0 4px ;
   font-size: 0.95rem;
   font-weight: 600;
 }
 
-.toast-text {
+.toast .text {
   margin: 0;
+  text-align: left;
   font-size: 0.85rem;
   line-height: 1.45;
   color: #4b5563;

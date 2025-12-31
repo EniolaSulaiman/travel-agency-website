@@ -144,7 +144,7 @@ document.getElementById(`closeBtn`).addEventListener(`click`, () => {
 
 document.getElementById(`confirmBtn`).addEventListener(`click`, () => {
   if (document.getElementById(`modalNoOfDays`).innerHTML == 0) {
-    sendToast(`Purchase Unsuccesful`, `Please specify number of days greater than 0`, `error`)
+    sendToast(`Purchase Unsuccesful`, `Number of Days cant't be zero`, `error`)
   } else {
     sendToast(`Purchase Successful`, ``, `success`)
   } document.getElementById(`modal`).classList.remove(`active`)
