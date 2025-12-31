@@ -179,18 +179,18 @@ select {
     transform: scale(1);
 }
 
-@media (max-width:670px){
-    main{
-        padding-inline: 5px;
+@media (max-width:41.875rem) {
+    main {
+        padding-inline: .3125rem;
     }
 
-    main .container{
+    main .container {
         width: 100%;
     }
 }
 
-@media (max-width:385px) {
-   main .grid{
+@media (max-width:24.0625rem) {
+    main .grid {
         grid-template-columns: 1fr;
     }
 }

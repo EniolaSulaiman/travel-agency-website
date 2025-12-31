@@ -50,34 +50,34 @@ input:focus::placeholder {
 
 .toast-container {
   position: fixed;
-  top: 16px;
+  top: 1rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: .625rem;
   pointer-events: none;
 }
 
 .toast {
-  min-width: 280px;
-  max-width: 360px;
-  padding: 14px 16px;
-  border-radius: 12px;
+  min-width: 17.5rem;
+  max-width: 22.5rem;
+  padding: .875rem 1rem;
+  border-radius: .75rem;
   background: #ffffff;
   color: #1f2937;
-  border-left: 5px solid;
+  border-left: .3125rem solid;
   box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.12),
-    0 2px 6px rgba(0, 0, 0, 0.08);
+    0 .5rem 1.25rem rgba(0, 0, 0, 0.12),
+    0 .125rem .375rem rgba(0, 0, 0, 0.08);
   font-family: system-ui, sans-serif;
   animation: slideIn 0.3s ease forwards;
 }
 
 
 .toast-title {
-  margin: 0 0 4px ;
+  margin: 0 0 .25rem;
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -195,8 +195,8 @@ body .ham-menu a:hover {
 }
 
 .menu-close svg {
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
   color: #fff;
   transition: transform 0.2s ease, color 0.2s ease;
 }
@@ -309,28 +309,28 @@ section.home-about a.btn {
   background-size: cover;
 }
 
-.home-popular-destinations .slider a.destination-1{
+.home-popular-destinations .slider a.destination-1 {
   background-image: url("/images/paris-1.jpg");
 }
 
-.home-popular-destinations .slider a.destination-2{
-background-image: url("/images/europe-3.jpg");
+.home-popular-destinations .slider a.destination-2 {
+  background-image: url("/images/europe-3.jpg");
 }
 
-.home-popular-destinations .slider a.destination-3{
-background-image: url("/images/sydney-1.jpg");
+.home-popular-destinations .slider a.destination-3 {
+  background-image: url("/images/sydney-1.jpg");
 }
 
-.home-popular-destinations .slider a.destination-4{
-background-image: url("/images/japan-1.jpg");
+.home-popular-destinations .slider a.destination-4 {
+  background-image: url("/images/japan-1.jpg");
 }
 
-.home-popular-destinations .slider a.destination-5{
-background-image: url("/images/beach-2.jpg");
+.home-popular-destinations .slider a.destination-5 {
+  background-image: url("/images/beach-2.jpg");
 }
 
-.home-popular-destinations .slider a.destination-6{
-background-image: url("/images/bahamas-3.jpg");
+.home-popular-destinations .slider a.destination-6 {
+  background-image: url("/images/bahamas-3.jpg");
 }
 
 
@@ -531,7 +531,7 @@ background-image: url("/images/bahamas-3.jpg");
 #toursContainer .moreContent {
   display: none;
   opacity: 0;
-  margin-inline: 10px;
+  margin-inline: .625rem;
   transition: all 1s ease;
 }
 
@@ -569,7 +569,7 @@ background-image: url("/images/bahamas-3.jpg");
   margin: 0 0 1rem;
   color: #666;
   margin-left: 1.25rem;
-  margin-right: 10px;
+  margin-right: .625rem;
 }
 
 .popular-tours img,
@@ -606,7 +606,7 @@ background-image: url("/images/bahamas-3.jpg");
 .popular-tours .destinations-visited {
   display: flex;
   flex-wrap: wrap;
-  gap: 3px;
+  gap: .1875rem;
 }
 
 a.destinations {
@@ -649,7 +649,7 @@ a.destinations:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 10px;
+  padding-bottom: .625rem;
 }
 
 .about img {
@@ -782,7 +782,7 @@ footer div {
   padding: 2rem;
 }
 
-.profile-picture{
+.profile-picture {
   display: flex;
   justify-content: center;
 }
@@ -855,7 +855,7 @@ footer div {
 
 @keyframes slideIn {
   from {
-    transform: translateY(10px);
+    transform: translateY(.625rem);
     opacity: 0;
   }
 
@@ -896,7 +896,7 @@ footer div {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 60rem) {
   .about-main {
     padding-inline: 2rem;
   }
@@ -911,7 +911,7 @@ footer div {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 59.375rem) {
   .ds-header span.links {
     top: 0;
     left: 0;
@@ -922,11 +922,11 @@ footer div {
 
   .ds-header span.links ul {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 55rem) {
   .home-about .grid {
     display: block;
   }
@@ -937,7 +937,7 @@ footer div {
   }
 }
 
-@media (max-width: 835px) {
+@media (max-width: 52.1875rem) {
   .destination-cards {
     margin-top: 5rem;
   }
@@ -947,13 +947,13 @@ footer div {
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 51.875rem) {
   .about img {
     max-height: none;
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 51.25rem) {
   .nav-bar nav {
     display: none;
   }
@@ -972,7 +972,7 @@ footer div {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
 
   .moreContent.grid-3,
   .popular-tours .grid {
@@ -980,7 +980,7 @@ footer div {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 47.5rem) {
   .home-popular-destinations .container {
     padding: 0;
     overflow-x: hidden;
@@ -989,7 +989,7 @@ footer div {
   .home-popular-destinations .slider.flex {
     display: block;
     width: 100%;
-    padding-inline: 20px;
+    padding-inline: 1.25rem;
   }
 
   .home-popular-destinations .flex a {
@@ -999,14 +999,14 @@ footer div {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 42.5rem) {
   .footer-columns div {
     height: 100%;
     padding: 0;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 40.625rem) {
   .popular-tours {
     margin-block: 10rem;
   }
@@ -1032,7 +1032,7 @@ footer div {
   }
 
   footer img {
-    max-height: 200px;
+    max-height: 12.5rem;
   }
 
   .footer-columns div {
@@ -1046,7 +1046,7 @@ footer div {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 38.75rem) {
   .nav-bar .container {
     margin: 0;
     width: 100%;
@@ -1058,19 +1058,19 @@ footer div {
   }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 38.125rem) {
   .hero-text p {
     display: none;
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 35.625rem) {
   footer {
     height: fit-content;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 34.375rem) {
   .project-info {
     text-align: center;
     flex-direction: column;
@@ -1084,13 +1084,13 @@ footer div {
 
 }
 
-@media (max-width: 470px) {
+@media (max-width: 29.375rem) {
   .nav-bar .container {
-    padding-inline: 7px;
+    padding-inline: .4375rem;
   }
 }
 
-@media (max-width: 455px) {
+@media (max-width: 28.4375rem) {
   .tour-types .grid {
     grid-template-columns: none;
     grid-template-rows: none;
@@ -1098,13 +1098,13 @@ footer div {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 28.125rem) {
   .home-about .container {
     padding: 0;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   .ds-header {
     padding-inline: 0;
   }
@@ -1112,7 +1112,7 @@ footer div {
   .ds-header .datalists {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: .625rem;
   }
 
   .ds-header .datalists .input {
@@ -1125,11 +1125,11 @@ footer div {
 
   .above-the-fold form {
     width: 100%;
-    margin-inline: 3px;
+    margin-inline: .1875rem;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 23.4375rem) {
   .about-main h3 {
     display: none;
   }
@@ -1139,8 +1139,8 @@ footer div {
   }
 }
 
-@media (max-width: 340px) {
-  .above-the-fold form{
+@media (max-width: 21.25rem) {
+  .above-the-fold form {
     display: none;
   }
 }
