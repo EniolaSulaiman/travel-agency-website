@@ -258,7 +258,7 @@ body .hero-text {
 .hero-img {
   width: 100%;
   height: calc(100vh - 4.375rem);
-  background-image: url(images/hero-img.jpg);
+  background-image: url("../images/hero-img.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -310,27 +310,27 @@ section.home-about a.btn {
 }
 
 .home-popular-destinations .slider a.destination-1 {
-  background-image: url("images/paris-1.jpg");
+  background-image: url("../images/paris-1.jpg");
 }
 
 .home-popular-destinations .slider a.destination-2 {
-  background-image: url("images/europe-3.jpg");
+  background-image: url("../images/europe-3.jpg");
 }
 
 .home-popular-destinations .slider a.destination-3 {
-  background-image: url("images/sydney-1.jpg");
+  background-image: url("../images/sydney-1.jpg");
 }
 
 .home-popular-destinations .slider a.destination-4 {
-  background-image: url("images/japan-1.jpg");
+  background-image: url("../images/japan-1.jpg");
 }
 
 .home-popular-destinations .slider a.destination-5 {
-  background-image: url("images/beach-2.jpg");
+  background-image: url("../images/beach-2.jpg");
 }
 
 .home-popular-destinations .slider a.destination-6 {
-  background-image: url("images/bahamas-3.jpg");
+  background-image: url("../images/bahamas-3.jpg");
 }
 
 
