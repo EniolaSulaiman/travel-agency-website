@@ -105,7 +105,6 @@ select {
     font-size: 0.8rem;
 }
 
-/* Modal */
 .modal-overlay {
     position: fixed;
     inset: 0;
