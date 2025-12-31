@@ -810,7 +810,7 @@ footer div {
 
 .profile-picture{
   display: flex;
-  place-items: center;
+  justify-content: center;
 }
 
 .profile-picture img {
