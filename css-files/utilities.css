@@ -49,7 +49,6 @@
 }
 
 
-/* Backgrounds and colored buttons */
 .bg-primary,
 .btn-primary {
     background: var(--primary-color);
@@ -85,7 +84,6 @@
     color: white;
 }
 
-/* Text colors */
 #text-primary {
     color: var(--primary-color);
 }
@@ -102,7 +100,6 @@
     color: var(--light-color);
 }
 
-/* Text sizes */
 .lead {
     font-size: 1.25rem;
 }
@@ -123,32 +120,9 @@
     font-size: 4rem;
 }
 
-/* Alert */
-.alert {
-    background: var(--light-color);
-    padding: .625rem 1.25rem;
-    font-weight: bold;
-    margin: .9375rem 0;
-}
-
-.alert i {
-    margin-right: .625rem;
-}
-
-.alert-success {
-    background: var(--success-color);
-    color: white;
-}
-
-.alert-error {
-    background: var(--error-color);
-    color: white;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* repeat(2, 1fr) means repeat 1fr twice*/
     gap: 1.25rem;
     justify-content: center;
     align-items: center;
@@ -168,7 +142,6 @@
     grid-template-columns: 2fr 1fr;
 }
 
-/*Margin*/
 .my-1 {
     margin: 1rem 0;
 }
@@ -209,7 +182,6 @@
     margin: 4rem;
 }
 
-/*Padding*/
 .py-1 {
     padding: 1rem 0;
 }
@@ -250,4 +222,3 @@
     padding: 4rem;
 }
 
-/* Animation Classes */
