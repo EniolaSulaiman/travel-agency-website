@@ -1,4 +1,4 @@
-# Travel Agency Website  
+# Enimbi Travel Agency Website  
 
 A simple responsive front-end website for a travel agency. It includes a homepage, about page, and contact page. You can check it out [here](https://eniolasulaiman.github.io/travel-agency-website)
 
@@ -6,17 +6,14 @@ A simple responsive front-end website for a travel agency. It includes a homepag
 - Travel destinations showcase   
 - Contact form
 - Basic filter
-
-## To Be Added
 - Responsive design
-- Map integration
-- More destinations and tours
+- Over 70 destinations and tours
 - Advanced filter
 
 ## Tech Stack  
 - HTML  
 - CSS  
-- JavaScript  
+- Vanilla JavaScript  
 
 ## Author  
 Created by **Eniola Sulaiman**  
