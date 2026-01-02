@@ -61,28 +61,28 @@ function returnBaseContent() {
             <img loading="lazy" src="images/paris-2.jpg" alt="destination-picture" />
             <h3>Paris, France</h3>
             <p>Experience the romance and charm of the City Of Lights.</p>
-            <a href="explore-destination.html?destination=paris" class="btn">Explore Tour</a>
+            <a href="explore-destination.html?destination=paris" class="btn">Explore Destination</a>
           </div>
 
           <div class="destinations card" id="destinations">
             <img loading="lazy" src="images/bahamas-3.jpg" alt="destination-picture" />
             <h3>Bahamas</h3>
             <p>Relax on pristine beaches and enjoy crystal clear waters.</p>
-            <a href="explore-destination.html?destination=bahamas" class="btn">Explore Tour</a>
+            <a href="explore-destination.html?destination=bahamas" class="btn">Explore Destination</a>
           </div>
 
           <div class="destinations card" id="destinations">
             <img loading="lazy" src="images/sydney-1.jpg" alt="destination-picture" />
             <h3>Sydney, Australia</h3>
             <p>Opera, ocean waves, and laid-back vibes.</p>
-            <a href="explore-destination.html?destination=sydney" class="btn">Explore Tour</a>
+            <a href="explore-destination.html?destination=sydney" class="btn">Explore Destination</a>
           </div>
 
           <div class="destinations card" id="destinations">
             <img loading="lazy" src="images/japan-1.jpg" alt="destination-picture" />
             <h3>Tokyo, Japan</h3>
             <p>A neon jungle where tradition meets high-tech future.</p>
-            <a href="explore-destination.html?destination=tokyo" class="btn">Explore Tour</a>
+            <a href="explore-destination.html?destination=tokyo" class="btn">Explore Destination</a>
           </div>
         </div>
       </article>
@@ -96,7 +96,7 @@ function returnBaseContent() {
       <h2>POPULAR TOURS</h2>
       <div class="grid">
         <div class="card">
-          <img loading="lazy" src="images/europe-2.jpg" alt="" />
+          <img loading="lazy" src="images/europe-2.jpg" alt="destination-picture" />
           <h3>Safari Gateway Adventure</h3>
           <p>
             Discover vibrant African cities that serve as gateways to legendary wildlife experiences.
@@ -110,7 +110,7 @@ function returnBaseContent() {
         </div>
 
         <div class="card">
-          <img loading="lazy" src="images/paris-2.jpg" alt="" />
+          <img loading="lazy" src="images/paris-2.jpg" alt="destination-picture" />
           <h3>Asian Nature Explorer</h3>
           <p>
             A journey through scenic Asian cities blending nature, culture, and urban excitement.
@@ -124,7 +124,7 @@ function returnBaseContent() {
         </div>
 
         <div class="card">
-          <img loading="lazy" src="images/paris-2.jpg" alt="" />
+          <img loading="lazy" src="images/paris-2.jpg" alt="destination-picture" />
           <h3>Luxury Middle East Retreat</h3>
           <p>
             Indulge in high-end hotels, stunning sky lines, and glamarous desert experiences.
@@ -138,7 +138,7 @@ function returnBaseContent() {
         </div>
 
         <div class="card">
-          <img loading="lazy" src="images/paris-2.jpg" alt="" />
+          <img loading="lazy" src="images/paris-2.jpg" alt="destination-picture" />
           <h3>Southern Europe Escaape</h3>
           <p>
             Dive into sun-soaked streets, coastal charm, and vibrant Mediterranean culture.
@@ -152,7 +152,7 @@ function returnBaseContent() {
         </div>
 
         <div class="card">
-          <img loading="lazy" src="images/paris-2.jpg" alt="" />
+          <img loading="lazy" src="images/paris-2.jpg" alt="destination-picture" />
           <h3>Americas Adventure Trail</h3>
           <p>
             Experience energetic cities across the Americas, packed with culture, colour, and excitement.
@@ -166,7 +166,7 @@ function returnBaseContent() {
         </div>
 
         <div class="card">
-          <img loading="lazy" src="images/paris-2.jpg" alt="" />
+          <img loading="lazy" src="images/paris-2.jpg" alt="destination-picture" />
           <h3>Pacific Island Discovery</h3>
           <p>
             A refreshing coastal-themed escape through vibrant cities known for beaches, culture, and stunning
@@ -228,7 +228,7 @@ async function destinationCardsTemplate(min, max) {
   for (let i = min; i < max + 1; i++) {
     content += `
             <div class="card">
-                <img loading="lazy" src="${data[0][i].image}" alt="${data[0][i].alt}">
+                <img loading="lazy" src="${data[0][i].image}" alt="destination-picture">
                 <h3>
                     ${data[0][i].name}
                 </h3>
@@ -255,7 +255,7 @@ async function tourCardsTemplate(min, max) {
     );
     content += `
             <div class="card">
-            <img loading="lazy" src="${data[1][i].image}" alt="Image">
+            <img loading="lazy" src="${data[1][i].image}" alt="destination-picture">
             <h3>
                 ${data[1][i].name}
             </h3>
@@ -677,7 +677,7 @@ async function filterDestinations() {
         card.classList.add("card");
 
         card.innerHTML = `
-        <img src="${item.image}" alt="${item.name}" class="card-img">
+        <img src="${item.image}" alt="destination-picture" class="card-img">
         <div class="card-body">
           <h3 class="card-title">${item.name}</h3>
           <p class="card-desc">${item.desc}</p>
@@ -736,7 +736,7 @@ async function filterTours(tourType) {
       })
       .join(``);
     card.innerHTML = `
-        <img src="${item.image}" alt="${item.name}" class="card-img">
+        <img src="${item.image}" alt="destination-picture" class="card-img">
         <div class="card-body">
           <h3 class="card-title">${item.name}</h3>
           <p class="card-desc">${item.desc}</p>
