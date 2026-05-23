@@ -18,4 +18,4 @@ A simple responsive front-end website for a travel agency. It includes a homepag
 ## Author  
 Created by **Eniola Sulaiman**    
 Connect with me:  
-[GitHub](https://github.com/Eniolasulaiman) | [Instagram](https://www.instagram.com/ennyboss_dev?igsh=MWJwYnVrNm5nYXptbA==) | [Facebook](https://www.facebook.com/share/19uAfN1mr4/)
+[GitHub](https://github.com/Eniolasulaiman) | [Instagram](https://www.instagram.com/eniolasulaiman_web?igsh=MWJwYnVrNm5nYXptbA==) | [Facebook](https://www.facebook.com/share/19uAfN1mr4/)
